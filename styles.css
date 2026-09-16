@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+aside {
+  width: 280px;
+  flex: 0 0 auto;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.viewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.world {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.basemap {
+  display: block;
+  max-width: none;
+}
