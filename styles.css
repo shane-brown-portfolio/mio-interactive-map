@@ -10,8 +10,48 @@ body {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 12px 20px;
   border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.progress-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.progress-track {
+  flex: 1;
+  height: 8px;
+  border-radius: 99px;
+  background: #eee;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #3d5a80;
+  transition: width .25s ease;
+}
+
+.progress-label {
+  font-size: 12px;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .layout {
