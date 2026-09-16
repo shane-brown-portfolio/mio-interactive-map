@@ -15,9 +15,16 @@ let scale = 1, minScale = 0.1, tx = 0, ty = 0;
 // Tracks an in-progress drag
 let dragging = false, dragMoved = false, lastX = 0, lastY = 0;
 
+// Cached viewport size/position, so zooming doesn't force the browser to
+// re-measure the page on every scroll tick
+let viewportRect = viewport.getBoundingClientRect();
+function updateViewportRect() {
+  viewportRect = viewport.getBoundingClientRect();
+}
+
 // Keep the map from being dragged past its own edges
 function clamp() {
-  const vw = viewport.clientWidth, vh = viewport.clientHeight;
+  const vw = viewportRect.width, vh = viewportRect.height;
   const ww = worldW * scale, wh = worldH * scale;
   tx = ww <= vw ? (vw - ww) / 2 : Math.min(0, Math.max(vw - ww, tx));
   ty = wh <= vh ? (vh - wh) / 2 : Math.min(0, Math.max(vh - wh, ty));
@@ -31,7 +38,8 @@ function apply() {
 
 // Zoom out and center so the whole map is visible
 function fitView() {
-  const vw = viewport.clientWidth, vh = viewport.clientHeight;
+  updateViewportRect();
+  const vw = viewportRect.width, vh = viewportRect.height;
   minScale = Math.min(vw / worldW, vh / worldH) * 0.98;
   scale = minScale;
   tx = (vw - worldW * scale) / 2;
@@ -49,11 +57,24 @@ function zoomAt(cx, cy, factor) {
   apply();
 }
 
-// Scroll/trackpad zoom, centered on the cursor
+// Scroll/trackpad zoom, centered on the cursor. The actual zoom is batched with
+// requestAnimationFrame instead of redrawing the map image once per event.
+let pendingZoom = null, zoomQueued = false;
 viewport.addEventListener('wheel', (e) => {
   e.preventDefault();
-  const rect = viewport.getBoundingClientRect();
-  zoomAt(e.clientX - rect.left, e.clientY - rect.top, e.deltaY < 0 ? 1.2 : 1 / 1.2);
+  pendingZoom = {
+    x: e.clientX - viewportRect.left,
+    y: e.clientY - viewportRect.top,
+    factor: e.deltaY < 0 ? 1.2 : 1 / 1.2,
+  };
+  if (!zoomQueued) {
+    zoomQueued = true;
+    requestAnimationFrame(() => {
+      zoomQueued = false;
+      if (pendingZoom) zoomAt(pendingZoom.x, pendingZoom.y, pendingZoom.factor);
+      pendingZoom = null;
+    });
+  }
 }, { passive: false });
 
 // Click and drag panning
@@ -85,12 +106,10 @@ viewport.addEventListener('pointercancel', endDrag);
 
 // Zoom buttons, centered on the middle of the screen
 document.getElementById('zoomIn').addEventListener('click', () => {
-  const r = viewport.getBoundingClientRect();
-  zoomAt(r.width / 2, r.height / 2, 1.3);
+  zoomAt(viewportRect.width / 2, viewportRect.height / 2, 1.3);
 });
 document.getElementById('zoomOut').addEventListener('click', () => {
-  const r = viewport.getBoundingClientRect();
-  zoomAt(r.width / 2, r.height / 2, 1 / 1.3);
+  zoomAt(viewportRect.width / 2, viewportRect.height / 2, 1 / 1.3);
 });
 document.getElementById('zoomReset').addEventListener('click', fitView);
 window.addEventListener('resize', fitView);
