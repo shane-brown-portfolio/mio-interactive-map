@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}

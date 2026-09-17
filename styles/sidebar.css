@@ -1,0 +1,6 @@
+aside {
+  width: 280px;
+  flex: 0 0 auto;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
