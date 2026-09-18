@@ -10,7 +10,11 @@ const basemap = document.getElementById('basemap');
 let worldW = 0, worldH = 0;
 
 // Current zoom level and map position. minScale is "fully zoomed out"
-let scale = 1, minScale = 0.1, tx = 0, ty = 0;
+let scale = 1, minScale = 0.1, maxScale = 8, tx = 0, ty = 0;
+
+const ZOOM_STEP = 1.3;
+const START_CLICKS_IN = 1;
+const MAX_CLICKS_IN = 6;
 
 // Tracks an in-progress drag
 let dragging = false, dragMoved = false, lastX = 0, lastY = 0;
@@ -40,7 +44,9 @@ function apply() {
 function fitView() {
   updateViewportRect();
   const vw = viewportRect.width, vh = viewportRect.height;
-  minScale = Math.min(vw / worldW, vh / worldH) * 0.98;
+  const fitScale = Math.min(vw / worldW, vh / worldH) * 0.98;
+  minScale = fitScale * Math.pow(ZOOM_STEP, START_CLICKS_IN);
+  maxScale = minScale * Math.pow(ZOOM_STEP, MAX_CLICKS_IN);
   scale = minScale;
   tx = (vw - worldW * scale) / 2;
   ty = (vh - worldH * scale) / 2;
@@ -49,7 +55,7 @@ function fitView() {
 
 // Zoom in/out while keeping the point under (cx, cy) in the same spot
 function zoomAt(cx, cy, factor) {
-  const newScale = Math.min(8, Math.max(minScale, scale * factor));
+  const newScale = Math.min(maxScale, Math.max(minScale, scale * factor));
   const wx = (cx - tx) / scale, wy = (cy - ty) / scale;
   scale = newScale;
   tx = cx - wx * scale;
@@ -65,7 +71,7 @@ viewport.addEventListener('wheel', (e) => {
   pendingZoom = {
     x: e.clientX - viewportRect.left,
     y: e.clientY - viewportRect.top,
-    factor: e.deltaY < 0 ? 1.2 : 1 / 1.2,
+    factor: e.deltaY < 0 ? ZOOM_STEP : 1 / ZOOM_STEP,
   };
   if (!zoomQueued) {
     zoomQueued = true;
@@ -106,10 +112,10 @@ viewport.addEventListener('pointercancel', endDrag);
 
 // Zoom buttons, centered on the middle of the screen
 document.getElementById('zoomIn').addEventListener('click', () => {
-  zoomAt(viewportRect.width / 2, viewportRect.height / 2, 1.3);
+  zoomAt(viewportRect.width / 2, viewportRect.height / 2, ZOOM_STEP);
 });
 document.getElementById('zoomOut').addEventListener('click', () => {
-  zoomAt(viewportRect.width / 2, viewportRect.height / 2, 1 / 1.3);
+  zoomAt(viewportRect.width / 2, viewportRect.height / 2, 1 / ZOOM_STEP);
 });
 document.getElementById('zoomReset').addEventListener('click', fitView);
 window.addEventListener('resize', fitView);

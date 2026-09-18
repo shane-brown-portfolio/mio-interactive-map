@@ -10,12 +10,12 @@ const MAP_DATA = {
         {
           "uid": "Mkkrxcctlrtd2qa",
           "label": "Attune Station",
-          "icon": "icons/attune-station.png"
+          "icon": "icons/attune-station.svg"
         },
         {
           "uid": "Mkkrxjyx2fo5gm9",
           "label": "Elevator",
-          "icon": "icons/elevator.png"
+          "icon": "icons/elevator.svg"
         }
       ]
     },
@@ -26,22 +26,22 @@ const MAP_DATA = {
         {
           "uid": "Mkkry1hb53dx6a",
           "label": "Ability",
-          "icon": "icons/ability.png"
+          "icon": "icons/ability.svg"
         },
         {
           "uid": "Mkkryd8c84zyyw9",
           "label": "Modifier",
-          "icon": "icons/modifier.png"
+          "icon": "icons/modifier.svg"
         },
         {
           "uid": "Mkkryr9tzh06ueq",
           "label": "Damage Upgrade",
-          "icon": "icons/damage-upgrade.png"
+          "icon": "icons/damage-upgrade.svg"
         },
         {
           "uid": "Mklo7etaznf2qu",
           "label": "Coating Component",
-          "icon": "icons/coating-component.png"
+          "icon": "icons/coating-component.svg"
         }
       ]
     },
@@ -52,32 +52,32 @@ const MAP_DATA = {
         {
           "uid": "Mkkrzfr5b2v5bpj",
           "label": "Junk Pile",
-          "icon": "icons/junk-pile.png"
+          "icon": "icons/junk-pile.svg"
         },
         {
           "uid": "Mkkrzn92hipumfv",
           "label": "Crystallized Nacre",
-          "icon": "icons/crystallized-nacre.png"
+          "icon": "icons/crystallized-nacre.svg"
         },
         {
           "uid": "Mkks00cdtqeamel",
           "label": "Old Core",
-          "icon": "icons/old-core.png"
+          "icon": "icons/old-core.svg"
         },
         {
           "uid": "Mkks0setaahiv85",
           "label": "Candle",
-          "icon": "icons/candle.png"
+          "icon": "icons/candle.svg"
         },
         {
           "uid": "Mkks11mxe0y1rxo",
           "label": "Letter From Tomo",
-          "icon": "icons/letter-from-tomo.png"
+          "icon": "icons/letter-from-tomo.svg"
         },
         {
           "uid": "Mkks1dwxeuo4x2s",
           "label": "Pearl Record",
-          "icon": "icons/pearl-record.png"
+          "icon": "icons/pearl-record.svg"
         }
       ]
     },
@@ -88,7 +88,7 @@ const MAP_DATA = {
         {
           "uid": "Mkks2qeldcqyaeu",
           "label": "Bosses",
-          "icon": "icons/bosses.png"
+          "icon": "icons/bosses.svg"
         }
       ]
     },
@@ -99,52 +99,52 @@ const MAP_DATA = {
         {
           "uid": "Mkks3hlp29dyho",
           "label": "Key",
-          "icon": "icons/key.png"
+          "icon": "icons/key.svg"
         },
         {
           "uid": "Mkks3yer4zvdfpn",
           "label": "Locked Door",
-          "icon": "icons/locked-door.png"
+          "icon": "icons/locked-door.svg"
         },
         {
           "uid": "Mkks46bz1m9o43",
           "label": "Switch",
-          "icon": "icons/switch.png"
+          "icon": "icons/switch.svg"
         },
         {
           "uid": "Mkks4lifcmich7k",
           "label": "NPC",
-          "icon": "icons/npc.png"
+          "icon": "icons/npc.svg"
         },
         {
           "uid": "Mkks51x9f031zjt",
           "label": "Missing Shop NPC",
-          "icon": "icons/missing-shop-npc.png"
+          "icon": "icons/missing-shop-npc.svg"
         },
         {
           "uid": "Mkks5pmnv7r87cp",
           "label": "Misc",
-          "icon": "icons/misc.png"
+          "icon": "icons/misc.svg"
         },
         {
           "uid": "Mklonkcrqpz0ly",
           "label": "Crystallizer",
-          "icon": "icons/crystallizer.png"
+          "icon": "icons/crystallizer.svg"
         },
         {
           "uid": "Mklovgt3gcykgro",
           "label": "Nacre Basin",
-          "icon": "icons/nacre-basin.png"
+          "icon": "icons/nacre-basin.svg"
         },
         {
           "uid": "Mklp5xwbuhc529o",
           "label": "Torn Overseer",
-          "icon": "icons/torn-overseer.png"
+          "icon": "icons/torn-overseer.svg"
         },
         {
           "uid": "Mklphh28hvj1f6l",
           "label": "Traveller's Log",
-          "icon": "icons/traveller-s-log.png"
+          "icon": "icons/traveller-s-log.svg"
         }
       ]
     }
