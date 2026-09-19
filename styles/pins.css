@@ -25,3 +25,7 @@
 .pin:hover {
   filter: brightness(1.15);
 }
+
+.pin.done {
+  opacity: .35;
+}

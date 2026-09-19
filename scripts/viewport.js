@@ -87,7 +87,7 @@ viewport.addEventListener('wheel', (e) => {
 viewport.addEventListener('pointerdown', (e) => {
   dragging = true; dragMoved = false;
   lastX = e.clientX; lastY = e.clientY;
-  viewport.setPointerCapture(e.pointerId);
+  if (!e.target.closest('.pin')) viewport.setPointerCapture(e.pointerId);
   viewport.classList.add('dragging');
 });
 

@@ -21,6 +21,7 @@ function renderPins() {
     pin.style.top = (marker.y * 100) + '%';
     pin.style.setProperty('--pin-color', marker.color);
     pin.title = marker.title;
+    pin.dataset.id = marker.id;
     pin.innerHTML = `<img src="${meta.icon}" alt="${meta.label}">`;
     pinsWorld.appendChild(pin);
   });
