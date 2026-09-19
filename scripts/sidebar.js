@@ -42,6 +42,10 @@ function catCount(cat) {
   const items = MAP_DATA.markers.filter(m => uids.includes(m.type));
   return { done: items.filter(m => collected.has(m.id)).length, total: items.length };
 }
+function typeCount(uid) {
+  const items = MAP_DATA.markers.filter(m => m.type === uid);
+  return { done: items.filter(m => collected.has(m.id)).length, total: items.length };
+}
 
 function renderSidebar() {
   // Full re-render wipes the DOM, so grab which categories were expanded first
@@ -70,6 +74,7 @@ function renderSidebar() {
       </div>
     `;
     cat.types.forEach(t => {
+      const tc = typeCount(t.uid);
       const row = document.createElement('button');
       row.type = 'button';
       row.className = 'type-row' + (hiddenTypes.has(t.uid) ? ' disabled' : '');
@@ -77,6 +82,7 @@ function renderSidebar() {
       row.innerHTML = `
         <span class="type-icon" style="background:${typeColors[t.uid]}"><img src="${t.icon}" alt=""></span>
         <span class="tname">${t.label}</span>
+        <span class="tcount">${tc.done}/${tc.total}</span>
       `;
       det.appendChild(row);
     });
@@ -121,6 +127,9 @@ function refreshSidebarCounts() {
   categoryList.querySelectorAll('.cat').forEach((det, i) => {
     const cat = MAP_DATA.categories[i];
     det.querySelector('.cat-count').textContent = `${catCount(cat).done}/${catCount(cat).total}`;
+    det.querySelectorAll('.type-row').forEach(row => {
+      row.querySelector('.tcount').textContent = `${typeCount(row.dataset.type).done}/${typeCount(row.dataset.type).total}`;
+    });
   });
 }
 

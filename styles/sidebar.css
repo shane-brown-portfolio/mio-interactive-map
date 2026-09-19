@@ -145,6 +145,7 @@ details.cat[open] summary::before { transform: rotate(90deg); }
 }
 .type-icon img { width: 12px; height: 12px; object-fit: contain; }
 .type-row .tname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.type-row .tcount { font-size: 11px; color: #888; flex: 0 0 auto; }
 .type-row.disabled { opacity: .4; }
 .type-row.disabled .type-icon { filter: grayscale(1); }
 
