@@ -29,6 +29,8 @@ function openPopup(marker, pinEl) {
   const vRect = viewport.getBoundingClientRect();
   const pRect = pinEl.getBoundingClientRect();
   const pw = popup.offsetWidth, ph = popup.offsetHeight;
+  
+  // Center above the pin, but keep it on screen and flip below if it'd clip the top
   let left = pRect.left - vRect.left + pRect.width / 2 - pw / 2;
   let top = pRect.top - vRect.top - ph - 10;
   left = Math.max(8, Math.min(left, vRect.width - pw - 8));
@@ -54,6 +56,8 @@ popupComplete.addEventListener('click', () => {
   if (!activeId) return;
   setCollected(activeId, !collected.has(activeId));
   updateCompleteButton();
+  refreshSidebarCounts();
+  applyFilters();
 });
 
 document.getElementById('popupClose').addEventListener('click', closePopup);

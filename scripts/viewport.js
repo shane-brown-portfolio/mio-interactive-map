@@ -87,7 +87,10 @@ viewport.addEventListener('wheel', (e) => {
 viewport.addEventListener('pointerdown', (e) => {
   dragging = true; dragMoved = false;
   lastX = e.clientX; lastY = e.clientY;
+
+  // Capturing on a pin steals its click event, so skip it there
   if (!e.target.closest('.pin')) viewport.setPointerCapture(e.pointerId);
+  
   viewport.classList.add('dragging');
 });
 

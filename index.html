@@ -25,7 +25,19 @@
 
   <div class="layout">
     <aside id="sidebar">
-      <!-- item type filters -->
+      <div class="side-section">
+        <label class="toggle-row">
+          <span>Show collected pins</span>
+          <span class="switch">
+            <input type="checkbox" id="showCollected">
+            <span class="track"><span class="knob"></span></span>
+          </span>
+        </label>
+      </div>
+      <div class="side-section">
+        <h2>Item Types</h2>
+        <div id="categoryList"></div>
+      </div>
     </aside>
 
     <main>
@@ -52,6 +64,7 @@
   <script src="data.js"></script>
   <script src="scripts/pins.js"></script>
   <script src="scripts/progress.js"></script>
+  <script src="scripts/sidebar.js"></script>
   <script src="scripts/popup.js"></script>
   <script src="scripts/viewport.js"></script>
 </body>

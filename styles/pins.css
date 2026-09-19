@@ -29,3 +29,7 @@
 .pin.done {
   opacity: .35;
 }
+
+.pin.hidden {
+  display: none;
+}
