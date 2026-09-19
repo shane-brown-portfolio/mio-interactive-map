@@ -32,12 +32,12 @@ function createMarker(x, y) {
     color: typeColors[type] || '#999999'
   };
 
+  // Not persisted yet: only committed to the edits overlay once Save is clicked
   MAP_DATA.markers.push(marker);
-  edits.customMarkers.push(marker);
-  saveEdits();
   pinsWorld.appendChild(createPinElement(marker));
   applyFilters();
   refreshSidebarCounts();
+  updateProgress();
   return marker;
 }
 
@@ -51,6 +51,10 @@ function updateMarker(id, patch)
     patch.color = typeColors[patch.type] || marker.color;
 
   Object.assign(marker, patch);
+
+  // First Save on a freshly-created pin is what commits it to the overlay
+  if (id === freshMarkerId && !edits.customMarkers.includes(marker))
+    edits.customMarkers.push(marker);
 
   const customMarker = edits.customMarkers.find(m => m.id === id);
   if (customMarker) {
@@ -75,17 +79,26 @@ function updateMarker(id, patch)
 
 function deleteMarker(id) {
   const wasCustom = edits.customMarkers.some(m => m.id === id);
+
+  // A freshly-created pin that was never Saved has no overlay entry to undo
+  const wasUncommitted = id === freshMarkerId && !wasCustom;
+  
   MAP_DATA.markers = MAP_DATA.markers.filter(m => m.id !== id);
 
   if (wasCustom) {
     edits.customMarkers = edits.customMarkers.filter(m => m.id !== id);
   }
-  else if (!edits.deletedMarkerIds.includes(id)) {
+  else if (!wasUncommitted && !edits.deletedMarkerIds.includes(id)) {
     edits.deletedMarkerIds.push(id);
   }
 
-  delete edits.markerEdits[id];
-  saveEdits();
+  if (!wasUncommitted) {
+    delete edits.markerEdits[id];
+    saveEdits();
+  }
+
+  collected.delete(id);
+  saveCollected();
 
   const pinEl = pinsWorld.querySelector(`.pin[data-id="${id}"]`);
   if (pinEl)
@@ -93,6 +106,7 @@ function deleteMarker(id) {
 
   renderSidebar();
   applyFilters();
+  updateProgress();
 }
 
 // Bundles a new category + its first type together, since a marker needs a type uid to attach to
@@ -145,11 +159,8 @@ viewport.addEventListener('click', (e) => {
     return;
   
   const vRect = viewport.getBoundingClientRect();
-  const cx = e.clientX - vRect.left;
-  const cy = e.clientY - vRect.top;
-
-  const x = (cx - tx) / scale / worldW;
-  const y = (cy - ty) / scale / worldH;
+  const cx = e.clientX - vRect.left, cy = e.clientY - vRect.top;
+  const x = (cx - tx) / scale / worldW, y = (cy - ty) / scale / worldH;
 
   if (x < 0 || x > 1 || y < 0 || y > 1)
     return;
