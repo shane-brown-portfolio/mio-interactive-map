@@ -6,17 +6,22 @@ const store = {
     try {
       const v = localStorage.getItem(key);
       return v ? JSON.parse(v) : fallback;
-    } catch (e) {
+    }
+    catch (e) {
       return fallback;
     }
   },
   set(key, val) {
-    try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+    try {
+      localStorage.setItem(key, JSON.stringify(val));
+    }
+    catch (e) {}
   }
 };
 
 const settings = store.get('mio-settings', { showCollected: true, hiddenTypes: [] });
 const hiddenTypes = new Set(settings.hiddenTypes || []);
+
 function saveSettings() {
   store.set('mio-settings', { showCollected: settings.showCollected, hiddenTypes: Array.from(hiddenTypes) });
 }
@@ -42,6 +47,7 @@ function catCount(cat) {
   const items = MAP_DATA.markers.filter(m => uids.includes(m.type));
   return { done: items.filter(m => collected.has(m.id)).length, total: items.length };
 }
+
 function typeCount(uid) {
   const items = MAP_DATA.markers.filter(m => m.type === uid);
   return { done: items.filter(m => collected.has(m.id)).length, total: items.length };
@@ -53,7 +59,8 @@ function renderSidebar() {
   const isFirstRender = existingCats.length === 0;
   const openUids = new Set();
   existingCats.forEach((det, i) => {
-    if (det.open) openUids.add(MAP_DATA.categories[i].uid);
+    if (det.open)
+      openUids.add(MAP_DATA.categories[i].uid);
   });
 
   categoryList.innerHTML = '';
@@ -95,7 +102,12 @@ function renderSidebar() {
     row.addEventListener('click', () => {
       const uid = row.dataset.type;
       const nowDisabled = row.classList.toggle('disabled');
-      if (nowDisabled) hiddenTypes.add(uid); else hiddenTypes.delete(uid);
+      if (nowDisabled) {
+        hiddenTypes.add(uid);
+      }
+      else {
+        hiddenTypes.delete(uid);
+      }
       saveSettings();
       applyFilters();
     });
@@ -106,7 +118,12 @@ function renderSidebar() {
     btn.addEventListener('click', () => {
       const cat = MAP_DATA.categories.find(c => c.uid === btn.dataset.cat);
       cat.types.forEach(t => {
-        if (btn.dataset.act === 'all') hiddenTypes.delete(t.uid); else hiddenTypes.add(t.uid);
+        if (btn.dataset.act === 'all') {
+          hiddenTypes.delete(t.uid);
+        }
+        else {
+          hiddenTypes.add(t.uid);
+        }
       });
       saveSettings();
       renderSidebar();
@@ -148,6 +165,7 @@ document.getElementById('showAllTypes').addEventListener('click', () => {
   renderSidebar();
   applyFilters();
 });
+
 document.getElementById('hideAllTypes').addEventListener('click', () => {
   MAP_DATA.categories.forEach(cat => cat.types.forEach(t => hiddenTypes.add(t.uid)));
   saveSettings();
@@ -157,7 +175,8 @@ document.getElementById('hideAllTypes').addEventListener('click', () => {
 
 // Reset the pin progress for the user across all map pins
 document.getElementById('resetProgress').addEventListener('click', () => {
-  if (!confirm("Reset all progress? This can't be undone.")) return;
+  if (!confirm("Reset all progress? This can't be undone."))
+    return;
   collected.clear();
   saveCollected();
   pinsWorld.querySelectorAll('.pin.done').forEach(pin => pin.classList.remove('done'));

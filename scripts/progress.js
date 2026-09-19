@@ -4,10 +4,12 @@
 function loadCollected() {
   try {
     return new Set(JSON.parse(localStorage.getItem('mio-collected')) || []);
-  } catch (e) {
+  }
+  catch (e) {
     return new Set();
   }
 }
+
 function saveCollected() {
   localStorage.setItem('mio-collected', JSON.stringify(Array.from(collected)));
 }
@@ -30,15 +32,22 @@ function updateProgress() {
 
 // Toggles a marker's collected state, syncs its pin's look, and persists the change
 function setCollected(id, isCollected) {
-  if (isCollected) collected.add(id); else collected.delete(id);
+  if (isCollected) {
+    collected.add(id);
+  }
+  else {
+    collected.delete(id);
+  }
   saveCollected();
   const pin = pinsWorld.querySelector(`.pin[data-id="${id}"]`);
-  if (pin) pin.classList.toggle('done', isCollected);
+  if (pin)
+    pin.classList.toggle('done', isCollected);
   updateProgress();
 }
 
 pinsWorld.querySelectorAll('.pin').forEach(pin => {
-  if (collected.has(pin.dataset.id)) pin.classList.add('done');
+  if (collected.has(pin.dataset.id))
+    pin.classList.add('done');
 });
 
 updateProgress();

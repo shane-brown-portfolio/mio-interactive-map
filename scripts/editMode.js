@@ -17,11 +17,21 @@ function createMarker(x, y) {
 
   // New pin must be visible so its popup can be positioned against it
   if (hiddenTypes.has(type)) {
-    hiddenTypes.delete(type);
-    saveSettings();
-    renderSidebar();
+      hiddenTypes.delete(type);
+      saveSettings();
+      renderSidebar();
   }
-  const marker = { id: genId(), x, y, type, title: 'New Pin', desc: '', color: typeColors[type] || '#999999' };
+  
+  const marker = {
+    id: genId(),
+    x,
+    y,
+    type,
+    title: 'New Pin',
+    desc: '',
+    color: typeColors[type] || '#999999'
+  };
+
   MAP_DATA.markers.push(marker);
   edits.customMarkers.push(marker);
   saveEdits();
@@ -31,15 +41,24 @@ function createMarker(x, y) {
   return marker;
 }
 
-function updateMarker(id, patch) {
+function updateMarker(id, patch)
+{
   const marker = MAP_DATA.markers.find(m => m.id === id);
-  if (!marker) return;
-  if (patch.type) patch.color = typeColors[patch.type] || marker.color;
+
+  if (!marker)
+    return;
+  if (patch.type)
+    patch.color = typeColors[patch.type] || marker.color;
+
   Object.assign(marker, patch);
 
   const customMarker = edits.customMarkers.find(m => m.id === id);
-  if (customMarker) Object.assign(customMarker, patch);
-  else edits.markerEdits[id] = Object.assign(edits.markerEdits[id] || {}, patch);
+  if (customMarker) {
+    Object.assign(customMarker, patch);
+  }
+  else {
+    edits.markerEdits[id] = Object.assign(edits.markerEdits[id] || {}, patch);
+  }
   saveEdits();
 
   const pinEl = pinsWorld.querySelector(`.pin[data-id="${id}"]`);
@@ -57,13 +76,21 @@ function updateMarker(id, patch) {
 function deleteMarker(id) {
   const wasCustom = edits.customMarkers.some(m => m.id === id);
   MAP_DATA.markers = MAP_DATA.markers.filter(m => m.id !== id);
-  if (wasCustom) edits.customMarkers = edits.customMarkers.filter(m => m.id !== id);
-  else if (!edits.deletedMarkerIds.includes(id)) edits.deletedMarkerIds.push(id);
+
+  if (wasCustom) {
+    edits.customMarkers = edits.customMarkers.filter(m => m.id !== id);
+  }
+  else if (!edits.deletedMarkerIds.includes(id)) {
+    edits.deletedMarkerIds.push(id);
+  }
+
   delete edits.markerEdits[id];
   saveEdits();
 
   const pinEl = pinsWorld.querySelector(`.pin[data-id="${id}"]`);
-  if (pinEl) pinEl.remove();
+  if (pinEl)
+    pinEl.remove();
+
   renderSidebar();
   applyFilters();
 }
@@ -76,7 +103,11 @@ function createCategory(catLabel, color, typeLabel) {
   MAP_DATA.categories.push(category);
   edits.customCategories.push(category);
   saveEdits();
-  typeMeta[typeUid] = { label: typeLabel, icon: null, categoryLabel: catLabel };
+  typeMeta[typeUid] = {
+    label: typeLabel,
+    icon: null,
+    categoryLabel: catLabel
+  };
   typeColors[typeUid] = color;
   catColors[catUid] = color;
   return typeUid;
@@ -86,26 +117,43 @@ function createCategory(catLabel, color, typeLabel) {
 function createType(catUid, label, color) {
   const category = MAP_DATA.categories.find(c => c.uid === catUid);
   const typeUid = genId();
-  const type = { uid: typeUid, label, icon: null };
+  const type = {
+    uid: typeUid,
+    label,
+    icon: null
+  };
   category.types.push(type);
 
   // A user-created category is already tracked by reference in customCategories,
   // so only a type added to a base category needs its own overlay entry
-  if (!edits.customCategories.includes(category)) edits.customTypes.push({ catUid, type });
+  if (!edits.customCategories.includes(category))
+    edits.customTypes.push({ catUid, type });
   saveEdits();
 
-  typeMeta[typeUid] = { label, icon: null, categoryLabel: category.label };
+  typeMeta[typeUid] = {
+    label,
+    icon: null,
+    categoryLabel: category.label
+  };
   typeColors[typeUid] = color;
   return typeUid;
 }
 
 // Click empty map space in Edit Mode to drop a new pin there
 viewport.addEventListener('click', (e) => {
-  if (!editMode || dragMoved || e.target.closest('.pin')) return;
+  if (!editMode || dragMoved || e.target.closest('.pin'))
+    return;
+  
   const vRect = viewport.getBoundingClientRect();
-  const cx = e.clientX - vRect.left, cy = e.clientY - vRect.top;
-  const x = (cx - tx) / scale / worldW, y = (cy - ty) / scale / worldH;
-  if (x < 0 || x > 1 || y < 0 || y > 1) return;
+  const cx = e.clientX - vRect.left;
+  const cy = e.clientY - vRect.top;
+
+  const x = (cx - tx) / scale / worldW;
+  const y = (cy - ty) / scale / worldH;
+
+  if (x < 0 || x > 1 || y < 0 || y > 1)
+    return;
+
   const marker = createMarker(x, y);
   freshMarkerId = marker.id;
   openPopup(marker, pinsWorld.querySelector(`.pin[data-id="${marker.id}"]`));
@@ -113,7 +161,12 @@ viewport.addEventListener('click', (e) => {
 
 document.getElementById('exportData').addEventListener('click', () => {
   const json = JSON.stringify(
-    { title: MAP_DATA.title, image: MAP_DATA.image, categories: MAP_DATA.categories, markers: MAP_DATA.markers },
+    {
+      title: MAP_DATA.title,
+      image: MAP_DATA.image,
+      categories: MAP_DATA.categories,
+      markers: MAP_DATA.markers
+    },
     null, 2
   );
   const blob = new Blob([`const MAP_DATA = ${json};\n`], { type: 'text/javascript' });

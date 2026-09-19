@@ -22,6 +22,7 @@ let dragging = false, dragMoved = false, lastX = 0, lastY = 0;
 // Cached viewport size/position, so zooming doesn't force the browser to
 // re-measure the page on every scroll tick
 let viewportRect = viewport.getBoundingClientRect();
+
 function updateViewportRect() {
   viewportRect = viewport.getBoundingClientRect();
 }
@@ -38,7 +39,8 @@ function clamp() {
 function apply() {
   clamp();
   world.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
-  if (popup.classList.contains('open')) positionPopup();
+  if (popup.classList.contains('open'))
+    positionPopup();
 }
 
 // Zoom out and center so the whole map is visible
@@ -72,13 +74,14 @@ viewport.addEventListener('wheel', (e) => {
   pendingZoom = {
     x: e.clientX - viewportRect.left,
     y: e.clientY - viewportRect.top,
-    factor: e.deltaY < 0 ? ZOOM_STEP : 1 / ZOOM_STEP,
+    factor: e.deltaY < 0 ? ZOOM_STEP : 1 / ZOOM_STEP
   };
   if (!zoomQueued) {
     zoomQueued = true;
     requestAnimationFrame(() => {
       zoomQueued = false;
-      if (pendingZoom) zoomAt(pendingZoom.x, pendingZoom.y, pendingZoom.factor);
+      if (pendingZoom)
+        zoomAt(pendingZoom.x, pendingZoom.y, pendingZoom.factor);
       pendingZoom = null;
     });
   }
@@ -90,16 +93,19 @@ viewport.addEventListener('pointerdown', (e) => {
   lastX = e.clientX; lastY = e.clientY;
 
   // Capturing on a pin steals its click event, so skip it there
-  if (!e.target.closest('.pin')) viewport.setPointerCapture(e.pointerId);
-  
+  if (!e.target.closest('.pin'))
+    viewport.setPointerCapture(e.pointerId);
+
   viewport.classList.add('dragging');
 });
 
 viewport.addEventListener('pointermove', (e) => {
-  if (!dragging) return;
+  if (!dragging)
+    return;
   const dx = e.clientX - lastX, dy = e.clientY - lastY;
   // Small movements don't count as a drag, so a click still works
-  if (Math.abs(dx) + Math.abs(dy) > 4) dragMoved = true;
+  if (Math.abs(dx) + Math.abs(dy) > 4)
+    dragMoved = true;
   if (dragMoved) {
     tx += dx; ty += dy;
     lastX = e.clientX; lastY = e.clientY;

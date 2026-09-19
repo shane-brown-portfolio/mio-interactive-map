@@ -83,6 +83,7 @@ function showNewFields(kind) {
   newFields.hidden = false;
   newLabel.placeholder = kind === 'category' ? 'New category name' : 'New item type name';
 }
+
 function hideNewFields() {
   newFields.hidden = true;
 }
@@ -91,6 +92,7 @@ function showFieldError(msg) {
   popupError.textContent = msg;
   popupError.hidden = false;
 }
+
 function clearFieldErrors() {
   popupError.hidden = true;
 }
@@ -102,7 +104,8 @@ function populateCategoryFields(selectedTypeUid, blank) {
   if (blank) {
     itemTypeField.hidden = true;
     editItemType.innerHTML = '';
-  } else {
+  }
+  else {
     itemTypeField.hidden = false;
     rebuildItemTypeOptions(cat.uid, selectedTypeUid);
   }
@@ -133,8 +136,12 @@ editCategory.addEventListener('change', () => {
 
 editItemType.addEventListener('change', () => {
   clearFieldErrors();
-  if (editItemType.value === '__newtype__') showNewFields('type');
-  else hideNewFields();
+  if (editItemType.value === '__newtype__') {
+    showNewFields('type');
+  }
+  else {
+    hideNewFields();
+  }
 });
 
 function openPopup(marker, pinEl) {
@@ -159,7 +166,8 @@ function openPopup(marker, pinEl) {
 // Re-run any time the pin moves on screen (zoom/pan), so the popup tracks it
 // instead of staying put or repositioning off the old spot
 function positionPopup() {
-  if (!activePinEl) return;
+  if (!activePinEl)
+    return;
   const vRect = viewport.getBoundingClientRect();
   const pRect = activePinEl.getBoundingClientRect();
   const pw = popup.offsetWidth, ph = popup.offsetHeight;
@@ -168,13 +176,15 @@ function positionPopup() {
   let left = pRect.left - vRect.left + pRect.width / 2 - pw / 2;
   let top = pRect.top - vRect.top - ph - 10;
   left = Math.max(8, Math.min(left, vRect.width - pw - 8));
-  if (top < 8) top = pRect.bottom - vRect.top + 10;
+  if (top < 8)
+    top = pRect.bottom - vRect.top + 10;
   popup.style.left = left + 'px';
   popup.style.top = top + 'px';
 }
 
 function closePopup() {
-  if (freshMarkerId && freshMarkerId === activeId) deleteMarker(freshMarkerId);
+  if (freshMarkerId && freshMarkerId === activeId)
+    deleteMarker(freshMarkerId);
   freshMarkerId = null;
   popup.classList.remove('open');
   activeId = null;
@@ -183,14 +193,17 @@ function closePopup() {
 
 pinsWorld.addEventListener('click', (e) => {
   const pinEl = e.target.closest('.pin');
-  if (!pinEl) return;
+  if (!pinEl)
+    return;
   const marker = MAP_DATA.markers.find(m => m.id === pinEl.dataset.id);
-  if (!marker) return;
+  if (!marker)
+    return;
   openPopup(marker, pinEl);
 });
 
 popupComplete.addEventListener('click', () => {
-  if (!activeId) return;
+  if (!activeId)
+    return;
   setCollected(activeId, !collected.has(activeId));
   updateCompleteButton();
   refreshSidebarCounts();
@@ -198,40 +211,58 @@ popupComplete.addEventListener('click', () => {
 });
 
 popupSave.addEventListener('click', () => {
-  if (!activeId) return;
+  if (!activeId)
+    return;
   clearFieldErrors();
 
-  if (editCategory.value === '') { showFieldError('Choose a category.'); return; }
+  if (editCategory.value === '') {
+    showFieldError('Choose a category.');
+    return;
+  }
 
   let typeUid;
   if (editCategory.value === '__newcat__') {
     const catLabel = newLabel.value.trim();
     const typeLabel = newTypeLabel.value.trim();
-    if (!catLabel) { showFieldError('Enter a name for the new category.'); return; }
-    if (!typeLabel) { showFieldError('Enter a name for the new item type.'); return; }
+    if (!catLabel) {
+      showFieldError('Enter a name for the new category.');
+      return;
+    }
+    if (!typeLabel) {
+      showFieldError('Enter a name for the new item type.');
+      return;
+    }
     typeUid = createCategory(catLabel, newColor.value, typeLabel);
-  } else if (editItemType.value === '__newtype__') {
+  }
+  else if (editItemType.value === '__newtype__') {
     const label = newLabel.value.trim();
-    if (!label) { showFieldError('Enter a name for the new item type.'); return; }
+    if (!label) {
+      showFieldError('Enter a name for the new item type.');
+      return;
+    }
     typeUid = createType(editCategory.value, label, newColor.value);
-  } else if (editItemType.value === '') {
+  }
+  else if (editItemType.value === '') {
     showFieldError('Choose an item type.');
     return;
-  } else {
+  }
+  else {
     typeUid = editItemType.value;
   }
   updateMarker(activeId, {
     title: editTitle.value.trim() || 'Untitled',
     desc: editDesc.value,
-    type: typeUid,
+    type: typeUid
   });
   freshMarkerId = null;
   closePopup();
 });
 
 popupDelete.addEventListener('click', () => {
-  if (!activeId) return;
-  if (!confirm('Delete this pin?')) return;
+  if (!activeId)
+    return;
+  if (!confirm('Delete this pin?'))
+    return;
   deleteMarker(activeId);
   freshMarkerId = null;
   closePopup();
@@ -241,5 +272,6 @@ document.getElementById('popupClose').addEventListener('click', closePopup);
 
 // Close on any interaction outside the popup
 document.addEventListener('pointerdown', (e) => {
-  if (popup.classList.contains('open') && !e.target.closest('#popup')) closePopup();
+  if (popup.classList.contains('open') && !e.target.closest('#popup'))
+    closePopup();
 });

@@ -8,7 +8,11 @@ const pinsWorld = document.getElementById('world');
 const typeMeta = {};
 MAP_DATA.categories.forEach(category => {
   category.types.forEach(type => {
-    typeMeta[type.uid] = { label: type.label, icon: type.icon, categoryLabel: category.label };
+    typeMeta[type.uid] = {
+      label: type.label,
+      icon: type.icon,
+      categoryLabel: category.label
+    };
   });
 });
 
