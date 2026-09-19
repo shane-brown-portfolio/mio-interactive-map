@@ -38,6 +38,7 @@ function clamp() {
 function apply() {
   clamp();
   world.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+  if (popup.classList.contains('open')) positionPopup();
 }
 
 // Zoom out and center so the whole map is visible

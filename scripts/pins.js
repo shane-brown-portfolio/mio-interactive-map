@@ -12,20 +12,23 @@ MAP_DATA.categories.forEach(category => {
   });
 });
 
+// Icon is optional: user-created categories are just a plain colored circle
+function createPinElement(marker) {
+  const meta = typeMeta[marker.type];
+  const pin = document.createElement('button');
+  pin.className = 'pin';
+  pin.style.left = (marker.x * 100) + '%';
+  pin.style.top = (marker.y * 100) + '%';
+  pin.style.setProperty('--pin-color', marker.color);
+  pin.title = marker.title;
+  pin.dataset.id = marker.id;
+  pin.dataset.type = marker.type;
+  pin.innerHTML = meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
+  return pin;
+}
+
 function renderPins() {
-  MAP_DATA.markers.forEach(marker => {
-    const meta = typeMeta[marker.type];
-    const pin = document.createElement('button');
-    pin.className = 'pin';
-    pin.style.left = (marker.x * 100) + '%';
-    pin.style.top = (marker.y * 100) + '%';
-    pin.style.setProperty('--pin-color', marker.color);
-    pin.title = marker.title;
-    pin.dataset.id = marker.id;
-    pin.dataset.type = marker.type;
-    pin.innerHTML = `<img src="${meta.icon}" alt="${meta.label}">`;
-    pinsWorld.appendChild(pin);
-  });
+  MAP_DATA.markers.forEach(marker => pinsWorld.appendChild(createPinElement(marker)));
 }
 
 renderPins();

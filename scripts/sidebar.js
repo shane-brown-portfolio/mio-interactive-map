@@ -79,8 +79,9 @@ function renderSidebar() {
       row.type = 'button';
       row.className = 'type-row' + (hiddenTypes.has(t.uid) ? ' disabled' : '');
       row.dataset.type = t.uid;
+      const icon = t.icon ? `<img src="${t.icon}" alt="">` : '';
       row.innerHTML = `
-        <span class="type-icon" style="background:${typeColors[t.uid]}"><img src="${t.icon}" alt=""></span>
+        <span class="type-icon" style="background:${typeColors[t.uid]}">${icon}</span>
         <span class="tname">${t.label}</span>
         <span class="tcount">${tc.done}/${tc.total}</span>
       `;

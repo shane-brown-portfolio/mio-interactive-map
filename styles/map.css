@@ -13,6 +13,10 @@ main {
   touch-action: none;
 }
 
+.viewport.edit-active {
+  cursor: crosshair;
+}
+
 .viewport.dragging {
   cursor: grabbing;
 }
@@ -53,4 +57,28 @@ main {
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.edit-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+.edit-controls button {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.edit-controls button.active {
+  background: #1c8f5f;
+  border-color: #1c8f5f;
+  color: #fff;
 }

@@ -1,6 +1,7 @@
 // Clicking a pin opens a small popup with its info and a button to toggle it
 // as completed. Completed pins get a `.done` class (see pins.css) so they
-// read as more transparent on the map.
+// read as more transparent on the map. In Edit Mode the popup instead shows
+// editable fields (see editMode.js for the toggle + pin creation).
 
 const popup = document.getElementById('popup');
 const popupType = document.getElementById('popupType');
@@ -8,13 +9,133 @@ const popupTitle = document.getElementById('popupTitle');
 const popupDesc = document.getElementById('popupDesc');
 const popupComplete = document.getElementById('popupComplete');
 
+const editTitle = document.getElementById('editTitle');
+const editDesc = document.getElementById('editDesc');
+const editCategory = document.getElementById('editCategory');
+const itemTypeField = document.getElementById('itemTypeField');
+const editItemType = document.getElementById('editItemType');
+const newFields = document.getElementById('newFields');
+const newLabel = document.getElementById('newLabel');
+const newColor = document.getElementById('newColor');
+const newTypeNameField = document.getElementById('newTypeNameField');
+const newTypeLabel = document.getElementById('newTypeLabel');
+const popupError = document.getElementById('popupError');
+const popupSave = document.getElementById('popupSave');
+const popupDelete = document.getElementById('popupDelete');
+
 let activeId = null;
+let activePinEl = null;
+
+// Tracks a pin just created by clicking empty map space
+// Closing the popup without hitting Save discards it
+let freshMarkerId = null;
 
 function updateCompleteButton() {
   const isDone = collected.has(activeId);
   popupComplete.textContent = isDone ? 'Completed ✓' : 'Mark completed';
   popupComplete.classList.toggle('done', isDone);
 }
+
+// Category dropdown drives the Item Type dropdown: a category must be picked
+// before Item Type is shown at all, and it's always scoped to that category
+function populateCategorySelect(selectedCatUid) {
+  editCategory.innerHTML = '';
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = '-';
+  editCategory.appendChild(placeholder);
+  MAP_DATA.categories.forEach(cat => {
+    const opt = document.createElement('option');
+    opt.value = cat.uid;
+    opt.textContent = cat.label;
+    editCategory.appendChild(opt);
+  });
+  const newCatOpt = document.createElement('option');
+  newCatOpt.value = '__newcat__';
+  newCatOpt.textContent = '+ New category…';
+  editCategory.appendChild(newCatOpt);
+  editCategory.value = selectedCatUid;
+}
+
+// Item Type list scoped to one category, plus the option to add a new type to it
+// Starts on "-" rather than silently guessing the first type
+function rebuildItemTypeOptions(catUid, selectedUid) {
+  const cat = MAP_DATA.categories.find(c => c.uid === catUid);
+  editItemType.innerHTML = '';
+  const placeholder = document.createElement('option');
+  placeholder.value = '';
+  placeholder.textContent = '-';
+  editItemType.appendChild(placeholder);
+  cat.types.forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t.uid;
+    opt.textContent = t.label;
+    editItemType.appendChild(opt);
+  });
+  const newOpt = document.createElement('option');
+  newOpt.value = '__newtype__';
+  newOpt.textContent = '+ New item type…';
+  editItemType.appendChild(newOpt);
+  editItemType.value = selectedUid || '';
+}
+
+function showNewFields(kind) {
+  newFields.hidden = false;
+  newLabel.placeholder = kind === 'category' ? 'New category name' : 'New item type name';
+}
+function hideNewFields() {
+  newFields.hidden = true;
+}
+
+function showFieldError(msg) {
+  popupError.textContent = msg;
+  popupError.hidden = false;
+}
+function clearFieldErrors() {
+  popupError.hidden = true;
+}
+
+// A new pin starts blank ("-") so the user must pick a specific category
+function populateCategoryFields(selectedTypeUid, blank) {
+  const cat = MAP_DATA.categories.find(c => c.types.some(t => t.uid === selectedTypeUid));
+  populateCategorySelect(blank ? '' : cat.uid);
+  if (blank) {
+    itemTypeField.hidden = true;
+    editItemType.innerHTML = '';
+  } else {
+    itemTypeField.hidden = false;
+    rebuildItemTypeOptions(cat.uid, selectedTypeUid);
+  }
+  hideNewFields();
+  newTypeNameField.hidden = true;
+  clearFieldErrors();
+}
+
+editCategory.addEventListener('change', () => {
+  clearFieldErrors();
+  const v = editCategory.value;
+  if (v === '__newcat__') {
+    itemTypeField.hidden = true;
+    showNewFields('category');
+    newTypeNameField.hidden = false;
+    return;
+  }
+  newTypeNameField.hidden = true;
+  hideNewFields();
+  if (v === '') {
+    itemTypeField.hidden = true;
+    editItemType.innerHTML = '';
+    return;
+  }
+  itemTypeField.hidden = false;
+  rebuildItemTypeOptions(v);
+});
+
+editItemType.addEventListener('change', () => {
+  clearFieldErrors();
+  if (editItemType.value === '__newtype__') showNewFields('type');
+  else hideNewFields();
+});
 
 function openPopup(marker, pinEl) {
   activeId = marker.id;
@@ -25,11 +146,24 @@ function openPopup(marker, pinEl) {
   popupDesc.hidden = !marker.desc;
   updateCompleteButton();
 
+  editTitle.value = marker.title || '';
+  editDesc.value = marker.desc || '';
+  populateCategoryFields(marker.type, freshMarkerId === marker.id);
+  popup.classList.toggle('edit-mode', editMode);
+
   popup.classList.add('open');
+  activePinEl = pinEl;
+  positionPopup();
+}
+
+// Re-run any time the pin moves on screen (zoom/pan), so the popup tracks it
+// instead of staying put or repositioning off the old spot
+function positionPopup() {
+  if (!activePinEl) return;
   const vRect = viewport.getBoundingClientRect();
-  const pRect = pinEl.getBoundingClientRect();
+  const pRect = activePinEl.getBoundingClientRect();
   const pw = popup.offsetWidth, ph = popup.offsetHeight;
-  
+
   // Center above the pin, but keep it on screen and flip below if it'd clip the top
   let left = pRect.left - vRect.left + pRect.width / 2 - pw / 2;
   let top = pRect.top - vRect.top - ph - 10;
@@ -40,8 +174,11 @@ function openPopup(marker, pinEl) {
 }
 
 function closePopup() {
+  if (freshMarkerId && freshMarkerId === activeId) deleteMarker(freshMarkerId);
+  freshMarkerId = null;
   popup.classList.remove('open');
   activeId = null;
+  activePinEl = null;
 }
 
 pinsWorld.addEventListener('click', (e) => {
@@ -58,6 +195,46 @@ popupComplete.addEventListener('click', () => {
   updateCompleteButton();
   refreshSidebarCounts();
   applyFilters();
+});
+
+popupSave.addEventListener('click', () => {
+  if (!activeId) return;
+  clearFieldErrors();
+
+  if (editCategory.value === '') { showFieldError('Choose a category.'); return; }
+
+  let typeUid;
+  if (editCategory.value === '__newcat__') {
+    const catLabel = newLabel.value.trim();
+    const typeLabel = newTypeLabel.value.trim();
+    if (!catLabel) { showFieldError('Enter a name for the new category.'); return; }
+    if (!typeLabel) { showFieldError('Enter a name for the new item type.'); return; }
+    typeUid = createCategory(catLabel, newColor.value, typeLabel);
+  } else if (editItemType.value === '__newtype__') {
+    const label = newLabel.value.trim();
+    if (!label) { showFieldError('Enter a name for the new item type.'); return; }
+    typeUid = createType(editCategory.value, label, newColor.value);
+  } else if (editItemType.value === '') {
+    showFieldError('Choose an item type.');
+    return;
+  } else {
+    typeUid = editItemType.value;
+  }
+  updateMarker(activeId, {
+    title: editTitle.value.trim() || 'Untitled',
+    desc: editDesc.value,
+    type: typeUid,
+  });
+  freshMarkerId = null;
+  closePopup();
+});
+
+popupDelete.addEventListener('click', () => {
+  if (!activeId) return;
+  if (!confirm('Delete this pin?')) return;
+  deleteMarker(activeId);
+  freshMarkerId = null;
+  closePopup();
 });
 
 document.getElementById('popupClose').addEventListener('click', closePopup);

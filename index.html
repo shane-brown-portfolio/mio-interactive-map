@@ -44,6 +44,7 @@
         <div id="categoryList"></div>
       </div>
       <div class="side-section">
+        <button type="button" id="exportData" class="export-btn">Export Data</button>
         <button type="button" id="resetProgress" class="reset-btn">Reset all progress</button>
       </div>
     </aside>
@@ -53,6 +54,9 @@
         <div class="world" id="world">
           <img class="basemap" id="basemap" alt="Mio: Memories in Orbit Map" draggable="false">
         </div>
+      </div>
+      <div class="edit-controls">
+        <button type="button" id="editModeBtn">Edit Mode</button>
       </div>
       <div class="zoom-controls">
         <button id="zoomIn" title="Zoom in">+</button>
@@ -64,17 +68,51 @@
         <div class="popup-type" id="popupType"></div>
         <h3 id="popupTitle"></h3>
         <div id="popupDesc"></div>
+
+        <div class="popup-edit">
+          <label class="field">
+            <span>Title</span>
+            <input type="text" id="editTitle">
+          </label>
+          <label class="field">
+            <span>Description</span>
+            <textarea id="editDesc" rows="3"></textarea>
+          </label>
+          <label class="field">
+            <span>Category</span>
+            <select id="editCategory"></select>
+          </label>
+          <label class="field" id="itemTypeField">
+            <span>Item Type</span>
+            <select id="editItemType"></select>
+          </label>
+          <div class="new-cat-fields" id="newFields" hidden>
+            <input type="text" id="newLabel" placeholder="Name">
+            <input type="color" id="newColor" value="#999999">
+          </div>
+          <div class="new-cat-fields" id="newTypeNameField" hidden>
+            <input type="text" id="newTypeLabel" placeholder="New item type name">
+          </div>
+          <div class="field-error" id="popupError" hidden></div>
+          <div class="popup-edit-actions">
+            <button type="button" id="popupSave">Save</button>
+            <button type="button" id="popupDelete">Delete</button>
+          </div>
+        </div>
+
         <button class="popup-complete" id="popupComplete">Mark completed</button>
       </div>
     </main>
   </div>
 
   <script src="data.js"></script>
+  <script src="scripts/edits.js"></script>
   <script src="scripts/pins.js"></script>
   <script src="scripts/progress.js"></script>
   <script src="scripts/sidebar.js"></script>
   <script src="scripts/popup.js"></script>
   <script src="scripts/viewport.js"></script>
+  <script src="scripts/editMode.js"></script>
 </body>
 
 </html>

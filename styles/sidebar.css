@@ -64,6 +64,20 @@ aside {
 }
 .reset-btn:hover { background: #ffe8e8; }
 
+.export-btn {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f4f4f4;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 0;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.export-btn:hover { background: #eee; }
+
 details.cat {
   border-top: 1px solid #eee;
   padding-top: 8px;

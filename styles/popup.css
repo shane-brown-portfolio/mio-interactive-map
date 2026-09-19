@@ -74,3 +74,64 @@
   cursor: pointer;
   padding: 2px;
 }
+
+.popup-edit {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.popup.edit-mode .popup-edit { display: flex; }
+.popup.edit-mode #popupTitle,
+.popup.edit-mode #popupDesc,
+.popup.edit-mode .popup-complete { display: none; }
+
+.popup-edit .field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 11px;
+  color: #666;
+}
+.popup-edit .field[hidden] { display: none; }
+
+.field-error {
+  color: #b42318;
+  font-size: 11px;
+  margin-top: -4px;
+}
+.popup-edit input[type="text"],
+.popup-edit textarea,
+.popup-edit select {
+  font: inherit;
+  font-size: 12px;
+  padding: 5px 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.popup-edit textarea { resize: vertical; }
+
+.new-cat-fields { display: flex; gap: 6px; }
+.new-cat-fields[hidden] { display: none; }
+.new-cat-fields input[type="text"],
+.new-cat-fields select { flex: 1; min-width: 0; }
+.new-cat-fields input[type="color"] {
+  width: 36px;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.popup-edit-actions { display: flex; gap: 8px; }
+.popup-edit-actions button {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 0;
+  cursor: pointer;
+}
+#popupSave { background: #1c8f5f; border-color: #1c8f5f; color: #fff; }
+#popupDelete { background: #fff5f5; border-color: #e0b4b4; color: #b42318; }
