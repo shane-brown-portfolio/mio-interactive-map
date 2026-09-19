@@ -32,6 +32,38 @@ aside {
   cursor: pointer;
 }
 
+.global-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.global-actions button {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f4f4f4;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 0;
+  cursor: pointer;
+}
+.global-actions button:hover { background: #eee; }
+
+.reset-btn {
+  width: 100%;
+  border: 1px solid #e0b4b4;
+  border-radius: 6px;
+  background: #fff5f5;
+  color: #b42318;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.reset-btn:hover { background: #ffe8e8; }
+
 details.cat {
   border-top: 1px solid #eee;
   padding-top: 8px;

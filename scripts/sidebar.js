@@ -131,5 +131,29 @@ showCollectedInput.addEventListener('change', (e) => {
   applyFilters();
 });
 
+// Methods to show all and hide all item types for the entiry map
+document.getElementById('showAllTypes').addEventListener('click', () => {
+  hiddenTypes.clear();
+  saveSettings();
+  renderSidebar();
+  applyFilters();
+});
+document.getElementById('hideAllTypes').addEventListener('click', () => {
+  MAP_DATA.categories.forEach(cat => cat.types.forEach(t => hiddenTypes.add(t.uid)));
+  saveSettings();
+  renderSidebar();
+  applyFilters();
+});
+
+// Reset the pin progress for the user across all map pins
+document.getElementById('resetProgress').addEventListener('click', () => {
+  if (!confirm("Reset all progress? This can't be undone.")) return;
+  collected.clear();
+  saveCollected();
+  pinsWorld.querySelectorAll('.pin.done').forEach(pin => pin.classList.remove('done'));
+  updateProgress();
+  refreshSidebarCounts();
+});
+
 renderSidebar();
 applyFilters();
