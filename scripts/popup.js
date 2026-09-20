@@ -191,7 +191,7 @@ function openPopup(marker, pinEl) {
   const meta = typeMeta[marker.type];
   popupType.textContent = meta ? `${meta.categoryLabel} • ${meta.label}` : '';
   popupTitle.textContent = marker.title;
-  popupDesc.innerHTML = marker.desc || ''; // desc is HTML (e.g. "<p>...</p>")
+  popupDesc.innerHTML = marker.desc ? marked.parse(marker.desc) : ''; // desc is Markdown source
   popupDesc.hidden = !marker.desc;
   updateCompleteButton();
 

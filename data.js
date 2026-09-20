@@ -228,7 +228,7 @@ const MAP_DATA = {
       "y": 0.323261,
       "type": "Mkkryd8c84zyyw9",
       "title": "Sunsail",
-      "desc": "<p><em>Increases gliding speed while using the Sail ability but also increases the energy consumption.</em></p><p><br></p><ul><li>Requires 30 Modifier slots.</li></ul>",
+      "desc": "*Increases gliding speed while using the Sail ability but also increases the energy consumption.*\n\n- Requires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -246,7 +246,7 @@ const MAP_DATA = {
       "y": 0.330812,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 180.</p>",
+      "desc": "Contains 180.",
       "color": "#344f6e"
     },
     {
@@ -255,7 +255,7 @@ const MAP_DATA = {
       "y": 0.334879,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -264,7 +264,7 @@ const MAP_DATA = {
       "y": 0.343512,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 240.</p>",
+      "desc": "Contains 240.",
       "color": "#344f6e"
     },
     {
@@ -282,7 +282,7 @@ const MAP_DATA = {
       "y": 0.366056,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 480.</p>",
+      "desc": "Contains 480.",
       "color": "#344f6e"
     },
     {
@@ -291,7 +291,7 @@ const MAP_DATA = {
       "y": 0.376802,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 320.</p>",
+      "desc": "Contains 320.",
       "color": "#344f6e"
     },
     {
@@ -309,7 +309,7 @@ const MAP_DATA = {
       "y": 0.380657,
       "type": "Mkkry1hb53dx6a",
       "title": "Sail",
-      "desc": "<p><em>Allows Mio to glide.</em></p>",
+      "desc": "*Allows Mio to glide.*",
       "color": "#593f62"
     },
     {
@@ -336,7 +336,7 @@ const MAP_DATA = {
       "y": 0.393240,
       "type": "Mkkryd8c84zyyw9",
       "title": "Firefly",
-      "desc": "<p><em>Generates a small electric cloud around Mio when using the Sail ability.</em></p><p><br></p><ul><li>Requires 40 Modifier slots.</li></ul>",
+      "desc": "*Generates a small electric cloud around Mio when using the Sail ability.*\n\n- Requires 40 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -363,7 +363,7 @@ const MAP_DATA = {
       "y": 0.401088,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "<p>Use glide to reach the platform.</p>",
+      "desc": "Use glide to reach the platform.",
       "color": "#593f62"
     },
     {
@@ -372,7 +372,7 @@ const MAP_DATA = {
       "y": 0.404633,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 40.</p>",
+      "desc": "Contains 40.",
       "color": "#344f6e"
     },
     {
@@ -399,7 +399,7 @@ const MAP_DATA = {
       "y": 0.417348,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Use the flowers and grapple points to reach the area above.</p>",
+      "desc": "Use the flowers and grapple points to reach the area above.",
       "color": "#344f6e"
     },
     {
@@ -408,7 +408,7 @@ const MAP_DATA = {
       "y": 0.418037,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -417,7 +417,7 @@ const MAP_DATA = {
       "y": 0.419224,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 100.</p>",
+      "desc": "Contains 100.",
       "color": "#344f6e"
     },
     {
@@ -426,7 +426,7 @@ const MAP_DATA = {
       "y": 0.419394,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -453,7 +453,7 @@ const MAP_DATA = {
       "y": 0.426975,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 20.</p>",
+      "desc": "Contains 20.",
       "color": "#344f6e"
     },
     {
@@ -462,7 +462,7 @@ const MAP_DATA = {
       "y": 0.430051,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>Reach by gliding from the top branch.</p>",
+      "desc": "Reach by gliding from the top branch.",
       "color": "#344f6e"
     },
     {
@@ -471,7 +471,7 @@ const MAP_DATA = {
       "y": 0.431189,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Found above the Crystallizer on a branch. Contains 480.</p>",
+      "desc": "Found above the Crystallizer on a branch. Contains 480.",
       "color": "#344f6e"
     },
     {
@@ -489,7 +489,7 @@ const MAP_DATA = {
       "y": 0.433123,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 40.</p>",
+      "desc": "Contains 40.",
       "color": "#344f6e"
     },
     {
@@ -498,7 +498,7 @@ const MAP_DATA = {
       "y": 0.433376,
       "type": "Mkks4lifcmich7k",
       "title": "Xelato",
-      "desc": "<p>Offers an item in exchange for 10,000 Nacre.</p>",
+      "desc": "Offers an item in exchange for 10,000 Nacre.",
       "color": "#926c15"
     },
     {
@@ -507,7 +507,7 @@ const MAP_DATA = {
       "y": 0.434252,
       "type": "Mkkryd8c84zyyw9",
       "title": "Wildcat",
-      "desc": "<p><em>After using the Hairpin ability, the next attack will be a heavy strike that deals a lot more damage to enemies.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*After using the Hairpin ability, the next attack will be a heavy strike that deals a lot more damage to enemies.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -516,7 +516,7 @@ const MAP_DATA = {
       "y": 0.435055,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -525,7 +525,7 @@ const MAP_DATA = {
       "y": 0.436835,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "<p>From the broken glass in the nearby elevator, jump to the platform and use the Striders to crawl beneath the building and up the other side.</p>",
+      "desc": "From the broken glass in the nearby elevator, jump to the platform and use the Striders to crawl beneath the building and up the other side.",
       "color": "#344f6e"
     },
     {
@@ -534,7 +534,7 @@ const MAP_DATA = {
       "y": 0.438703,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -552,7 +552,7 @@ const MAP_DATA = {
       "y": 0.441588,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -570,7 +570,7 @@ const MAP_DATA = {
       "y": 0.448849,
       "type": "Mkks3hlp29dyho",
       "title": "Friendly Invitation",
-      "desc": "<p>Opens a locked door in the Canopy.</p>",
+      "desc": "Opens a locked door in the Canopy.",
       "color": "#926c15"
     },
     {
@@ -579,7 +579,7 @@ const MAP_DATA = {
       "y": 0.449459,
       "type": "Mkkryd8c84zyyw9",
       "title": "Makeshift Recovery",
-      "desc": "<p>Crawl up the wall in the corner to reach the Modifier.</p><p><br></p><p><em>Quickly defeating an enemy that has struck Mio restores one layer of protection (non-stackable).</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "Crawl up the wall in the corner to reach the Modifier.\n\n*Quickly defeating an enemy that has struck Mio restores one layer of protection (non-stackable).*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -597,7 +597,7 @@ const MAP_DATA = {
       "y": 0.453582,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "<p>Found hidden in the wall in a small cubby that can be jumped to.</p>",
+      "desc": "Found hidden in the wall in a small cubby that can be jumped to.",
       "color": "#593f62"
     },
     {
@@ -633,7 +633,7 @@ const MAP_DATA = {
       "y": 0.456451,
       "type": "Mkks3yer4zvdfpn",
       "title": "Canopy Locked Door",
-      "desc": "<p>Requires Friendly Invitation</p>",
+      "desc": "Requires Friendly Invitation",
       "color": "#926c15"
     },
     {
@@ -642,7 +642,7 @@ const MAP_DATA = {
       "y": 0.456198,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 20.</p>",
+      "desc": "Contains 20.",
       "color": "#344f6e"
     },
     {
@@ -651,7 +651,7 @@ const MAP_DATA = {
       "y": 0.456829,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>Two piles here.</p>",
+      "desc": "Two piles here.",
       "color": "#344f6e"
     },
     {
@@ -687,7 +687,7 @@ const MAP_DATA = {
       "y": 0.461940,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Found on one of the railways.</p><p><br></p><p>Contains 40.</p>",
+      "desc": "Found on one of the railways.\n\nContains 40.",
       "color": "#344f6e"
     },
     {
@@ -705,7 +705,7 @@ const MAP_DATA = {
       "y": 0.462831,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -723,7 +723,7 @@ const MAP_DATA = {
       "y": 0.463268,
       "type": "Mkks3yer4zvdfpn",
       "title": "Bell Tower Door",
-      "desc": "<p>Requires Bell Tower Visitor Pass.</p>",
+      "desc": "Requires Bell Tower Visitor Pass.",
       "color": "#926c15"
     },
     {
@@ -768,7 +768,7 @@ const MAP_DATA = {
       "y": 0.463708,
       "type": "Mkks3hlp29dyho",
       "title": "Bell Tower Visitor Pass",
-      "desc": "<p>Opens the Bell Tower door.</p>",
+      "desc": "Opens the Bell Tower door.",
       "color": "#926c15"
     },
     {
@@ -786,7 +786,7 @@ const MAP_DATA = {
       "y": 0.463934,
       "type": "Mkks51x9f031zjt",
       "title": "Missing Shop NPC",
-      "desc": "<p>Must use Striders to reach the button on the other side of the fan vent.</p>",
+      "desc": "Must use Striders to reach the button on the other side of the fan vent.",
       "color": "#926c15"
     },
     {
@@ -813,7 +813,7 @@ const MAP_DATA = {
       "y": 0.467964,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -876,7 +876,7 @@ const MAP_DATA = {
       "y": 0.474813,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "<p>Glide and use wall climb to reach the room.</p>",
+      "desc": "Glide and use wall climb to reach the room.",
       "color": "#344f6e"
     },
     {
@@ -894,7 +894,7 @@ const MAP_DATA = {
       "y": 0.477395,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -939,7 +939,7 @@ const MAP_DATA = {
       "y": 0.481667,
       "type": "Mkkryd8c84zyyw9",
       "title": "Foolish Ideal",
-      "desc": "<p><em>Damage inflicted on enemies increases when Energy is not fully charged.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*Damage inflicted on enemies increases when Energy is not fully charged.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -957,7 +957,7 @@ const MAP_DATA = {
       "y": 0.482568,
       "type": "Mkkryd8c84zyyw9",
       "title": "Sharpened Hairpin",
-      "desc": "<p><em>Grants the ability to slice enemies when using the Hairpin ability on them.</em></p><p><br></p><ul><li>Requires 40 Modifier slots.</li></ul>",
+      "desc": "*Grants the ability to slice enemies when using the Hairpin ability on them.*\n\n- Requires 40 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -975,7 +975,7 @@ const MAP_DATA = {
       "y": 0.482621,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Atop the platform. Contains 240.</p>",
+      "desc": "Atop the platform. Contains 240.",
       "color": "#344f6e"
     },
     {
@@ -1020,7 +1020,7 @@ const MAP_DATA = {
       "y": 0.485347,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1029,7 +1029,7 @@ const MAP_DATA = {
       "y": 0.485104,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -1038,7 +1038,7 @@ const MAP_DATA = {
       "y": 0.485222,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -1056,7 +1056,7 @@ const MAP_DATA = {
       "y": 0.486701,
       "type": "Mkks51x9f031zjt",
       "title": "Missing Shop NPC",
-      "desc": "<p>Defeat all the enemies in the area to free the NPC.</p>",
+      "desc": "Defeat all the enemies in the area to free the NPC.",
       "color": "#926c15"
     },
     {
@@ -1074,7 +1074,7 @@ const MAP_DATA = {
       "y": 0.487595,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1083,7 +1083,7 @@ const MAP_DATA = {
       "y": 0.487140,
       "type": "Mkks3yer4zvdfpn",
       "title": "Hall Of History Door",
-      "desc": "<p>Requires Old Fashioned Key.</p>",
+      "desc": "Requires Old Fashioned Key.",
       "color": "#926c15"
     },
     {
@@ -1110,7 +1110,7 @@ const MAP_DATA = {
       "y": 0.487568,
       "type": "Mkks3yer4zvdfpn",
       "title": "Hall Of History Door",
-      "desc": "<p>Requires Old Fashioned Key.</p>",
+      "desc": "Requires Old Fashioned Key.",
       "color": "#926c15"
     },
     {
@@ -1119,7 +1119,7 @@ const MAP_DATA = {
       "y": 0.487971,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Found via a hole in the nearby elevator shaft.</p><p><br></p><p>Contains 80.</p>",
+      "desc": "Found via a hole in the nearby elevator shaft.\n\nContains 80.",
       "color": "#344f6e"
     },
     {
@@ -1128,7 +1128,7 @@ const MAP_DATA = {
       "y": 0.489766,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1155,7 +1155,7 @@ const MAP_DATA = {
       "y": 0.491977,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 40.</p>",
+      "desc": "Contains 40.",
       "color": "#344f6e"
     },
     {
@@ -1182,7 +1182,7 @@ const MAP_DATA = {
       "y": 0.494357,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Speak to the NPC nearby.</p>",
+      "desc": "Speak to the NPC nearby.",
       "color": "#344f6e"
     },
     {
@@ -1191,7 +1191,7 @@ const MAP_DATA = {
       "y": 0.495119,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>On the ledge above.</p>",
+      "desc": "On the ledge above.",
       "color": "#344f6e"
     },
     {
@@ -1227,7 +1227,7 @@ const MAP_DATA = {
       "y": 0.497072,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -1245,7 +1245,7 @@ const MAP_DATA = {
       "y": 0.497455,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "<p>Inside the container.</p>",
+      "desc": "Inside the container.",
       "color": "#344f6e"
     },
     {
@@ -1263,7 +1263,7 @@ const MAP_DATA = {
       "y": 0.497940,
       "type": "Mkks3hlp29dyho",
       "title": "Old Fashioned Key",
-      "desc": "<p>Found after defeating Calderon.</p>",
+      "desc": "Found after defeating Calderon.",
       "color": "#926c15"
     },
     {
@@ -1272,7 +1272,7 @@ const MAP_DATA = {
       "y": 0.503555,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Use the Hairpin to reach the spot.</p>",
+      "desc": "Use the Hairpin to reach the spot.",
       "color": "#344f6e"
     },
     {
@@ -1281,7 +1281,7 @@ const MAP_DATA = {
       "y": 0.504071,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -1326,7 +1326,7 @@ const MAP_DATA = {
       "y": 0.508887,
       "type": "Mkks3yer4zvdfpn",
       "title": "Aviaries Door",
-      "desc": "<p>Requires Aviaries Passepartout</p>",
+      "desc": "Requires Aviaries Passepartout",
       "color": "#926c15"
     },
     {
@@ -1335,7 +1335,7 @@ const MAP_DATA = {
       "y": 0.509484,
       "type": "Mkks4lifcmich7k",
       "title": "Rad",
-      "desc": "<p>Stuck in the doorway.</p>",
+      "desc": "Stuck in the doorway.",
       "color": "#926c15"
     },
     {
@@ -1353,7 +1353,7 @@ const MAP_DATA = {
       "y": 0.509580,
       "type": "Mkkry1hb53dx6a",
       "title": "Dodge",
-      "desc": "<p><em>Allows Mio to dodge projectiles and attacks.</em></p>",
+      "desc": "*Allows Mio to dodge projectiles and attacks.*",
       "color": "#593f62"
     },
     {
@@ -1362,7 +1362,7 @@ const MAP_DATA = {
       "y": 0.509613,
       "type": "Mkkryd8c84zyyw9",
       "title": "Analyzer",
-      "desc": "<p>Given to Mio by Rad after rescuing them.</p><p><br></p><p><em>Displays enemies' remaining health.</em></p><p><br></p><ul><li>Requires 5 Modifier slots.<span class=\"ql-cursor\">﻿</span></li></ul>",
+      "desc": "Given to Mio by Rad after rescuing them.\n\n*Displays enemies' remaining health.*\n\n- Requires 5 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1371,7 +1371,7 @@ const MAP_DATA = {
       "y": 0.510432,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 20.</p>",
+      "desc": "Contains 20.",
       "color": "#344f6e"
     },
     {
@@ -1398,7 +1398,7 @@ const MAP_DATA = {
       "y": 0.517460,
       "type": "Mkks3yer4zvdfpn",
       "title": "Door To Vaults Lift",
-      "desc": "<p>Requires Dr Hayln's Assistant Credentials.</p>",
+      "desc": "Requires Dr Hayln's Assistant Credentials.",
       "color": "#926c15"
     },
     {
@@ -1416,7 +1416,7 @@ const MAP_DATA = {
       "y": 0.517143,
       "type": "Mkkryd8c84zyyw9",
       "title": "Nacre Overload",
-      "desc": "<p><em>Damage increases for each Nacre Droplet carried. Each attack dealt on an enemy will use Droplets, but all Droplets will be returned when the enemy is defeated.</em></p><p><br></p><ul><li>Requires 30 Modifier slots.</li></ul>",
+      "desc": "*Damage increases for each Nacre Droplet carried. Each attack dealt on an enemy will use Droplets, but all Droplets will be returned when the enemy is defeated.*\n\n- Requires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1425,7 +1425,7 @@ const MAP_DATA = {
       "y": 0.518417,
       "type": "Mkkryd8c84zyyw9",
       "title": "The Hand's Greed",
-      "desc": "<p><em>Damage inflicted on enemies increases for each layer of protection that Mio has lost.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*Damage inflicted on enemies increases for each layer of protection that Mio has lost.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1434,7 +1434,7 @@ const MAP_DATA = {
       "y": 0.518676,
       "type": "Mkkryd8c84zyyw9",
       "title": "Protective Overlay",
-      "desc": "<p>Defeat all the enemies to open the closed container.</p><p><br></p><p><em>Grants an additional layer of protection.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "Defeat all the enemies to open the closed container.\n\n*Grants an additional layer of protection.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1452,7 +1452,7 @@ const MAP_DATA = {
       "y": 0.520893,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1461,7 +1461,7 @@ const MAP_DATA = {
       "y": 0.520770,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 280.</p>",
+      "desc": "Contains 280.",
       "color": "#344f6e"
     },
     {
@@ -1470,7 +1470,7 @@ const MAP_DATA = {
       "y": 0.521827,
       "type": "Mkkryd8c84zyyw9",
       "title": "Bird of Prey",
-      "desc": "<p><em>Temporarily increases damage to enemies while using the Sail ability.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*Temporarily increases damage to enemies while using the Sail ability.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1479,7 +1479,7 @@ const MAP_DATA = {
       "y": 0.522637,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Hidden up the wall in a small cubby.</p><p><br></p><p>Contains 280.</p>",
+      "desc": "Hidden up the wall in a small cubby.\n\nContains 280.",
       "color": "#344f6e"
     },
     {
@@ -1515,7 +1515,7 @@ const MAP_DATA = {
       "y": 0.524978,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Use the nearby enemy to harvest energy and regain jumps to real the mechanical remains.</p>",
+      "desc": "Use the nearby enemy to harvest energy and regain jumps to real the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1533,7 +1533,7 @@ const MAP_DATA = {
       "y": 0.525053,
       "type": "Mkkry1hb53dx6a",
       "title": "Striders",
-      "desc": "<p><em>Allows Mio to cling to walls and other surfaces.</em></p>",
+      "desc": "*Allows Mio to cling to walls and other surfaces.*",
       "color": "#593f62"
     },
     {
@@ -1542,7 +1542,7 @@ const MAP_DATA = {
       "y": 0.525157,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1560,7 +1560,7 @@ const MAP_DATA = {
       "y": 0.525503,
       "type": "Mkkryd8c84zyyw9",
       "title": "Kinetic Thrust",
-      "desc": "<p><em>The last attack of a the combo deals additional damage.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*The last attack of a the combo deals additional damage.*\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1578,7 +1578,7 @@ const MAP_DATA = {
       "y": 0.528125,
       "type": "Mkkryd8c84zyyw9",
       "title": "Asma's Will",
-      "desc": "<p>Located hidden inside a small room in the wall just above the dangerous purple plants.</p><p><br></p><p><em>Makes it so enemies (excluding bosses) refuse to attack Mio unless she attacks them first.</em></p><p><br></p><ul><li>Requires 30 Modifier slots.</li></ul>",
+      "desc": "Located hidden inside a small room in the wall just above the dangerous purple plants.\n\n*Makes it so enemies (excluding bosses) refuse to attack Mio unless she attacks them first.*\n\n- Requires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1605,7 +1605,7 @@ const MAP_DATA = {
       "y": 0.528571,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "<p>Found behind the wall next to the bouncy mushroom.</p>",
+      "desc": "Found behind the wall next to the bouncy mushroom.",
       "color": "#593f62"
     },
     {
@@ -1659,7 +1659,7 @@ const MAP_DATA = {
       "y": 0.532256,
       "type": "Mkks4lifcmich7k",
       "title": "Shii",
-      "desc": "<p>Feed Nacre to unlock the map system.</p>",
+      "desc": "Feed Nacre to unlock the map system.",
       "color": "#926c15"
     },
     {
@@ -1668,7 +1668,7 @@ const MAP_DATA = {
       "y": 0.532289,
       "type": "Mkks3hlp29dyho",
       "title": "Silo Access Badge",
-      "desc": "<p>Opens the Silo Access Door.</p>",
+      "desc": "Opens the Silo Access Door.",
       "color": "#926c15"
     },
     {
@@ -1677,7 +1677,7 @@ const MAP_DATA = {
       "y": 0.532502,
       "type": "Mkkry1hb53dx6a",
       "title": "Harvester",
-      "desc": "<p>Found in a hidden area past the Crow boss fight.</p><p><br></p><p><em>Allows Mio to refill energy after striking an enemy or object.</em></p>",
+      "desc": "Found in a hidden area past the Crow boss fight.\n\n*Allows Mio to refill energy after striking an enemy or object.*",
       "color": "#593f62"
     },
     {
@@ -1686,7 +1686,7 @@ const MAP_DATA = {
       "y": 0.533422,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>User Striders to bypass the airflow and reach the mechanical remains.</p>",
+      "desc": "User Striders to bypass the airflow and reach the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -1722,7 +1722,7 @@ const MAP_DATA = {
       "y": 0.538855,
       "type": "Mkkryd8c84zyyw9",
       "title": "Enhanced Dodge",
-      "desc": "<p><em>Dodging attacks has increased timing.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*Dodging attacks has increased timing.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1731,7 +1731,7 @@ const MAP_DATA = {
       "y": 0.539041,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Go through the vent in the top left corner of the previous room.</p>",
+      "desc": "Go through the vent in the top left corner of the previous room.",
       "color": "#344f6e"
     },
     {
@@ -1812,7 +1812,7 @@ const MAP_DATA = {
       "y": 0.551366,
       "type": "Mkks3yer4zvdfpn",
       "title": "Silo Access Door",
-      "desc": "<p>Requires Silo Access Badge to open.</p>",
+      "desc": "Requires Silo Access Badge to open.",
       "color": "#926c15"
     },
     {
@@ -1821,7 +1821,7 @@ const MAP_DATA = {
       "y": 0.551445,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -1830,7 +1830,7 @@ const MAP_DATA = {
       "y": 0.552518,
       "type": "Mkkryd8c84zyyw9",
       "title": "Defense Mechanism",
-      "desc": "<p>Attack the flowers while jumping to regain a jump charge to cross the distance.</p><p><br></p><p><em>Creates an explosion around Mio when she takes a hit.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "Attack the flowers while jumping to regain a jump charge to cross the distance.\n\n*Creates an explosion around Mio when she takes a hit.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -1848,7 +1848,7 @@ const MAP_DATA = {
       "y": 0.554906,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 200.</p>",
+      "desc": "Contains 200.",
       "color": "#344f6e"
     },
     {
@@ -1920,7 +1920,7 @@ const MAP_DATA = {
       "y": 0.565109,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "<p>Use wall climb and glide to reach.</p>",
+      "desc": "Use wall climb and glide to reach.",
       "color": "#344f6e"
     },
     {
@@ -1938,7 +1938,7 @@ const MAP_DATA = {
       "y": 0.566295,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -1983,7 +1983,7 @@ const MAP_DATA = {
       "y": 0.568093,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -2001,7 +2001,7 @@ const MAP_DATA = {
       "y": 0.570172,
       "type": "Mkkryd8c84zyyw9",
       "title": "Split Process",
-      "desc": "<p><em>Increases the number of Modifier slots, but energy recharges more slowly.</em></p><p><br></p><ul><li>Adds 15 Modifier slots.</li></ul>",
+      "desc": "*Increases the number of Modifier slots, but energy recharges more slowly.*\n\n- Adds 15 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2019,7 +2019,7 @@ const MAP_DATA = {
       "y": 0.570707,
       "type": "Mkks3yer4zvdfpn",
       "title": "Locked Access Door",
-      "desc": "<p>Requires Dr Hayln's Assistant Credentials.</p>",
+      "desc": "Requires Dr Hayln's Assistant Credentials.",
       "color": "#926c15"
     },
     {
@@ -2028,7 +2028,7 @@ const MAP_DATA = {
       "y": 0.571063,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 20.</p>",
+      "desc": "Contains 20.",
       "color": "#344f6e"
     },
     {
@@ -2055,7 +2055,7 @@ const MAP_DATA = {
       "y": 0.571645,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -2064,7 +2064,7 @@ const MAP_DATA = {
       "y": 0.572545,
       "type": "Mkks3hlp29dyho",
       "title": "Dr Hayln's Employment Ledger",
-      "desc": "<p>Grants Dr Hayln's Assistant Credentials.</p>",
+      "desc": "Grants Dr Hayln's Assistant Credentials.",
       "color": "#926c15"
     },
     {
@@ -2082,7 +2082,7 @@ const MAP_DATA = {
       "y": 0.573426,
       "type": "Mkkry1hb53dx6a",
       "title": "Hairpin",
-      "desc": "<p>Allows Mio to grapple Energy Shards.</p>",
+      "desc": "Allows Mio to grapple Energy Shards.",
       "color": "#593f62"
     },
     {
@@ -2091,7 +2091,7 @@ const MAP_DATA = {
       "y": 0.573867,
       "type": "Mkkryd8c84zyyw9",
       "title": "Imperfect Focus",
-      "desc": "<p>Found on the ledge above the frost blasters. Players need to time dodges and jumps to reach it.</p><p><br></p><p><em>Increases the number of modifier slots available on Mio but the timing for dodging attacks is reduced.</em></p><p><br></p><ul><li>Adds 5 Modifier slots.</li></ul>",
+      "desc": "Found on the ledge above the frost blasters. Players need to time dodges and jumps to reach it.\n\n*Increases the number of modifier slots available on Mio but the timing for dodging attacks is reduced.*\n\n- Adds 5 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2154,7 +2154,7 @@ const MAP_DATA = {
       "y": 0.578508,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 200.</p>",
+      "desc": "Contains 200.",
       "color": "#344f6e"
     },
     {
@@ -2163,7 +2163,7 @@ const MAP_DATA = {
       "y": 0.579560,
       "type": "Mkks5pmnv7r87cp",
       "title": "Fragmented Serial Number",
-      "desc": "<p>Go in the hole beneath the moving red pipes and all the way left.</p>",
+      "desc": "Go in the hole beneath the moving red pipes and all the way left.",
       "color": "#926c15"
     },
     {
@@ -2181,7 +2181,7 @@ const MAP_DATA = {
       "y": 0.579625,
       "type": "Mkks3hlp29dyho",
       "title": "Aviaries Passepartout",
-      "desc": "<p>Located on a platform after defeating the Flora boss.</p><p><br></p><p>Opens the Aviaries Door.</p>",
+      "desc": "Located on a platform after defeating the Flora boss.\n\nOpens the Aviaries Door.",
       "color": "#926c15"
     },
     {
@@ -2190,7 +2190,7 @@ const MAP_DATA = {
       "y": 0.579879,
       "type": "Mkks4lifcmich7k",
       "title": "Personal Assistant",
-      "desc": "<p>Shows up after the Flora boss fight.</p>",
+      "desc": "Shows up after the Flora boss fight.",
       "color": "#926c15"
     },
     {
@@ -2253,7 +2253,7 @@ const MAP_DATA = {
       "y": 0.581636,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 140.</p>",
+      "desc": "Contains 140.",
       "color": "#344f6e"
     },
     {
@@ -2271,7 +2271,7 @@ const MAP_DATA = {
       "y": 0.582381,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "<p>Inside the container, will only open after boss fight.</p>",
+      "desc": "Inside the container, will only open after boss fight.",
       "color": "#593f62"
     },
     {
@@ -2280,7 +2280,7 @@ const MAP_DATA = {
       "y": 0.583673,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -2298,7 +2298,7 @@ const MAP_DATA = {
       "y": 0.587869,
       "type": "Mkkryd8c84zyyw9",
       "title": "Afterimage",
-      "desc": "<p><em>Using the Hairpin generates a Decoy that enemies will target instead of Mio. The Decoy will explode after a short period of time.</em></p><p><br></p><ul><li>Requires 30 Modifier slots.</li></ul>",
+      "desc": "*Using the Hairpin generates a Decoy that enemies will target instead of Mio. The Decoy will explode after a short period of time.*\n\n- Requires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2325,7 +2325,7 @@ const MAP_DATA = {
       "y": 0.597805,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 160.</p>",
+      "desc": "Contains 160.",
       "color": "#344f6e"
     },
     {
@@ -2343,7 +2343,7 @@ const MAP_DATA = {
       "y": 0.600124,
       "type": "Mkks5pmnv7r87cp",
       "title": "Fragmented Serial Number",
-      "desc": "<p>Inside the vent to the left of the moving red pipes.</p>",
+      "desc": "Inside the vent to the left of the moving red pipes.",
       "color": "#926c15"
     },
     {
@@ -2424,7 +2424,7 @@ const MAP_DATA = {
       "y": 0.743153,
       "type": "Mkkryd8c84zyyw9",
       "title": "Splintering Dodge",
-      "desc": "<p><em>Dodging an attack generates an Energy shard.</em></p><p><br></p><ul><li>Requires 30 Modifier slots.</li></ul>",
+      "desc": "*Dodging an attack generates an Energy shard.*\n\n- Requires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2469,7 +2469,7 @@ const MAP_DATA = {
       "y": 0.751367,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 80.</p>",
+      "desc": "Contains 80.",
       "color": "#344f6e"
     },
     {
@@ -2505,7 +2505,7 @@ const MAP_DATA = {
       "y": 0.755147,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>Two piles here.</p>",
+      "desc": "Two piles here.",
       "color": "#344f6e"
     },
     {
@@ -2514,7 +2514,7 @@ const MAP_DATA = {
       "y": 0.757400,
       "type": "Mkkryd8c84zyyw9",
       "title": "High Risk Voucher",
-      "desc": "<p><em>Allows purchase of an extra layer of protection (non-stackable) at Nacre Basins.</em></p><p><br></p><ul><li>Requires 20 Modifier slots.</li></ul>",
+      "desc": "*Allows purchase of an extra layer of protection (non-stackable) at Nacre Basins.*\n\n- Requires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2532,7 +2532,7 @@ const MAP_DATA = {
       "y": 0.757808,
       "type": "Mkkry1hb53dx6a",
       "title": "Slingshot",
-      "desc": "<p><em>Creates a powerful energy blast capable of clearing rubble when hitting Energy Shards.</em></p>",
+      "desc": "*Creates a powerful energy blast capable of clearing rubble when hitting Energy Shards.*",
       "color": "#593f62"
     },
     {
@@ -2541,7 +2541,7 @@ const MAP_DATA = {
       "y": 0.757945,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "<p>Climb the drawers with the Striders. It's found in the back of the drawer up top.</p>",
+      "desc": "Climb the drawers with the Striders. It's found in the back of the drawer up top.",
       "color": "#593f62"
     },
     {
@@ -2577,7 +2577,7 @@ const MAP_DATA = {
       "y": 0.762745,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>Three found here.</p>",
+      "desc": "Three found here.",
       "color": "#344f6e"
     },
     {
@@ -2595,7 +2595,7 @@ const MAP_DATA = {
       "y": 0.764287,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -2604,7 +2604,7 @@ const MAP_DATA = {
       "y": 0.765644,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "<p>Three in this area.</p>",
+      "desc": "Three in this area.",
       "color": "#344f6e"
     },
     {
@@ -2613,7 +2613,7 @@ const MAP_DATA = {
       "y": 0.766124,
       "type": "Mkks3yer4zvdfpn",
       "title": "Vault Door",
-      "desc": "<p>Requires Vaults' Worker Authentication.</p>",
+      "desc": "Requires Vaults' Worker Authentication.",
       "color": "#926c15"
     },
     {
@@ -2622,7 +2622,7 @@ const MAP_DATA = {
       "y": 0.766360,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 40.</p>",
+      "desc": "Contains 40.",
       "color": "#344f6e"
     },
     {
@@ -2649,7 +2649,7 @@ const MAP_DATA = {
       "y": 0.771895,
       "type": "Mkks46bz1m9o43",
       "title": "The Wheel",
-      "desc": "<p>Used to spin the underside of the map.</p><p><br></p><ul><li>Requires the Severed Finger to operate.</li></ul>",
+      "desc": "Used to spin the underside of the map.\n\n- Requires the Severed Finger to operate.",
       "color": "#926c15"
     },
     {
@@ -2658,7 +2658,7 @@ const MAP_DATA = {
       "y": 0.773158,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -2739,7 +2739,7 @@ const MAP_DATA = {
       "y": 0.798741,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -2757,7 +2757,7 @@ const MAP_DATA = {
       "y": 0.800666,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Hidden beneath the saws.</p>",
+      "desc": "Hidden beneath the saws.",
       "color": "#344f6e"
     },
     {
@@ -2766,7 +2766,7 @@ const MAP_DATA = {
       "y": 0.801302,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "<p>Inside the mechanical remains.</p>",
+      "desc": "Inside the mechanical remains.",
       "color": "#344f6e"
     },
     {
@@ -2793,7 +2793,7 @@ const MAP_DATA = {
       "y": 0.809663,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 240.</p>",
+      "desc": "Contains 240.",
       "color": "#344f6e"
     },
     {
@@ -2802,7 +2802,7 @@ const MAP_DATA = {
       "y": 0.810736,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
-      "desc": "<ul><li>Turns Nacre Droplets into Crystallized Nacre.</li></ul>",
+      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
       "color": "#926c15"
     },
     {
@@ -2829,7 +2829,7 @@ const MAP_DATA = {
       "y": 0.814452,
       "type": "Mkkryd8c84zyyw9",
       "title": "Extra-Coating Processor",
-      "desc": "<p><em>Creates an extra layer of protection (non-stackable) for every three enemies defeated.</em></p><p><br></p><p>Requires 30 Modifier slots.</p>",
+      "desc": "*Creates an extra layer of protection (non-stackable) for every three enemies defeated.*\n\nRequires 30 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2865,7 +2865,7 @@ const MAP_DATA = {
       "y": 0.823602,
       "type": "Mkks3yer4zvdfpn",
       "title": "Serial Code Door",
-      "desc": "<p>Requires 6 Serial Codes to open.</p>",
+      "desc": "Requires 6 Serial Codes to open.",
       "color": "#926c15"
     },
     {
@@ -2901,7 +2901,7 @@ const MAP_DATA = {
       "y": 0.825597,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
-      "desc": "<p>Contains 180.</p>",
+      "desc": "Contains 180.",
       "color": "#344f6e"
     },
     {
@@ -2910,7 +2910,7 @@ const MAP_DATA = {
       "y": 0.827580,
       "type": "Mkkryd8c84zyyw9",
       "title": "High Voltage Discharge",
-      "desc": "<p>After a short delay, the next attack will automatically stun the target.</p><p><br></p><p>Requires 20 Modifier slots.</p><p><br></p><p><br></p>",
+      "desc": "After a short delay, the next attack will automatically stun the target.\n\nRequires 20 Modifier slots.",
       "color": "#593f62"
     },
     {
@@ -2982,7 +2982,7 @@ const MAP_DATA = {
       "y": 0.845265,
       "type": "Mkks3hlp29dyho",
       "title": "Severed Fingertip",
-      "desc": "<p>Used to control the Wheel located above the Lab Attune Station.</p>",
+      "desc": "Used to control the Wheel located above the Lab Attune Station.",
       "color": "#926c15"
     }
   ]

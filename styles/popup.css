@@ -1,7 +1,7 @@
 .popup {
   position: absolute;
   z-index: 15;
-  width: 220px;
+  width: 250px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -37,6 +37,15 @@
   margin: 0 0 8px;
 }
 #popupDesc p:last-child {
+  margin-bottom: 0;
+}
+#popupDesc ul,
+#popupDesc ol {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+#popupDesc ul:last-child,
+#popupDesc ol:last-child {
   margin-bottom: 0;
 }
 
