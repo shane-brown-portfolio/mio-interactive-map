@@ -16,7 +16,8 @@ MAP_DATA.categories.forEach(category => {
   });
 });
 
-// Icon is optional: user-created categories are just a plain colored circle
+// Icon is optional: user-created categories are just a plain colored circle.
+// marker.type is null for an uncategorized pin still being placed in Edit Mode
 function createPinElement(marker) {
   const meta = typeMeta[marker.type];
   const pin = document.createElement('button');
@@ -26,8 +27,8 @@ function createPinElement(marker) {
   pin.style.setProperty('--pin-color', marker.color);
   pin.title = marker.title;
   pin.dataset.id = marker.id;
-  pin.dataset.type = marker.type;
-  pin.innerHTML = meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
+  pin.dataset.type = marker.type || '';
+  pin.innerHTML = meta && meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
   return pin;
 }
 

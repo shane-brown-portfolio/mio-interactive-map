@@ -89,8 +89,10 @@ viewport.addEventListener('wheel', (e) => {
 
 // Click and drag panning
 viewport.addEventListener('pointerdown', (e) => {
-  dragging = true; dragMoved = false;
-  lastX = e.clientX; lastY = e.clientY;
+  dragging = true;
+  dragMoved = false;
+  lastX = e.clientX;
+  lastY = e.clientY;
 
   // Capturing on a pin steals its click event, so skip it there
   if (!e.target.closest('.pin'))
@@ -107,8 +109,10 @@ viewport.addEventListener('pointermove', (e) => {
   if (Math.abs(dx) + Math.abs(dy) > 4)
     dragMoved = true;
   if (dragMoved) {
-    tx += dx; ty += dy;
-    lastX = e.clientX; lastY = e.clientY;
+    tx += dx;
+    ty += dy;
+    lastX = e.clientX;
+    lastY = e.clientY;
     apply();
   }
 });

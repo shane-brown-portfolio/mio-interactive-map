@@ -79,13 +79,49 @@ function rebuildItemTypeOptions(catUid, selectedUid) {
   editItemType.value = selectedUid || '';
 }
 
+// Color is a per-category attribute: a new type inherits its category's color
 function showNewFields(kind) {
   newFields.hidden = false;
   newLabel.placeholder = kind === 'category' ? 'New category name' : 'New item type name';
+  newColor.hidden = kind !== 'category';
 }
 
 function hideNewFields() {
   newFields.hidden = true;
+}
+
+// Reflects a marker's actual stored type/color onto its pin
+function syncPinVisual(marker) {
+  const pinEl = pinsWorld.querySelector(`.pin[data-id="${marker.id}"]`);
+  if (!pinEl)
+    return;
+  const meta = typeMeta[marker.type];
+  pinEl.style.setProperty('--pin-color', marker.color);
+  pinEl.innerHTML = meta && meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
+}
+
+// Live preview: gray with no icon until a category is picked, then displays item type's icon on top
+function previewPinAppearance() {
+  if (!activePinEl)
+    return;
+  let color = '#999999', icon = null, label = '';
+  if (editCategory.value === '__newcat__') {
+    color = newColor.value;
+  }
+  else if (editItemType.value === '__newtype__') {
+    color = catColors[editCategory.value];
+  }
+  else if (editItemType.value) {
+    const meta = typeMeta[editItemType.value];
+    color = typeColors[editItemType.value];
+    icon = meta.icon;
+    label = meta.label;
+  }
+  else if (editCategory.value) {
+    color = catColors[editCategory.value];
+  }
+  activePinEl.style.setProperty('--pin-color', color);
+  activePinEl.innerHTML = icon ? `<img src="${icon}" alt="${label}">` : '';
 }
 
 function showFieldError(msg) {
@@ -121,6 +157,7 @@ editCategory.addEventListener('change', () => {
     itemTypeField.hidden = true;
     showNewFields('category');
     newTypeNameField.hidden = false;
+    previewPinAppearance();
     return;
   }
   newTypeNameField.hidden = true;
@@ -128,10 +165,12 @@ editCategory.addEventListener('change', () => {
   if (v === '') {
     itemTypeField.hidden = true;
     editItemType.innerHTML = '';
+    previewPinAppearance();
     return;
   }
   itemTypeField.hidden = false;
   rebuildItemTypeOptions(v);
+  previewPinAppearance();
 });
 
 editItemType.addEventListener('change', () => {
@@ -142,12 +181,15 @@ editItemType.addEventListener('change', () => {
   else {
     hideNewFields();
   }
+  previewPinAppearance();
 });
+
+newColor.addEventListener('input', previewPinAppearance);
 
 function openPopup(marker, pinEl) {
   activeId = marker.id;
   const meta = typeMeta[marker.type];
-  popupType.textContent = `${meta.categoryLabel} • ${meta.label}`;
+  popupType.textContent = meta ? `${meta.categoryLabel} • ${meta.label}` : '';
   popupTitle.textContent = marker.title;
   popupDesc.innerHTML = marker.desc || ''; // desc is HTML (e.g. "<p>...</p>")
   popupDesc.hidden = !marker.desc;
@@ -182,9 +224,20 @@ function positionPopup() {
   popup.style.top = top + 'px';
 }
 
+// Item Type appearing, or the new-category/new-type fields, changes the popup's own height,
+// so reposition the popup so it doesn't grow down over the pin
+new ResizeObserver(positionPopup).observe(popup);
+
 function closePopup() {
-  if (freshMarkerId && freshMarkerId === activeId)
+  if (freshMarkerId && freshMarkerId === activeId) {
     deleteMarker(freshMarkerId);
+  }
+  else if (activeId) {
+    // Undo any live preview that wasn't saved
+    const marker = MAP_DATA.markers.find(m => m.id === activeId);
+    if (marker)
+      syncPinVisual(marker);
+  }
   freshMarkerId = null;
   popup.classList.remove('open');
   activeId = null;
@@ -240,7 +293,7 @@ popupSave.addEventListener('click', () => {
       showFieldError('Enter a name for the new item type.');
       return;
     }
-    typeUid = createType(editCategory.value, label, newColor.value);
+    typeUid = createType(editCategory.value, label);
   }
   else if (editItemType.value === '') {
     showFieldError('Choose an item type.');
@@ -270,8 +323,11 @@ popupDelete.addEventListener('click', () => {
 
 document.getElementById('popupClose').addEventListener('click', closePopup);
 
-// Close on any interaction outside the popup
-document.addEventListener('pointerdown', (e) => {
-  if (popup.classList.contains('open') && !e.target.closest('#popup'))
+// Close on any click outside the popup, unless clicking onto another pin
+document.addEventListener('click', (e) => {
+  if (popup.classList.contains('open') && !e.target.closest('#popup')) {
     closePopup();
-});
+    if (!e.target.closest('.pin'))
+      e.stopPropagation();
+  }
+}, true);

@@ -13,23 +13,15 @@ editModeBtn.addEventListener('click', () => {
 });
 
 function createMarker(x, y) {
-  const type = MAP_DATA.categories[0].types[0].uid;
-
-  // New pin must be visible so its popup can be positioned against it
-  if (hiddenTypes.has(type)) {
-      hiddenTypes.delete(type);
-      saveSettings();
-      renderSidebar();
-  }
-  
+  // Starts uncategorized as a plain gray pin with no icon
   const marker = {
     id: genId(),
     x,
     y,
-    type,
+    type: null,
     title: 'New Pin',
     desc: '',
-    color: typeColors[type] || '#999999'
+    color: '#999999'
   };
 
   // Not persisted yet: only committed to the edits overlay once Save is clicked
@@ -67,12 +59,10 @@ function updateMarker(id, patch)
 
   const pinEl = pinsWorld.querySelector(`.pin[data-id="${id}"]`);
   if (pinEl) {
-    const meta = typeMeta[marker.type];
     pinEl.title = marker.title;
     pinEl.dataset.type = marker.type;
-    pinEl.style.setProperty('--pin-color', marker.color);
-    pinEl.innerHTML = meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
   }
+  syncPinVisual(marker);
   renderSidebar();
   applyFilters();
 }
@@ -128,7 +118,8 @@ function createCategory(catLabel, color, typeLabel) {
 }
 
 // Adds a new type under an already-existing category (base or user-created)
-function createType(catUid, label, color) {
+// Color is a category-level attribute, so the type just inherits it
+function createType(catUid, label) {
   const category = MAP_DATA.categories.find(c => c.uid === catUid);
   const typeUid = genId();
   const type = {
@@ -149,7 +140,7 @@ function createType(catUid, label, color) {
     icon: null,
     categoryLabel: category.label
   };
-  typeColors[typeUid] = color;
+  typeColors[typeUid] = catColors[catUid];
   return typeUid;
 }
 
