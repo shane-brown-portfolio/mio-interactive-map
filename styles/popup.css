@@ -23,8 +23,17 @@
 }
 
 .popup h3 {
-  margin: 0 0 6px;
+  margin: 0 0 2px;
   font-size: 14px;
+}
+
+#popupSubtitle {
+  margin: 0 0 6px;
+  font-size: 11px;
+  color: #888;
+}
+#popupSubtitle[hidden] {
+  display: none;
 }
 
 #popupDesc {
@@ -92,6 +101,7 @@
 }
 .popup.edit-mode .popup-edit { display: flex; }
 .popup.edit-mode #popupTitle,
+.popup.edit-mode #popupSubtitle,
 .popup.edit-mode #popupDesc,
 .popup.edit-mode .popup-complete { display: none; }
 

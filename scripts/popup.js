@@ -6,10 +6,12 @@
 const popup = document.getElementById('popup');
 const popupType = document.getElementById('popupType');
 const popupTitle = document.getElementById('popupTitle');
+const popupSubtitle = document.getElementById('popupSubtitle');
 const popupDesc = document.getElementById('popupDesc');
 const popupComplete = document.getElementById('popupComplete');
 
 const editTitle = document.getElementById('editTitle');
+const editSubtitle = document.getElementById('editSubtitle');
 const editDesc = document.getElementById('editDesc');
 const editCategory = document.getElementById('editCategory');
 const itemTypeField = document.getElementById('itemTypeField');
@@ -191,11 +193,14 @@ function openPopup(marker, pinEl) {
   const meta = typeMeta[marker.type];
   popupType.textContent = meta ? `${meta.categoryLabel} • ${meta.label}` : '';
   popupTitle.textContent = marker.title;
+  popupSubtitle.textContent = marker.subtitle || '';
+  popupSubtitle.hidden = !marker.subtitle;
   popupDesc.innerHTML = marker.desc ? marked.parse(marker.desc) : ''; // desc is Markdown source
   popupDesc.hidden = !marker.desc;
   updateCompleteButton();
 
   editTitle.value = marker.title || '';
+  editSubtitle.value = marker.subtitle || '';
   editDesc.value = marker.desc || '';
   populateCategoryFields(marker.type, freshMarkerId === marker.id);
   popup.classList.toggle('edit-mode', editMode);
@@ -304,6 +309,7 @@ popupSave.addEventListener('click', () => {
   }
   updateMarker(activeId, {
     title: editTitle.value.trim() || 'Untitled',
+    subtitle: editSubtitle.value.trim(),
     desc: editDesc.value,
     type: typeUid
   });

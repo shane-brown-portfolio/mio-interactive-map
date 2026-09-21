@@ -20,6 +20,7 @@ function createMarker(x, y) {
     y,
     type: null,
     title: 'New Pin',
+    subtitle: '',
     desc: '',
     color: '#999999'
   };
