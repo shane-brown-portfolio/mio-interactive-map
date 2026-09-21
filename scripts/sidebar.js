@@ -35,7 +35,9 @@ MAP_DATA.categories.forEach(cat => {
   catColors[cat.uid] = (first && first.color) || '#999999';
   cat.types.forEach(t => {
     const firstOfType = MAP_DATA.markers.find(m => m.type === t.uid);
-    typeColors[t.uid] = (firstOfType && firstOfType.color) || '#999999';
+    // A type with no markers yet (freshly added to a category) falls back to
+    // the category's color instead of gray, so new pins match their siblings
+    typeColors[t.uid] = (firstOfType && firstOfType.color) || catColors[cat.uid];
   });
 });
 

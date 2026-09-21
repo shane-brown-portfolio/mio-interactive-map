@@ -1,4 +1,3 @@
-// Marker + category data extracted from the interactive map
 const MAP_DATA = {
   "title": "Mio: Memories In Orbit",
   "image": "map.png",
@@ -24,6 +23,27 @@ const MAP_DATA = {
       "label": "Upgrades",
       "types": [
         {
+          "uid": "Mkkryr9tzh06ueq",
+          "label": "Forebears Legacy",
+          "icon": "icons/damage-upgrade.svg"
+        },
+        {
+          "uid": "Mklo7etaznf2qu",
+          "label": "Coating Component",
+          "icon": "icons/coating-component.svg"
+        },
+        {
+          "uid": "Mmua9n0ek8he79",
+          "label": "Modifier Extension",
+          "icon": "icons/modifier.svg"
+        }
+      ]
+    },
+    {
+      "uid": "Mmua9n0eld2z6m",
+      "label": "Abilities & Mods",
+      "types": [
+        {
           "uid": "Mkkry1hb53dx6a",
           "label": "Ability",
           "icon": "icons/ability.svg"
@@ -32,16 +52,6 @@ const MAP_DATA = {
           "uid": "Mkkryd8c84zyyw9",
           "label": "Modifier",
           "icon": "icons/modifier.svg"
-        },
-        {
-          "uid": "Mkkryr9tzh06ueq",
-          "label": "Damage Upgrade",
-          "icon": "icons/damage-upgrade.svg"
-        },
-        {
-          "uid": "Mklo7etaznf2qu",
-          "label": "Coating Component",
-          "icon": "icons/coating-component.svg"
         }
       ]
     },
@@ -189,7 +199,7 @@ const MAP_DATA = {
     {
       "id": "Mklpuhjcobhv37",
       "x": 0.685352,
-      "y": 0.286750,
+      "y": 0.28675,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
       "desc": "",
@@ -228,8 +238,8 @@ const MAP_DATA = {
       "y": 0.323261,
       "type": "Mkkryd8c84zyyw9",
       "title": "Sunsail",
-      "desc": "*Increases gliding speed while using the Sail ability but also increases the energy consumption.*\n\n- Requires 30 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Increases gliding speed while using the Sail, but also increases its energy consumption.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkkxdlqn01ejzra",
@@ -250,15 +260,6 @@ const MAP_DATA = {
       "color": "#344f6e"
     },
     {
-      "id": "Mkl1jw2vk6hnmq",
-      "x": 0.533716,
-      "y": 0.334879,
-      "type": "Mkks00cdtqeamel",
-      "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
-    },
-    {
       "id": "Mklm6idkctl8mqm",
       "x": 0.577875,
       "y": 0.343512,
@@ -270,7 +271,7 @@ const MAP_DATA = {
     {
       "id": "Mklpznkaotrw19pi",
       "x": 0.738048,
-      "y": 0.366030,
+      "y": 0.36603,
       "type": "Mkks5pmnv7r87cp",
       "title": "Flash Memory",
       "desc": "",
@@ -309,8 +310,9 @@ const MAP_DATA = {
       "y": 0.380657,
       "type": "Mkkry1hb53dx6a",
       "title": "Sail",
-      "desc": "*Allows Mio to glide.*",
-      "color": "#593f62"
+      "desc": "*Allows Mio to glide.*\n\nMake your way to the top of the Bell Tower and look on your left for the Strange Tube that will grant you the Sail ability.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mkkx9j89s0h69be",
@@ -333,11 +335,11 @@ const MAP_DATA = {
     {
       "id": "Mkkua0jpll4pn2r",
       "x": 0.618257,
-      "y": 0.393240,
+      "y": 0.39324,
       "type": "Mkkryd8c84zyyw9",
       "title": "Firefly",
-      "desc": "*Generates a small electric cloud around Mio when using the Sail ability.*\n\n- Requires 40 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Using the Sail generates a static storm around Mio that deals damage to enemies over time.*\n\n- Requires 40 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklp1ysewhb19ksz",
@@ -363,12 +365,13 @@ const MAP_DATA = {
       "y": 0.401088,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "Use glide to reach the platform.",
-      "color": "#593f62"
+      "desc": "After acquiring Glide, drop from the upper mushroom on the eastern wall and glide over to this ledge.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklmd65ofpb0v5n",
-      "x": 0.739950,
+      "x": 0.73995,
       "y": 0.404633,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -399,17 +402,9 @@ const MAP_DATA = {
       "y": 0.417348,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Use the flowers and grapple points to reach the area above.",
-      "color": "#344f6e"
-    },
-    {
-      "id": "Mkl1mnyjykg4aya",
-      "x": 0.674050,
-      "y": 0.418037,
-      "type": "Mkks00cdtqeamel",
-      "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "On a ledge in the top-left corner of the room. Use the Energy Shards and flower bulbs to platform your way over.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmcp9al5fcck",
@@ -440,8 +435,8 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmv968i21197g",
-      "x": 0.644260,
-      "y": 0.420730,
+      "x": 0.64426,
+      "y": 0.42073,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -458,7 +453,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmvt8570nfuyq",
-      "x": 0.631250,
+      "x": 0.63125,
       "y": 0.430051,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
@@ -506,9 +501,9 @@ const MAP_DATA = {
       "x": 0.558804,
       "y": 0.434252,
       "type": "Mkkryd8c84zyyw9",
-      "title": "Wildcat",
-      "desc": "*After using the Hairpin ability, the next attack will be a heavy strike that deals a lot more damage to enemies.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "title": "Wild Cat",
+      "desc": "*After using the Hairpin ability, the next attack will be a heavy strike that inflicts a lot more damage to enemies.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklorihl1mxebms",
@@ -547,15 +542,6 @@ const MAP_DATA = {
       "color": "#926c15"
     },
     {
-      "id": "Mkl1paos37elyg",
-      "x": 0.782762,
-      "y": 0.441588,
-      "type": "Mkks00cdtqeamel",
-      "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
-    },
-    {
       "id": "Mkl0l3mtlmxb4gq",
       "x": 0.751993,
       "y": 0.447209,
@@ -579,17 +565,8 @@ const MAP_DATA = {
       "y": 0.449459,
       "type": "Mkkryd8c84zyyw9",
       "title": "Makeshift Recovery",
-      "desc": "Crawl up the wall in the corner to reach the Modifier.\n\n*Quickly defeating an enemy that has struck Mio restores one layer of protection (non-stackable).*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
-    },
-    {
-      "id": "Mklok9025o7csx",
-      "x": 0.190624,
-      "y": 0.449920,
-      "type": "Mklo7etaznf2qu",
-      "title": "Coating Component",
-      "desc": "",
-      "color": "#593f62"
+      "desc": "Crawl up the wall in the corner to reach the Modifier.\n\n*Quickly defeating an enemy that has hit Mio restores one layer of protection (non-stackable).*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklog1ftqa41ahe",
@@ -597,8 +574,9 @@ const MAP_DATA = {
       "y": 0.453582,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "Found hidden in the wall in a small cubby that can be jumped to.",
-      "color": "#593f62"
+      "desc": "Climb the wall here to find a hidden path leading to this item.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklpktbw4rv7dxm",
@@ -620,7 +598,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxr8i53nzikf",
-      "x": 0.778990,
+      "x": 0.77899,
       "y": 0.456299,
       "type": "Mkks2qeldcqyaeu",
       "title": "Friends",
@@ -684,7 +662,7 @@ const MAP_DATA = {
     {
       "id": "Mklmhtcins4u9i",
       "x": 0.298946,
-      "y": 0.461940,
+      "y": 0.46194,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
       "desc": "Found on one of the railways.\n\nContains 40.",
@@ -711,7 +689,7 @@ const MAP_DATA = {
     {
       "id": "Mklpz8k4crl3id7",
       "x": 0.321544,
-      "y": 0.462420,
+      "y": 0.46242,
       "type": "Mkks5pmnv7r87cp",
       "title": "Cryptic Curio",
       "desc": "",
@@ -725,15 +703,6 @@ const MAP_DATA = {
       "title": "Bell Tower Door",
       "desc": "Requires Bell Tower Visitor Pass.",
       "color": "#926c15"
-    },
-    {
-      "id": "Mklol88dy07abkw",
-      "x": 0.029099,
-      "y": 0.463661,
-      "type": "Mklo7etaznf2qu",
-      "title": "Coating Component",
-      "desc": "",
-      "color": "#593f62"
     },
     {
       "id": "Mkkxbi751szxcjf",
@@ -790,18 +759,9 @@ const MAP_DATA = {
       "color": "#926c15"
     },
     {
-      "id": "Mkkxfeyumd6b7g",
-      "x": 0.006445,
-      "y": 0.466753,
-      "type": "Mkkrxcctlrtd2qa",
-      "title": "Promenade Tower",
-      "desc": "",
-      "color": "#ff9b42"
-    },
-    {
       "id": "Mkkxmchvheellnj",
       "x": 0.393497,
-      "y": 0.467330,
+      "y": 0.46733,
       "type": "Mkks2qeldcqyaeu",
       "title": "Acat",
       "desc": "",
@@ -813,8 +773,9 @@ const MAP_DATA = {
       "y": 0.467964,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Examine the remains on the crumbling platform to receive the core.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp70z7pixsa7t",
@@ -830,18 +791,20 @@ const MAP_DATA = {
       "x": 0.132663,
       "y": 0.470618,
       "type": "Mkkryr9tzh06ueq",
-      "title": "Damage Upgrade",
-      "desc": "",
-      "color": "#593f62"
+      "title": "Forebears Legacy",
+      "desc": "Defeat Ancile & Targa, then follow the path to the east. You’ll find this in a room at the end.",
+      "color": "#593f62",
+      "subtitle": "Nav, Keeper of the Eye"
     },
     {
       "id": "Mkkytif6yp530ia",
       "x": 0.700988,
       "y": 0.470915,
       "type": "Mkkryr9tzh06ueq",
-      "title": "Damage Upgrade",
-      "desc": "",
-      "color": "#593f62"
+      "title": "Forebears Legacy",
+      "desc": "Found at the end of the area beyond the Energy Shield, as your reward for completing the platforming challenge.",
+      "color": "#593f62",
+      "subtitle": "Pip, Keeper of the Eye"
     },
     {
       "id": "Mkl0773muhwfawi",
@@ -894,8 +857,9 @@ const MAP_DATA = {
       "y": 0.477395,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "As you head down the path with the tangled vines, look for a platform above a bounce pad.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpxwkgt7c7omo",
@@ -939,13 +903,13 @@ const MAP_DATA = {
       "y": 0.481667,
       "type": "Mkkryd8c84zyyw9",
       "title": "Foolish Ideal",
-      "desc": "*Damage inflicted on enemies increases when Energy is not fully charged.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Damage inflicted on enemies increases when energy is not fully charged.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkln1wn9njqaa4h",
       "x": 0.260312,
-      "y": 0.482310,
+      "y": 0.48231,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -953,12 +917,12 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkvq0w66yjq57e",
-      "x": 0.206210,
+      "x": 0.20621,
       "y": 0.482568,
       "type": "Mkkryd8c84zyyw9",
       "title": "Sharpened Hairpin",
-      "desc": "*Grants the ability to slice enemies when using the Hairpin ability on them.*\n\n- Requires 40 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Grants the ability to slice enemies when pressing attack while using the Hairpin on them.*\n\n- Requires 40 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklmrib500nfqi9",
@@ -992,9 +956,10 @@ const MAP_DATA = {
       "x": 0.516082,
       "y": 0.484315,
       "type": "Mkkryr9tzh06ueq",
-      "title": "Damage Upgrade",
-      "desc": "",
-      "color": "#593f62"
+      "title": "Forebears Legacy",
+      "desc": "Starting from the walkway on L1, use the Striders to climb up the eastern wall to find to find this in a hidden area at the top of the room.",
+      "color": "#593f62",
+      "subtitle": "Gel, Keeper of the Eye"
     },
     {
       "id": "Mklpyoyudvvsj1",
@@ -1007,7 +972,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpyeiff79z4pt",
-      "x": 0.489980,
+      "x": 0.48998,
       "y": 0.484986,
       "type": "Mkks5pmnv7r87cp",
       "title": "Cryptic Curio",
@@ -1020,8 +985,9 @@ const MAP_DATA = {
       "y": 0.485347,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "You will need to obtain Striders to be able to walk up the wall that leads to this corridor.\n\nFrom there, use Hairpin and Harvester to get yourself across to the other side.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkloqc5tp33obmn",
@@ -1034,7 +1000,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllw79delo5fc",
-      "x": 0.277310,
+      "x": 0.27731,
       "y": 0.485222,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -1044,15 +1010,16 @@ const MAP_DATA = {
     {
       "id": "Mkkyt3v9sba3w8f",
       "x": 0.417583,
-      "y": 0.486000,
+      "y": 0.486,
       "type": "Mkkryr9tzh06ueq",
-      "title": "Damage Upgrade",
-      "desc": "",
-      "color": "#593f62"
+      "title": "Forebears Legacy",
+      "desc": "Climb up to the northeast corner of the room and “Absorb Tendrils” from Esi to receive this and permanently increase your damage.",
+      "color": "#593f62",
+      "subtitle": "Esi, Keeper of the Eye"
     },
     {
       "id": "Mkl0g78lgowpcka",
-      "x": 0.633460,
+      "x": 0.63346,
       "y": 0.486701,
       "type": "Mkks51x9f031zjt",
       "title": "Missing Shop NPC",
@@ -1069,18 +1036,9 @@ const MAP_DATA = {
       "color": "#926c15"
     },
     {
-      "id": "Mkl1pvbjrdqao2f",
-      "x": 0.034174,
-      "y": 0.487595,
-      "type": "Mkks00cdtqeamel",
-      "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
-    },
-    {
       "id": "Mkkz8tb6y74wtzc",
       "x": 0.226987,
-      "y": 0.487140,
+      "y": 0.48714,
       "type": "Mkks3yer4zvdfpn",
       "title": "Hall Of History Door",
       "desc": "Requires Old Fashioned Key.",
@@ -1106,7 +1064,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkz8m6u6tj35ua",
-      "x": 0.203260,
+      "x": 0.20326,
       "y": 0.487568,
       "type": "Mkks3yer4zvdfpn",
       "title": "Hall Of History Door",
@@ -1124,12 +1082,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl1f8umqm970g",
-      "x": 0.670080,
+      "x": 0.67008,
       "y": 0.489766,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Drop down to the right of the Nacre Basin to find this Mechanized Remains.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp7opphsr3uko",
@@ -1142,7 +1101,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklox8zm1xnej7",
-      "x": 0.433720,
+      "x": 0.43372,
       "y": 0.489839,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
@@ -1151,7 +1110,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllrvo5ggjruru",
-      "x": 0.784440,
+      "x": 0.78444,
       "y": 0.491977,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -1160,7 +1119,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmsaz1xvjnguk",
-      "x": 0.583570,
+      "x": 0.58357,
       "y": 0.493322,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
@@ -1182,8 +1141,9 @@ const MAP_DATA = {
       "y": 0.494357,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Speak to the NPC nearby.",
-      "color": "#344f6e"
+      "desc": "Speak to Poncia to receive an Old Core.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmyg9pei2wazo",
@@ -1205,7 +1165,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxaexttxlbvjo",
-      "x": 0.270920,
+      "x": 0.27092,
       "y": 0.496236,
       "type": "Mkkrxcctlrtd2qa",
       "title": "City Gates",
@@ -1236,8 +1196,9 @@ const MAP_DATA = {
       "y": 0.497274,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "",
-      "color": "#593f62"
+      "desc": "Keep to the right as you drop down here to find a hidden path leading to this item.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mkkyaw50rc4tb8i",
@@ -1260,7 +1221,7 @@ const MAP_DATA = {
     {
       "id": "Mkl002ylrey89g",
       "x": 0.192313,
-      "y": 0.497940,
+      "y": 0.49794,
       "type": "Mkks3hlp29dyho",
       "title": "Old Fashioned Key",
       "desc": "Found after defeating Calderon.",
@@ -1331,7 +1292,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmdxcm40aer783",
-      "x": 0.469350,
+      "x": 0.46935,
       "y": 0.509484,
       "type": "Mkks4lifcmich7k",
       "title": "Rad",
@@ -1340,7 +1301,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl04n7phujxxq9",
-      "x": 0.530580,
+      "x": 0.53058,
       "y": 0.509562,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
@@ -1350,11 +1311,12 @@ const MAP_DATA = {
     {
       "id": "Mkkwxm3xnc3qrpq",
       "x": 0.529216,
-      "y": 0.509580,
+      "y": 0.50958,
       "type": "Mkkry1hb53dx6a",
       "title": "Dodge",
-      "desc": "*Allows Mio to dodge projectiles and attacks.*",
-      "color": "#593f62"
+      "desc": "*Allows Mio to dodge projectiles and attacks.*\n\nOnce you have the Aviaries Passepartout from Feral Undergrowth, head through and interact with the Strange Tube.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mkmdx12bx5rhxeh",
@@ -1363,7 +1325,7 @@ const MAP_DATA = {
       "type": "Mkkryd8c84zyyw9",
       "title": "Analyzer",
       "desc": "Given to Mio by Rad after rescuing them.\n\n*Displays enemies' remaining health.*\n\n- Requires 5 Modifier slots.",
-      "color": "#593f62"
+      "color": "#d4b106"
     },
     {
       "id": "Mkllot10i85fdcn",
@@ -1395,7 +1357,7 @@ const MAP_DATA = {
     {
       "id": "Mkkz6ij6ki3lu2h",
       "x": 0.703851,
-      "y": 0.517460,
+      "y": 0.51746,
       "type": "Mkks3yer4zvdfpn",
       "title": "Door To Vaults Lift",
       "desc": "Requires Dr Hayln's Assistant Credentials.",
@@ -1416,8 +1378,8 @@ const MAP_DATA = {
       "y": 0.517143,
       "type": "Mkkryd8c84zyyw9",
       "title": "Nacre Overload",
-      "desc": "*Damage increases for each Nacre Droplet carried. Each attack dealt on an enemy will use Droplets, but all Droplets will be returned when the enemy is defeated.*\n\n- Requires 30 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Damage inflicted on enemies increases for each Nacre Droplet carried. Each attack dealt to an enemy will use Droplets, but all Droplets will be recovered when the enemy dies. There is no limit, however the benefit decreases exponentially.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkktiyiyjpjw504",
@@ -1425,17 +1387,17 @@ const MAP_DATA = {
       "y": 0.518417,
       "type": "Mkkryd8c84zyyw9",
       "title": "The Hand's Greed",
-      "desc": "*Damage inflicted on enemies increases for each layer of protection that Mio has lost.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Damage inflicted on enemies increases for each layer of protection Mio has already lost.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkme2bjwi6chgkg",
-      "x": 0.434900,
+      "x": 0.4349,
       "y": 0.518676,
       "type": "Mkkryd8c84zyyw9",
       "title": "Protective Overlay",
       "desc": "Defeat all the enemies to open the closed container.\n\n*Grants an additional layer of protection.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "color": "#d4b106"
     },
     {
       "id": "Mklmp0hoqa0m7g",
@@ -1452,13 +1414,14 @@ const MAP_DATA = {
       "y": 0.520893,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Search the Mechanized Remains to get this Old Core, sat next to the flower bud shortcut.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmeg2y52erk97",
       "x": 0.306346,
-      "y": 0.520770,
+      "y": 0.52077,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
       "desc": "Contains 280.",
@@ -1470,8 +1433,8 @@ const MAP_DATA = {
       "y": 0.521827,
       "type": "Mkkryd8c84zyyw9",
       "title": "Bird of Prey",
-      "desc": "*Temporarily increases damage to enemies while using the Sail ability.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Damage inflicted on enemies temporarily increases while using the Sail.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkme442e2zcuwhi",
@@ -1515,13 +1478,14 @@ const MAP_DATA = {
       "y": 0.524978,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Use the nearby enemy to harvest energy and regain jumps to real the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Use Hairline to grapple onto the floating enemy and propel yourself up to this platform. Scavenge the core from the remains.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxry49rx6k8ng",
       "x": 0.723924,
-      "y": 0.525330,
+      "y": 0.52533,
       "type": "Mkks2qeldcqyaeu",
       "title": "Lombre",
       "desc": "",
@@ -1533,8 +1497,9 @@ const MAP_DATA = {
       "y": 0.525053,
       "type": "Mkkry1hb53dx6a",
       "title": "Striders",
-      "desc": "*Allows Mio to cling to walls and other surfaces.*",
-      "color": "#593f62"
+      "desc": "*Allows Mio to cling to walls and other surfaces.*\n\nInteract with the Strange Tube and complete the tutorial to obtain the ability.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mkl1c9po1dvyoui",
@@ -1542,8 +1507,9 @@ const MAP_DATA = {
       "y": 0.525157,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Drop down the nearby shaft while hugging the left wall to find a secret path.\n\nMake your way to the far west and you’ll find mechanical remains containing the Old Core on the pipes.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl05k0z9y23nhd",
@@ -1560,8 +1526,8 @@ const MAP_DATA = {
       "y": 0.525503,
       "type": "Mkkryd8c84zyyw9",
       "title": "Kinetic Thrust",
-      "desc": "*The last attack of a the combo deals additional damage.*\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*The last attack of a the combo deals more damage.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklp9he03tk0kcr",
@@ -1574,12 +1540,12 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkt1g2gz889w4r",
-      "x": 0.552160,
+      "x": 0.55216,
       "y": 0.528125,
       "type": "Mkkryd8c84zyyw9",
       "title": "Asma's Will",
-      "desc": "Located hidden inside a small room in the wall just above the dangerous purple plants.\n\n*Makes it so enemies (excluding bosses) refuse to attack Mio unless she attacks them first.*\n\n- Requires 30 Modifier slots.",
-      "color": "#593f62"
+      "desc": "Located hidden inside a small room in the wall just above the dangerous purple plants.\n\n*Enemies (bosses excluded) don't attack Mio as long as she doesn't strike first.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mkme6j5vaifzjzf",
@@ -1591,22 +1557,14 @@ const MAP_DATA = {
       "color": "#344f6e"
     },
     {
-      "id": "Mklpn26q32b6ba",
-      "x": 0.001212,
-      "y": 0.528770,
-      "type": "Mkkrxjyx2fo5gm9",
-      "title": "Elevator",
-      "desc": "",
-      "color": "#ff9b42"
-    },
-    {
       "id": "Mkloaoejpjmzqnd",
       "x": 0.608053,
       "y": 0.528571,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "Found behind the wall next to the bouncy mushroom.",
-      "color": "#593f62"
+      "desc": "Go west in the room to the right when you find a bounce pad to reach this ledge.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklpkan1fyvxmto",
@@ -1637,7 +1595,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmoh456sjuym",
-      "x": 0.617700,
+      "x": 0.6177,
       "y": 0.531305,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
@@ -1664,7 +1622,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmej2xnmd9u72f",
-      "x": 0.476420,
+      "x": 0.47642,
       "y": 0.532289,
       "type": "Mkks3hlp29dyho",
       "title": "Silo Access Badge",
@@ -1677,8 +1635,9 @@ const MAP_DATA = {
       "y": 0.532502,
       "type": "Mkkry1hb53dx6a",
       "title": "Harvester",
-      "desc": "Found in a hidden area past the Crow boss fight.\n\n*Allows Mio to refill energy after striking an enemy or object.*",
-      "color": "#593f62"
+      "desc": "*Allows Mio to refill energy after striking an enemy or object.*\n\nAfter defeating Crow, exit to the west and follow the path down to another Samsk tube, where you will learn the Harvester ability.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mkl1g69v31pw9kk",
@@ -1686,12 +1645,13 @@ const MAP_DATA = {
       "y": 0.533422,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "User Striders to bypass the airflow and reach the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Found on the mechanical remains inside the glass orb-like structure. Requires the Striders ability to reach.\n\nMake your way up the wind jet and then hold the Strider ability to cross to the right, where you’ll find the core.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpjxd21oz8yr",
-      "x": 0.328630,
+      "x": 0.32863,
       "y": 0.533962,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
@@ -1701,7 +1661,7 @@ const MAP_DATA = {
     {
       "id": "Mklpmp5esy31tyl",
       "x": 0.474152,
-      "y": 0.538080,
+      "y": 0.53808,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
       "desc": "",
@@ -1709,8 +1669,8 @@ const MAP_DATA = {
     },
     {
       "id": "Mkme75g2ku2myx",
-      "x": 0.465800,
-      "y": 0.539010,
+      "x": 0.4658,
+      "y": 0.53901,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
       "desc": "",
@@ -1723,7 +1683,7 @@ const MAP_DATA = {
       "type": "Mkkryd8c84zyyw9",
       "title": "Enhanced Dodge",
       "desc": "*Dodging attacks has increased timing.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "color": "#d4b106"
     },
     {
       "id": "Mkl1i5k2qwu31pp",
@@ -1731,8 +1691,9 @@ const MAP_DATA = {
       "y": 0.539041,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Go through the vent in the top left corner of the previous room.",
-      "color": "#344f6e"
+      "desc": "Requires the Strider ability to reach it.\n\nFrom the east end of the red room, jump and use the Strider ability to grapple the ceiling. Go west and up onto the icy ledge and then head east to the Core.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkygh3xrq2xztx",
@@ -1746,7 +1707,7 @@ const MAP_DATA = {
     {
       "id": "Mkkxt9qbj6qs1ss",
       "x": 0.293901,
-      "y": 0.539850,
+      "y": 0.53985,
       "type": "Mkks2qeldcqyaeu",
       "title": "Poltergates",
       "desc": "",
@@ -1800,7 +1761,7 @@ const MAP_DATA = {
     {
       "id": "Mkmdj1xutvrj4x",
       "x": 0.460585,
-      "y": 0.551090,
+      "y": 0.55109,
       "type": "Mkks2qeldcqyaeu",
       "title": "Egis",
       "desc": "",
@@ -1826,12 +1787,12 @@ const MAP_DATA = {
     },
     {
       "id": "Mkktxz4y4kcuoh",
-      "x": 0.623180,
+      "x": 0.62318,
       "y": 0.552518,
       "type": "Mkkryd8c84zyyw9",
       "title": "Defense Mechanism",
-      "desc": "Attack the flowers while jumping to regain a jump charge to cross the distance.\n\n*Creates an explosion around Mio when she takes a hit.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "desc": "Attack the flowers while jumping to regain a jump charge to cross the distance.\n\n*Creates an explosion around Mio whenever she takes a hit.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklpm5iuyfu57f",
@@ -1844,7 +1805,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllumuac0mqlq7",
-      "x": 0.222810,
+      "x": 0.22281,
       "y": 0.554906,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -1853,8 +1814,8 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmdum7ybvj3e5n",
-      "x": 0.499560,
-      "y": 0.555210,
+      "x": 0.49956,
+      "y": 0.55521,
       "type": "Mklonkcrqpz0ly",
       "title": "Crystallizer",
       "desc": "",
@@ -1872,11 +1833,12 @@ const MAP_DATA = {
     {
       "id": "Mkkxhyspbeu00at",
       "x": 0.100162,
-      "y": 0.556210,
-      "type": "Mkkry1hb53dx6a",
+      "y": 0.55621,
+      "type": "Mkkrxcctlrtd2qa",
       "title": "Redacted #1",
-      "desc": "",
-      "color": "#593f62"
+      "desc": "Just past the large fan in the central room.",
+      "color": "#ff9b42",
+      "subtitle": ""
     },
     {
       "id": "Mklp0l5g236i4gr",
@@ -1889,12 +1851,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmeh92936y0aqh",
-      "x": 0.569730,
+      "x": 0.56973,
       "y": 0.559476,
       "type": "Mklo7etaznf2qu",
-      "title": "Coating Compound",
-      "desc": "",
-      "color": "#593f62"
+      "title": "Coating Component",
+      "desc": "Examine the object on the ground here to obtain a Coating Component. You’ll need the Hairpin to reach this area.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklmqofkbidsslo",
@@ -1915,22 +1878,14 @@ const MAP_DATA = {
       "color": "#926c15"
     },
     {
-      "id": "Mkkydxuaua8t4sd",
-      "x": 0.078875,
-      "y": 0.565109,
-      "type": "Mkks0setaahiv85",
-      "title": "Candle",
-      "desc": "Use wall climb and glide to reach.",
-      "color": "#344f6e"
-    },
-    {
       "id": "Mkmegpgc19lxpxb",
       "x": 0.584431,
       "y": 0.564854,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found just outside the path leading west. Obtained by salvaging the Mechanized Remains.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklllded2xswqmn",
@@ -1960,15 +1915,6 @@ const MAP_DATA = {
       "color": "#926c15"
     },
     {
-      "id": "Mkkxg7vfurm8dsk",
-      "x": 0.046164,
-      "y": 0.568198,
-      "type": "Mkkrxcctlrtd2qa",
-      "title": "Redacted #2",
-      "desc": "",
-      "color": "#ff9b42"
-    },
-    {
       "id": "Mklmq3mr2gppt5b",
       "x": 0.364669,
       "y": 0.567921,
@@ -1983,8 +1929,9 @@ const MAP_DATA = {
       "y": 0.568093,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Located at the end of the hall. Take the path opposite the shortcut to the east to reach it.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmeg3flt9a2ndp",
@@ -1994,15 +1941,6 @@ const MAP_DATA = {
       "title": "Traveller's Log",
       "desc": "",
       "color": "#926c15"
-    },
-    {
-      "id": "Mkkvycanu63yeji",
-      "x": 0.742801,
-      "y": 0.570172,
-      "type": "Mkkryd8c84zyyw9",
-      "title": "Split Process",
-      "desc": "*Increases the number of Modifier slots, but energy recharges more slowly.*\n\n- Adds 15 Modifier slots.",
-      "color": "#593f62"
     },
     {
       "id": "Mkllv2o8s50ld8j",
@@ -2015,7 +1953,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkzxttp83d8k2",
-      "x": 0.790930,
+      "x": 0.79093,
       "y": 0.570707,
       "type": "Mkks3yer4zvdfpn",
       "title": "Locked Access Door",
@@ -2032,31 +1970,14 @@ const MAP_DATA = {
       "color": "#344f6e"
     },
     {
-      "id": "Mklpnrdo09a7yfq",
-      "x": 0.001388,
-      "y": 0.572057,
-      "type": "Mkkrxjyx2fo5gm9",
-      "title": "Elevator",
-      "desc": "",
-      "color": "#ff9b42"
-    },
-    {
-      "id": "Mklq4o0y1r793a",
-      "x": 0.038177,
-      "y": 0.572183,
-      "type": "Mkks5pmnv7r87cp",
-      "title": "Fragmented Serial Number",
-      "desc": "",
-      "color": "#926c15"
-    },
-    {
       "id": "Mkl1qervljhlgb",
       "x": 0.306635,
       "y": 0.571645,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Located in the top-right corner of the room. You’ll need the Strider ability to climb the walls whilst you jump across the room from ledge to ledge.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkzx18uua1fvst",
@@ -2082,17 +2003,18 @@ const MAP_DATA = {
       "y": 0.573426,
       "type": "Mkkry1hb53dx6a",
       "title": "Hairpin",
-      "desc": "Allows Mio to grapple Energy Shards.",
-      "color": "#593f62"
+      "desc": "*Allows Mio to grapple Energy Shards.*\n\nInteract with the Strange Tube and complete the short tutorial sequence to obtain Hairpin.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mkkvcss2bhkm6wp",
-      "x": 0.352660,
+      "x": 0.35266,
       "y": 0.573867,
       "type": "Mkkryd8c84zyyw9",
       "title": "Imperfect Focus",
-      "desc": "Found on the ledge above the frost blasters. Players need to time dodges and jumps to reach it.\n\n*Increases the number of modifier slots available on Mio but the timing for dodging attacks is reduced.*\n\n- Adds 5 Modifier slots.",
-      "color": "#593f62"
+      "desc": "Found on the ledge above the frost blasters. Players need to time dodges and jumps to reach it.\n\n*Increases the number of modifier slots, but the timing for dodging attacks is reduced.*\n\n- Adds 5 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklq3vhnb6v5x7j",
@@ -2118,13 +2040,14 @@ const MAP_DATA = {
       "y": 0.576708,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "",
-      "color": "#593f62"
+      "desc": "Instead of using the Grapple Point to continue to the southeast, instead, use it to reach the ledge above, where you can find this item.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklpjkgd6y6m0nq",
       "x": 0.228658,
-      "y": 0.576320,
+      "y": 0.57632,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
       "desc": "",
@@ -2160,7 +2083,7 @@ const MAP_DATA = {
     {
       "id": "Mklq8auu05hyewp",
       "x": 0.129592,
-      "y": 0.579560,
+      "y": 0.57956,
       "type": "Mkks5pmnv7r87cp",
       "title": "Fragmented Serial Number",
       "desc": "Go in the hole beneath the moving red pipes and all the way left.",
@@ -2186,7 +2109,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl0pxghmlx9vjo",
-      "x": 0.620850,
+      "x": 0.62085,
       "y": 0.579879,
       "type": "Mkks4lifcmich7k",
       "title": "Personal Assistant",
@@ -2248,15 +2171,6 @@ const MAP_DATA = {
       "color": "#344f6e"
     },
     {
-      "id": "Mklmiglgplrcl7",
-      "x": 0.046311,
-      "y": 0.581636,
-      "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 140.",
-      "color": "#344f6e"
-    },
-    {
       "id": "Mkl066odng295g",
       "x": 0.441242,
       "y": 0.581647,
@@ -2271,8 +2185,9 @@ const MAP_DATA = {
       "y": 0.582381,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "Inside the container, will only open after boss fight.",
-      "color": "#593f62"
+      "desc": "Located inside the container. Must defeat the enemies in the Combat Room to open it.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mkllu3n9pvrno2v",
@@ -2285,21 +2200,12 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl17eyjlz408bb",
-      "x": 0.333160,
+      "x": 0.33316,
       "y": 0.585023,
       "type": "Mkks46bz1m9o43",
       "title": "Fan Switch",
       "desc": "",
       "color": "#926c15"
-    },
-    {
-      "id": "Mkktg7mcin9otr",
-      "x": 0.189990,
-      "y": 0.587869,
-      "type": "Mkkryd8c84zyyw9",
-      "title": "Afterimage",
-      "desc": "*Using the Hairpin generates a Decoy that enemies will target instead of Mio. The Decoy will explode after a short period of time.*\n\n- Requires 30 Modifier slots.",
-      "color": "#593f62"
     },
     {
       "id": "Mklmzipbgri7ijo",
@@ -2321,7 +2227,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmfcgvtmzpdcd",
-      "x": 0.208830,
+      "x": 0.20883,
       "y": 0.597805,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -2366,7 +2272,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklndlr40vmksr",
-      "x": 0.057480,
+      "x": 0.05748,
       "y": 0.723317,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
@@ -2412,7 +2318,7 @@ const MAP_DATA = {
     {
       "id": "Mklnd8lbr747gnp",
       "x": 0.030357,
-      "y": 0.741990,
+      "y": 0.74199,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -2420,17 +2326,17 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkvw6l94fe4sco",
-      "x": 0.653510,
+      "x": 0.65351,
       "y": 0.743153,
       "type": "Mkkryd8c84zyyw9",
       "title": "Splintering Dodge",
-      "desc": "*Dodging an attack generates an Energy shard.*\n\n- Requires 30 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Dodging an attack generates an Energy Shard.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklnccrd0irp15s",
       "x": 0.133003,
-      "y": 0.745350,
+      "y": 0.74535,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -2474,8 +2380,8 @@ const MAP_DATA = {
     },
     {
       "id": "Mkln30hx89izlxr",
-      "x": 0.648630,
-      "y": 0.751600,
+      "x": 0.64863,
+      "y": 0.7516,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -2492,7 +2398,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklnb7mocdxu8e",
-      "x": 0.164140,
+      "x": 0.16414,
       "y": 0.753199,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
@@ -2511,11 +2417,11 @@ const MAP_DATA = {
     {
       "id": "Mkkuixzf4yq9vh4",
       "x": 0.671793,
-      "y": 0.757400,
+      "y": 0.7574,
       "type": "Mkkryd8c84zyyw9",
-      "title": "High Risk Voucher",
+      "title": "High-Risk Voucher",
       "desc": "*Allows purchase of an extra layer of protection (non-stackable) at Nacre Basins.*\n\n- Requires 20 Modifier slots.",
-      "color": "#593f62"
+      "color": "#d4b106"
     },
     {
       "id": "Mkl06rlt8eyilp",
@@ -2532,17 +2438,19 @@ const MAP_DATA = {
       "y": 0.757808,
       "type": "Mkkry1hb53dx6a",
       "title": "Slingshot",
-      "desc": "*Creates a powerful energy blast capable of clearing rubble when hitting Energy Shards.*",
-      "color": "#593f62"
+      "desc": "*Creates a powerful energy blast capable of clearing rubble when hitting Energy Shards.*\n\nOpen the Strange Tube and complete the tutorial sequence to acquire the Slingshot ability.",
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "Mklogz7a5dmz4g8",
-      "x": 0.756270,
+      "x": 0.75627,
       "y": 0.757945,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "Climb the drawers with the Striders. It's found in the back of the drawer up top.",
-      "color": "#593f62"
+      "desc": "Use the Striders to spider-walk up the east side of the room. Towards the top is an open drawer. You’ll find this inside.",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklnaolnf1n89vd",
@@ -2586,8 +2494,9 @@ const MAP_DATA = {
       "y": 0.763058,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
-      "desc": "",
-      "color": "#593f62"
+      "desc": "Found on a platform at the top of the waterfall (Flowing Steps required).",
+      "color": "#593f62",
+      "subtitle": ""
     },
     {
       "id": "Mklot5f3fsrw2ip",
@@ -2619,7 +2528,7 @@ const MAP_DATA = {
     {
       "id": "Mkllywqh5am8zim",
       "x": 0.680725,
-      "y": 0.766360,
+      "y": 0.76636,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
       "desc": "Contains 40.",
@@ -2627,7 +2536,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxjnss02ozc5e",
-      "x": 0.712450,
+      "x": 0.71245,
       "y": 0.766951,
       "type": "Mkkrxcctlrtd2qa",
       "title": "Vaults",
@@ -2658,13 +2567,14 @@ const MAP_DATA = {
       "y": 0.773158,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Climb the wall to the right of the pump with the Striders to find this item.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxtpo2xnrw6qf",
       "x": 0.778566,
-      "y": 0.779910,
+      "y": 0.77991,
       "type": "Mkks2qeldcqyaeu",
       "title": "Sawlong",
       "desc": "",
@@ -2682,7 +2592,7 @@ const MAP_DATA = {
     {
       "id": "Mkl12v16jaj6xra",
       "x": 0.685535,
-      "y": 0.780500,
+      "y": 0.7805,
       "type": "Mkks46bz1m9o43",
       "title": "Pump Level Switch",
       "desc": "",
@@ -2739,8 +2649,9 @@ const MAP_DATA = {
       "y": 0.798741,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Enter Pipe E and follow it to the end.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklq2z3zdh36wc",
@@ -2766,8 +2677,9 @@ const MAP_DATA = {
       "y": 0.801302,
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
-      "desc": "Inside the mechanical remains.",
-      "color": "#344f6e"
+      "desc": "Drop down from the gap in the pipes above, and examine the remains.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpc5dklexqmpi",
@@ -2829,8 +2741,8 @@ const MAP_DATA = {
       "y": 0.814452,
       "type": "Mkkryd8c84zyyw9",
       "title": "Extra-Coating Processor",
-      "desc": "*Creates an extra layer of protection (non-stackable) for every three enemies defeated.*\n\nRequires 30 Modifier slots.",
-      "color": "#593f62"
+      "desc": "*Creates an extra layer of protection (non-stackable) for every three enemies defeated.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
     },
     {
       "id": "Mklqb5oiqhhs4a5",
@@ -2871,7 +2783,7 @@ const MAP_DATA = {
     {
       "id": "Mkl0j96c5kz9if9",
       "x": 0.397854,
-      "y": 0.823620,
+      "y": 0.82362,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
       "desc": "",
@@ -2897,7 +2809,7 @@ const MAP_DATA = {
     },
     {
       "id": "Mklm55r8b148zao",
-      "x": 0.664510,
+      "x": 0.66451,
       "y": 0.825597,
       "type": "Mkkrzn92hipumfv",
       "title": "Crystallized Nacre",
@@ -2905,18 +2817,9 @@ const MAP_DATA = {
       "color": "#344f6e"
     },
     {
-      "id": "Mkkv5vmymow168",
-      "x": 0.687362,
-      "y": 0.827580,
-      "type": "Mkkryd8c84zyyw9",
-      "title": "High Voltage Discharge",
-      "desc": "After a short delay, the next attack will automatically stun the target.\n\nRequires 20 Modifier slots.",
-      "color": "#593f62"
-    },
-    {
       "id": "Mkln55opjelxp8",
       "x": 0.329456,
-      "y": 0.829460,
+      "y": 0.82946,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
       "desc": "",
@@ -2984,6 +2887,637 @@ const MAP_DATA = {
       "title": "Severed Fingertip",
       "desc": "Used to control the Wheel located above the Lab Attune Station.",
       "color": "#926c15"
+    },
+    {
+      "id": "mmu9cssr4a3aia",
+      "x": 0.805917489884766,
+      "y": 0.46208826524248414,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Promenade Tower",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmu9ct9pt71rx2",
+      "x": 0.7997395067543291,
+      "y": 0.5287305185799731,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmu9ctuoeyj1d4",
+      "x": 0.799936956499265,
+      "y": 0.570703672345465,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmu9cuawame616",
+      "x": 0.8370048552818857,
+      "y": 0.5699548829821225,
+      "type": "Mkks5pmnv7r87cp",
+      "title": "Fragmented Serial Number",
+      "desc": "",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmu9cv1c7ez6vy",
+      "x": 0.8444933196824151,
+      "y": 0.5794395482511283,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallized Nacre",
+      "desc": "Contains 140.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmu9cvmvfl6rj0",
+      "x": 0.8444933196824151,
+      "y": 0.5657117432565145,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Redacted #2",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmu9cw77t7uyl5",
+      "x": 0.8763192933846652,
+      "y": 0.5639645680753819,
+      "type": "Mkks0setaahiv85",
+      "title": "Candle",
+      "desc": "Use wall climb and glide to reach.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmu9d05l3smb06",
+      "x": 0.828048919625458,
+      "y": 0.4584844584138559,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "desc": "In a small cave on the east side of the room.",
+      "color": "#593f62",
+      "subtitle": ""
+    },
+    {
+      "id": "mmu9ddtunz1nry",
+      "x": 0.18404040374943545,
+      "y": 0.475719932641246,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Counter Measures",
+      "desc": "*Dodging an attack applies the \"targeted\" status to the enemy.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dg87xjv4t0",
+      "x": 0.18745949078567475,
+      "y": 0.5855056231201882,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Afterimage",
+      "desc": "*Using the Hairpin generates a decoy that enemies will target first. The decoy explodes after a short delay.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dh7hr2haut",
+      "x": 0.26646381447478046,
+      "y": 0.36178654664339777,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Black Widow",
+      "desc": "*Damage inflicted on enemies temporarily increases while using the Striders.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dhzql4jq51",
+      "x": 0.492462972165446,
+      "y": 0.7422573997518207,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Oath to Ember",
+      "desc": "*Increases the number of modifier slots, but the damage received in combat are doubled.*\n\n- Adds 25 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9djqzrdxbtm",
+      "x": 0.6886447955330471,
+      "y": 0.8256259964892672,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "High-Voltage Discharge",
+      "desc": "*After a short delay, the next attack will automatically stun the target.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dp7yd891wk",
+      "x": 0.5013182666011876,
+      "y": 0.4567656843167823,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Defective Core",
+      "desc": "Acquired after delivering all Candles to the Shard of the Eye.\n\nEquip it to gain entry to The Pit.\n\n*Increases the number of modifier slots, but disables the Protective Coat entirely.*\n\n- Adds 35 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dsqz9t7if5",
+      "x": 0.6344224586182602,
+      "y": 0.43295652252924893,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Perfect State",
+      "desc": "Give Xelato 10,000 Nacre to receive this.\n\n*High increase to the damage inflicted on enemies when all layers of protection are active.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dtpl14w33s",
+      "x": 0.7215478617398043,
+      "y": 0.3897571361825621,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Alexander's Fate",
+      "desc": "*Nacre Droplets are no longer lost upon death.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dvg3b6ypdu",
+      "x": 0.7441796088544635,
+      "y": 0.5665102182828584,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Split Process",
+      "desc": "*Increases the number of Modifier slots, but energy recharges more slowly.*\n\n- Adds 15 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dx3i625u58",
+      "x": 0.5761920853592063,
+      "y": 0.5085458381749689,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Resource's Shortage",
+      "desc": "*Increases the number of modifier slots, but enemies drop fewer Nacre Droplets when defeated.*\n\n- Adds 5 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dxo9eqz3l0",
+      "x": 0.6029826574137305,
+      "y": 0.480221275529335,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Nacre Drought",
+      "desc": "*Increases the number of modifier slots, but Nacre Basins stay dry.*\n\n- Adds 15 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dy8n8fk1ru",
+      "x": 0.6117816030843526,
+      "y": 0.47972208262044,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Energy Leecher",
+      "desc": "*Large increase to energy recovered when attacking an enemy.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9dyy349j35z",
+      "x": 0.6488495018669732,
+      "y": 0.4951970627961865,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Glitch Trail",
+      "desc": "*Leaves a trail that hurts enemies after using the Hairpin on any target.*\n\n- Requires 30 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e08dg51da3",
+      "x": 0.47658142901840767,
+      "y": 0.5354341352994552,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Maintenance Hack",
+      "desc": "Purchase from Mel's Workshop.\n\n*The Protective Coat repair at Nacre Basins is free.*\n\n- Requires 10 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e0yfn9t5ns",
+      "x": 0.47647613580860126,
+      "y": 0.5407000941757742,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Effective Dismantlement",
+      "desc": "Purchase from Mel's Workshop.\n\n*Enemies leak a lot more Nacre Droplets when dying.*\n\n- Requires 20 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e1l3muo4n8",
+      "x": 0.47647613580860126,
+      "y": 0.5455000259920727,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Thinner Frame",
+      "desc": "Can be purchased from Mel's Workshop after saving one Scrapling.\n\n*Increases the number of modifier slots, but removes one layer of protection.*\n\n- Adds 15 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9ect3ohkfa6",
+      "x": 0.47662014473938075,
+      "y": 0.5504919550810232,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Reduced Latency",
+      "desc": "Can be purchased from Mel's Workshop after saving one Scrapling.\n\n*Quicker recovery after getting hit.*\n\n- Requires 5 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e2eeoo40ic",
+      "x": 0.4766657100651352,
+      "y": 0.555477134265857,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Defragmentation",
+      "desc": "Can be purchased from Mel's Workshop after saving two Scraplings.\n\n*Getting hit by an enemy generates an Energy Shard.*\n\n- Requires 10 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e2zfqokll4",
+      "x": 0.4765217011343557,
+      "y": 0.5604690633548075,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Pain Conversion",
+      "desc": "Can be purchased from Mel's Workshop after saving two Scraplings.\n\n*Energy Recharges when taking damage.*\n\n- Requires 5 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e3mgpp3r4n",
+      "x": 0.4765217011343557,
+      "y": 0.5654609924437579,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Portable Crystallizer",
+      "desc": "Can be purchased from Mel's Workshop after saving two Scraplings.\n\n*Converts some Nacre Droplets dropped by enemies into Crystallised Nacre.*\n\n- Requires 10 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e480wpfbbc",
+      "x": 0.4768097189959145,
+      "y": 0.5702609242600566,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "The Heart's Favorite",
+      "desc": "Can be purchased from Mel's Workshop after saving two Scraplings.\n\n*Energy recharges quicker when on the ground.*\n\n- Requires 10 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmu9e7hhckxa34",
+      "x": 0.4768097189959145,
+      "y": 0.575252853349007,
+      "type": "Mkkryd8c84zyyw9",
+      "title": "Gratitude",
+      "desc": "Purchase from Mel's Workshop after rescuing her Debby in the Lab.\n\n*Restores an extra layer of protection (non-stackable) when Mio stays on the ground for a short time.*\n\n- Requires 40 Modifier slots.",
+      "color": "#d4b106"
+    },
+    {
+      "id": "mmua87tcgs8u2c",
+      "x": 0.28297908891969065,
+      "y": 0.8512905181892888,
+      "type": "Mkkryr9tzh06ueq",
+      "title": "Forebears Legacy",
+      "desc": "From the surface, head down to the very bottom of The Pit to the lake. Go as far east as you can, then scale the walls to find a cavern beneath the exit. Lou can be found against the eastern wall, past the elevator.",
+      "color": "#593f62",
+      "subtitle": "Lou, Keeper of the Eye"
+    },
+    {
+      "id": "mmuas93bhhsoku",
+      "x": 0.18974487304724535,
+      "y": 0.4454233862112154,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Located next to the Energy Shield after the platforming section accessed above.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasa3tp87kca",
+      "x": 0.37977690825036314,
+      "y": 0.5022683267270677,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Drop down from the platforms above to grab this.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasc5na6m8i1",
+      "x": 0.4774073822434913,
+      "y": 0.5381983449697995,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component (x6)",
+      "subtitle": "",
+      "desc": "With each of the three Scraplings you find (check the NPC category in the map filter for help) and return to Mel, two Coating Components will unlock for purchase.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasdrnjped2l",
+      "x": 0.5184458514253854,
+      "y": 0.5238325149934617,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Resting on a branch on the eastern wall. Drop down using the gap in the walkway above to reach it.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasgcb3i826l",
+      "x": 0.5930358241149362,
+      "y": 0.5296961026474671,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Located inside the room behind the Energy Shield to the east.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuash1mu1n71a",
+      "x": 0.638077821757661,
+      "y": 0.5379559633109345,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Use the flowers to get over the water pit to reach this item.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuask1g5077rw",
+      "x": 0.21943284232041846,
+      "y": 0.8258306922587904,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "Look above the Network Gate to find a narrow path through the rocks, into a small space above. You’ll find the component inside.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasny1m2cyjw",
+      "x": 0.6128668670188493,
+      "y": 0.7762018196046372,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "You need to Splintering Dodge active to create an energy Shard to break through the wall from the east. You may break thrugh the wall on the west, too.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasomdjxylxi",
+      "x": 0.835511912827793,
+      "y": 0.7904221743144446,
+      "type": "Mklo7etaznf2qu",
+      "title": "Coating Component",
+      "subtitle": "",
+      "desc": "On the floor in the upper section of the room.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuaspf5m4zmj2",
+      "x": 0.25054188782124776,
+      "y": 0.5723262458876084,
+      "type": "Mmua9n0ek8he79",
+      "title": "Modifier Extension",
+      "subtitle": "",
+      "desc": "Located at the end of the platform. You’ll need to go around and up the wind jet to access this room.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuasrcg0ihw8m",
+      "x": 0.47740904230725595,
+      "y": 0.5431049495838278,
+      "type": "Mmua9n0ek8he79",
+      "title": "Modifier Extension (x5)",
+      "subtitle": "",
+      "desc": "Five Mod Extensions can be purchased from Mel. Two are available from the off, but you must track down Mel’s three Scraplings (check the NPC category in the map filter) to unlock the other three.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuassjapssr9m",
+      "x": 0.7703742752784302,
+      "y": 0.40102373879263137,
+      "type": "Mmua9n0ek8he79",
+      "title": "Modifier Extension",
+      "subtitle": "",
+      "desc": "In the southeast corner of the room.",
+      "color": "#593f62"
+    },
+    {
+      "id": "mmuat50yl0k3eo",
+      "x": 0.041345385311165855,
+      "y": 0.48451509446843316,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Scavenge the remains on the bridge to find the core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuat5jku3bg9l",
+      "x": 0.11746726294013476,
+      "y": 0.538607737067024,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Use the bombs to reach the upper walkway and examine the remains to receive the core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuat7tacjnatr",
+      "x": 0.20483175866414588,
+      "y": 0.4908297316506193,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Secret Area: Head east under the western Old-fashioned Key door and it’ll take you into a secret room. The Old Core will be on the mechanical remains in there.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuat8dgjf9zl6",
+      "x": 0.20827670430795373,
+      "y": 0.45744684364691757,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "On the broken walkway near the top of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuat9bvrwwv4s",
+      "x": 0.2678279757905452,
+      "y": 0.5687744525575555,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Located on the ledge above the tendrils. Use a combination of the enemy and the Strider ability to reach it.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatbfob4ttpw",
+      "x": 0.5309998864169162,
+      "y": 0.5254442602926556,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Obtained by doing a downward dash in the flower pot in the room above.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatc9wd5aekp",
+      "x": 0.6098024519953825,
+      "y": 0.5617508609951447,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Speak to Arjuna to get this Old Core. Requires you jumping over using the flower to the left of him.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatcizm3932t",
+      "x": 0.6243570580394999,
+      "y": 0.5653570371683841,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Defeat the Scorpion enemy that can be found under the ledge, then examine the Mechanized Remains to get the Old Core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatdh4124w2t",
+      "x": 0.647670188074768,
+      "y": 0.5213960323898468,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Speak to Ollanty to get an Old Core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuate9imbbkja",
+      "x": 0.6197317644359474,
+      "y": 0.4844266894888529,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Found in the Mechanized Remains next to Irina, reach them by using a Downward Dash (down and then the jump button) on the branch above.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuateqtpsasfp",
+      "x": 0.5831429902123467,
+      "y": 0.4135112618737682,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "From the top platform to the left, start gliding over and then hit one of the enemies along the way to gain more height and refresh your Glide.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatfabw4gjf7",
+      "x": 0.6080017421284059,
+      "y": 0.4428758392844318,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Interact with the Mechanized Remains outside the eastern exit of this room to collect an Old Core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuathcu2k1mm7",
+      "x": 0.6752871102872131,
+      "y": 0.4104605012272108,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Examine the remains on the rooftop here to receive the core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatj1kz2073q",
+      "x": 0.7264214341767236,
+      "y": 0.3821262598660441,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "To reach this core, bounce off the bottom bulb, then quickly attack up to hit the two above. Immediately double jump and hold glide to hover above them. When they reemerge, downward attack then immediately jump up and over to the left. Complete the rest of the platforming challenge using the energy shards and bulbs. Examine the remains at the end to receive the core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatk8bo5ulsz",
+      "x": 0.7740086766015275,
+      "y": 0.4412780134576729,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Examine the remains resting on a mushroom here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatkqq72j4zh",
+      "x": 0.7858584443542604,
+      "y": 0.43097465296270315,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Speak to Harpagon here to receive the core.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatlb9em9rf8",
+      "x": 0.536477827376325,
+      "y": 0.3287111601963533,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Search the mechanical remains east of the Network Gate to find this.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatm1onxmsr4",
+      "x": 0.5319697635573506,
+      "y": 0.2820025926191574,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "As you pass through this corridor, look for a gap in the ceiling between two tufts of red grass. Climb up with the Striders to find this.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuato80ap61jr",
+      "x": 0.2136557067957589,
+      "y": 0.8086933950662927,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "From the Network Gate, go left, and then climb up the path to the right to find this near the top of the area.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatoyd35nbws",
+      "x": 0.23564089003178043,
+      "y": 0.8197214252494086,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Found in a small cubby just beneath the surface, northeast of the Network Gate.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatpo7rca31s",
+      "x": 0.20171157158210118,
+      "y": 0.845107027292257,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "From the Network Gate, head down, and keep heading left. You’ll eventually find a dead-end, and the core itself.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatq725n6dn9",
+      "x": 0.19295304759095075,
+      "y": 0.8566124465116398,
+      "type": "Mkks00cdtqeamel",
+      "title": "Old Core",
+      "subtitle": "",
+      "desc": "Make your way down to the lowest section of this area, beneath the location of the nearby Old Core to the northeast.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuatz92s04a8g",
+      "x": 0.2072049230026464,
+      "y": 0.738770749105358,
+      "type": "Mkkry1hb53dx6a",
+      "title": "Flowing Steps",
+      "subtitle": "",
+      "desc": "*The Flowing Steps lightens the Striders' Tendrils, allowing the wielder to walk even on liquid surfaces.*\n\nRetrieve the Data Reports from the east and west wings of The Crucible, then speak to Tomo. After a brief dialogue sequence, Samsk will gift you this final ability, which allows the Striders to walk across water.",
+      "color": "#d4b106"
     }
   ]
 };
