@@ -1,3 +1,11 @@
+:root {
+  --mio-teal-deep: #1f4d5c;
+  --mio-teal: #2f7186;
+  --mio-teal-pale: #dceef0;
+  --mio-gold: #c99a52;
+  --mio-coral: #d1543f;
+}
+
 * { box-sizing: border-box; }
 
 body {
