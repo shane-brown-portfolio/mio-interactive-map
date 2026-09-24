@@ -99,6 +99,11 @@ const MAP_DATA = {
           "uid": "Mkks2qeldcqyaeu",
           "label": "Bosses",
           "icon": "icons/bosses.svg"
+        },
+        {
+          "uid": "mmucgtg2nwkseg",
+          "label": "Combat Room",
+          "icon": "icons/misc.svg"
         }
       ]
     },
@@ -601,9 +606,10 @@ const MAP_DATA = {
       "x": 0.77899,
       "y": 0.456299,
       "type": "Mkks2qeldcqyaeu",
-      "title": "Friends",
-      "desc": "",
-      "color": "#a11d33"
+      "title": "Friends :)",
+      "desc": "Open the door to the west with the friendly invitation to access this boss fight.",
+      "color": "#a11d33",
+      "subtitle": "-- nothing to worry about --"
     },
     {
       "id": "Mkkz7j1w2cj3ku6",
@@ -674,8 +680,9 @@ const MAP_DATA = {
       "y": 0.462465,
       "type": "Mkks2qeldcqyaeu",
       "title": "Nabuu",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "Nabuu will attack you from the background as you approach the center of the room.",
+      "color": "#a11d33",
+      "subtitle": "Keeper Of The Breath"
     },
     {
       "id": "Mkllkmv91jr13rz",
@@ -764,8 +771,9 @@ const MAP_DATA = {
       "y": 0.46733,
       "type": "Mkks2qeldcqyaeu",
       "title": "Acat",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "The encounter with Acat will begin as you enter the room.",
+      "color": "#a11d33",
+      "subtitle": "Nacre Engraver"
     },
     {
       "id": "Mkl1rhs79tiz8y",
@@ -821,8 +829,9 @@ const MAP_DATA = {
       "y": 0.471647,
       "type": "Mkks2qeldcqyaeu",
       "title": "Ancile & Targa",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "On the upper level of the room, only accessible via the hidden path beyond the locked door. You can only access this area by first exploring the eastern edge of the map, through Canopy, then Promenade, before looping back around.",
+      "color": "#a11d33",
+      "subtitle": "Pristine Sentinels"
     },
     {
       "id": "Mkllr6yi1w7666v",
@@ -1215,8 +1224,9 @@ const MAP_DATA = {
       "y": 0.497366,
       "type": "Mkks2qeldcqyaeu",
       "title": "Calderon",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "When you interact with the container on the floor above, you’ll fall down to this room, where you’ll encounter the boss, Calderon.",
+      "color": "#a11d33",
+      "subtitle": "Unyielding Furnace"
     },
     {
       "id": "Mkl002ylrey89g",
@@ -1268,9 +1278,10 @@ const MAP_DATA = {
       "x": 0.501979,
       "y": 0.508148,
       "type": "Mkks2qeldcqyaeu",
-      "title": "Final Boss",
-      "desc": "",
-      "color": "#a11d33"
+      "title": "Ati - Final Boss (Ending A)",
+      "desc": "After receiving Halyn’s Voice, you can now open the Spine. Exhaust the dialogue with Ati to begin the final battle. Defeating Ati will lead directly to an ending. Loading your save after will bring you back to the point before the final encounter, allowing you to continue to explore if you wish.",
+      "color": "#a11d33",
+      "subtitle": "Keeper Of The Heart"
     },
     {
       "id": "Mkloyirb7b091s",
@@ -1451,8 +1462,9 @@ const MAP_DATA = {
       "y": 0.523561,
       "type": "Mkks2qeldcqyaeu",
       "title": "Crow",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "You will encounter the Crow boss here, who blocks the elevator.",
+      "color": "#a11d33",
+      "subtitle": "Automated Reaper"
     },
     {
       "id": "Mkl03u6ospqwm4r",
@@ -1488,8 +1500,9 @@ const MAP_DATA = {
       "y": 0.52533,
       "type": "Mkks2qeldcqyaeu",
       "title": "Lombre",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "From the Network Gate, head east and jump over the tendrils and then take the path under the next platform. As you drop, head west for the boss fight.",
+      "color": "#a11d33",
+      "subtitle": "Intrusive Fertiliser"
     },
     {
       "id": "Mkkx1vdmg343w5",
@@ -1710,8 +1723,9 @@ const MAP_DATA = {
       "y": 0.53985,
       "type": "Mkks2qeldcqyaeu",
       "title": "Poltergates",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "As you enter the room, the doors will lock behind you, and you’ll need to defeat the boss to progress.",
+      "color": "#a11d33",
+      "subtitle": "Dr Halyn's Experiment #223"
     },
     {
       "id": "Mklowri5ztx6e9w",
@@ -1764,8 +1778,9 @@ const MAP_DATA = {
       "y": 0.55109,
       "type": "Mkks2qeldcqyaeu",
       "title": "Egis",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "Enter the room to start the battle with Egis.",
+      "color": "#a11d33",
+      "subtitle": "Worn Out Sentinel"
     },
     {
       "id": "Mkmejrrvougq6xc",
@@ -2139,9 +2154,10 @@ const MAP_DATA = {
       "x": 0.625141,
       "y": 0.579942,
       "type": "Mkks2qeldcqyaeu",
-      "title": "Sentient Pearltrap",
-      "desc": "",
-      "color": "#a11d33"
+      "title": "Flora",
+      "desc": "You’ll be attacked by Flora when you first enter this room.",
+      "color": "#a11d33",
+      "subtitle": "Sentient Pearltrap"
     },
     {
       "id": "Mkkxp9fk09v7xq",
@@ -2149,8 +2165,9 @@ const MAP_DATA = {
       "y": 0.580153,
       "type": "Mkks2qeldcqyaeu",
       "title": "Atmos",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "Take the elevator down and let the wind jet take you down the hole at the end.",
+      "color": "#a11d33",
+      "subtitle": "Weather Control Unit"
     },
     {
       "id": "Mkln00t7ilhhdy",
@@ -2577,8 +2594,9 @@ const MAP_DATA = {
       "y": 0.77991,
       "type": "Mkks2qeldcqyaeu",
       "title": "Sawlong",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "You will trigger this boss encounter (a platforming chase sequence) as you enter this corridor.",
+      "color": "#a11d33",
+      "subtitle": "-- and thanks for all the Nacre --"
     },
     {
       "id": "Mklpcnodr45ybzo",
@@ -2750,8 +2768,9 @@ const MAP_DATA = {
       "y": 0.816238,
       "type": "Mkks2qeldcqyaeu",
       "title": "Anra",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "A two-phase boss fight will begin as you enter the room from the west.",
+      "color": "#a11d33",
+      "subtitle": "Anti-Rat Weapon"
     },
     {
       "id": "Mkkxqozgsktf56n",
@@ -2759,8 +2778,9 @@ const MAP_DATA = {
       "y": 0.817717,
       "type": "Mkks2qeldcqyaeu",
       "title": "Debby",
-      "desc": "",
-      "color": "#a11d33"
+      "desc": "Attempting to free Mel will trigger the boss fight with Debby.",
+      "color": "#a11d33",
+      "subtitle": "Dr Halyn's Collector"
     },
     {
       "id": "Mkln7ba4ylz05x",
@@ -3518,6 +3538,136 @@ const MAP_DATA = {
       "subtitle": "",
       "desc": "*The Flowing Steps lightens the Striders' Tendrils, allowing the wielder to walk even on liquid surfaces.*\n\nRetrieve the Data Reports from the east and west wings of The Crucible, then speak to Tomo. After a brief dialogue sequence, Samsk will gift you this final ability, which allows the Striders to walk across water.",
       "color": "#d4b106"
+    },
+    {
+      "id": "mmucgt6v8sfghq",
+      "x": 0.2411799738277417,
+      "y": 0.4863366188084072,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "As you enter the room, both doors will lock behind you and you’ll need to defeat all enemies before you can leave.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmucgu6n1igivm",
+      "x": 0.2950412738220335,
+      "y": 0.3543442654258757,
+      "type": "Mkks2qeldcqyaeu",
+      "title": "Sol & Vin",
+      "subtitle": "The Last Embedders",
+      "desc": "The boss will begin when you reach the center of the area.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmucgyac4tj45z",
+      "x": 0.3965896542777493,
+      "y": 0.47502976734773017,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A combat encounter will begin as you enter this small room.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmucha77nm0m8y",
+      "x": 0.7458079788410402,
+      "y": 0.3301845228031047,
+      "type": "Mkks2qeldcqyaeu",
+      "title": "Shii - Final Boss (Secret Ending)",
+      "subtitle": "Keeper Of The Spine",
+      "desc": "After deploying the bridge to the Sample Room, selecting “Go Forth” will begin the final boss encounter for the true ending.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchc6tksote0",
+      "x": 0.3203287326653867,
+      "y": 0.821722732047922,
+      "type": "Mkks2qeldcqyaeu",
+      "title": "Sawlog",
+      "subtitle": "-- and thanks for all the Nacre --",
+      "desc": "After the two chase sequences, you will encounter Sawlong here, cowering on the floor. Sawlong won’t put up a fight, but you have to kill the boss to progress, nevertheless.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchee5jad8s2",
+      "x": 0.8684566151194407,
+      "y": 0.811885370546172,
+      "type": "Mkks2qeldcqyaeu",
+      "title": "Vlad",
+      "subtitle": "Exiled Sycophant",
+      "desc": "The battle will begin as you enter the room.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchx5mgc6baz",
+      "x": 0.40135890617641856,
+      "y": 0.5807668952722924,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "You’ll be ambushed by various enemies as you enter the center of the room.\n\nThese will need to be defeated if you want the container.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchxn6zh39hr",
+      "x": 0.4366506057878187,
+      "y": 0.5168860602034803,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A combat encounter will trigger as you approach the container here.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchyfyfmh67o",
+      "x": 0.5327906011807984,
+      "y": 0.5079631890248288,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A combat encounter will begin here when you head to the center of this room.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchywwbwb52y",
+      "x": 0.6207023889338681,
+      "y": 0.5072710661499128,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A combat encounter will begin when you enter this room from the east side.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuchzeezrccsc",
+      "x": 0.6029800630455248,
+      "y": 0.41762512192668744,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A combat encounter will begin when you enter this room.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuci05afl74j4",
+      "x": 0.6862574857228704,
+      "y": 0.756609036169685,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A locked-room combat encounter with a single spinning-blade enemy will trigger when you enter this room.",
+      "color": "#a11d33"
+    },
+    {
+      "id": "mmuci0n8bk5noe",
+      "x": 0.7798964113341401,
+      "y": 0.749053238473374,
+      "type": "mmucgtg2nwkseg",
+      "title": "Combat Room",
+      "subtitle": "",
+      "desc": "A locked-room combat encounter with a single spinning-blade enemy will trigger when you enter this room.",
+      "color": "#a11d33"
     }
   ]
 };
