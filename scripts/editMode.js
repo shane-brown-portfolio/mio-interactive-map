@@ -145,6 +145,56 @@ function createType(catUid, label) {
   return typeUid;
 }
 
+// Drag an existing pin in Edit Mode to nudge its x/y instead of panning the map
+let pinDragMoved = false;
+let draggingPin = null, dragStartFracX = 0, dragStartFracY = 0, dragStartClientX = 0, dragStartClientY = 0;
+
+pinsWorld.addEventListener('pointerdown', (e) => {
+  const pinEl = e.target.closest('.pin');
+  if (!editMode || !pinEl)
+    return;
+
+  const marker = MAP_DATA.markers.find(m => m.id === pinEl.dataset.id);
+  if (!marker)
+    return;
+
+  e.stopPropagation(); // keep viewport's own pointerdown from starting a map pan
+  draggingPin = { marker, pinEl };
+  pinDragMoved = false;
+  dragStartFracX = marker.x;
+  dragStartFracY = marker.y;
+  dragStartClientX = e.clientX;
+  dragStartClientY = e.clientY;
+  pinEl.setPointerCapture(e.pointerId);
+});
+
+pinsWorld.addEventListener('pointermove', (e) => {
+  if (!draggingPin)
+    return;
+  const dx = e.clientX - dragStartClientX, dy = e.clientY - dragStartClientY;
+  if (Math.abs(dx) + Math.abs(dy) > 4)
+    pinDragMoved = true;
+  if (!pinDragMoved)
+    return;
+
+  const { marker, pinEl } = draggingPin;
+  marker.x = Math.min(1, Math.max(0, dragStartFracX + dx / scale / worldW));
+  marker.y = Math.min(1, Math.max(0, dragStartFracY + dy / scale / worldH));
+  pinEl.style.left = (marker.x * 100) + '%';
+  pinEl.style.top = (marker.y * 100) + '%';
+  if (activePinEl === pinEl)
+    positionPopup();
+});
+
+pinsWorld.addEventListener('pointerup', () => {
+  if (!draggingPin)
+    return;
+  const { marker } = draggingPin;
+  draggingPin = null;
+  if (pinDragMoved)
+    updateMarker(marker.id, { x: marker.x, y: marker.y });
+});
+
 // Click empty map space in Edit Mode to drop a new pin there
 viewport.addEventListener('click', (e) => {
   if (!editMode || dragMoved || e.target.closest('.pin'))

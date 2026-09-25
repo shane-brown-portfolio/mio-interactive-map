@@ -20,6 +20,8 @@
   width: 18px;
   height: 18px;
   object-fit: contain;
+  pointer-events: none;
+  -webkit-user-drag: none;
 }
 
 .pin:hover {
@@ -32,4 +34,8 @@
 
 .pin.hidden {
   display: none;
+}
+
+.edit-active .pin {
+  cursor: move;
 }

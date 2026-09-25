@@ -28,7 +28,7 @@ function createPinElement(marker) {
   pin.title = marker.title;
   pin.dataset.id = marker.id;
   pin.dataset.type = marker.type || '';
-  pin.innerHTML = meta && meta.icon ? `<img src="${meta.icon}" alt="${meta.label}">` : '';
+  pin.innerHTML = meta && meta.icon ? `<img src="${meta.icon}" alt="${meta.label}" draggable="false">` : '';
   return pin;
 }
 

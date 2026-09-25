@@ -253,6 +253,10 @@ pinsWorld.addEventListener('click', (e) => {
   const pinEl = e.target.closest('.pin');
   if (!pinEl)
     return;
+  if (pinDragMoved) {
+    pinDragMoved = false; // this click just ended a drag, not a real click
+    return;
+  }
   const marker = MAP_DATA.markers.find(m => m.id === pinEl.dataset.id);
   if (!marker)
     return;
