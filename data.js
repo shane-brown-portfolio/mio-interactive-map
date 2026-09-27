@@ -8,7 +8,7 @@ const MAP_DATA = {
       "types": [
         {
           "uid": "Mkkrxcctlrtd2qa",
-          "label": "Attune Station",
+          "label": "Network Gate",
           "icon": "icons/attune-station.svg"
         },
         {
@@ -66,8 +66,8 @@ const MAP_DATA = {
         },
         {
           "uid": "Mkkrzn92hipumfv",
-          "label": "Crystallized Nacre",
-          "icon": "icons/crystallized-nacre.svg"
+          "label": "Crystallised Nacre",
+          "icon": "icons/crystallised-nacre.svg"
         },
         {
           "uid": "Mkks00cdtqeamel",
@@ -143,8 +143,8 @@ const MAP_DATA = {
         },
         {
           "uid": "Mklonkcrqpz0ly",
-          "label": "Crystallizer",
-          "icon": "icons/crystallizer.svg"
+          "label": "Crystalliser",
+          "icon": "icons/crystalliser.svg"
         },
         {
           "uid": "Mklovgt3gcykgro",
@@ -160,6 +160,11 @@ const MAP_DATA = {
           "uid": "Mklphh28hvj1f6l",
           "label": "Traveller's Log",
           "icon": "icons/traveller-s-log.svg"
+        },
+        {
+          "uid": "mmuha5jbc9pqix",
+          "label": "Fragmented Serial Number",
+          "icon": null
         }
       ]
     }
@@ -180,8 +185,9 @@ const MAP_DATA = {
       "y": 0.152949,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Drop down from The Eye’s remains to find this on the platform below.",
+      "color": "#344f6e",
+      "subtitle": "Positive Report"
     },
     {
       "id": "Mklpu6ri4h6upcj",
@@ -194,21 +200,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklptwf0wgt3r39",
-      "x": 0.672812,
-      "y": 0.261009,
+      "x": 0.6681162678992757,
+      "y": 0.2601919757107504,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "After downloading the Planetary Analysis, Ati will appear briefly before leaving this behind.",
+      "color": "#344f6e",
+      "subtitle": "Final Instructions"
     },
     {
       "id": "Mklpuhjcobhv37",
-      "x": 0.685352,
-      "y": 0.28675,
+      "x": 0.6854204214404916,
+      "y": 0.2862273855166021,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
       "desc": "",
-      "color": "#ff9b42"
+      "color": "#ff9b42",
+      "subtitle": "L1: Celestial Bay"
     },
     {
       "id": "Mklpuynqfb1tbm",
@@ -248,30 +256,33 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxdlqn01ejzra",
-      "x": 0.744788,
-      "y": 0.325678,
+      "x": 0.7461992856040428,
+      "y": 0.32431092651765964,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Library",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Found on the middle floor of the Library. Use the elevator to reach it.",
+      "color": "#ff9b42",
+      "subtitle": "Library"
     },
     {
       "id": "Mklm4hwrbfd9q9p",
       "x": 0.495053,
       "y": 0.330812,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 180.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Follow the grapple points to the west of the network gate into a small hidden area to find this.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklm6idkctl8mqm",
-      "x": 0.577875,
-      "y": 0.343512,
+      "x": 0.5772264626938998,
+      "y": 0.3393752275929376,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 240.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found in a little pocket of space above the exit shaft.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpznkaotrw19pi",
@@ -284,21 +295,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmfxcy7hxk79",
-      "x": 0.735701,
-      "y": 0.366056,
+      "x": 0.7347767462906858,
+      "y": 0.3646654488081984,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 480.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Perched on a tree root.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmblh2ikjrfco",
-      "x": 0.633052,
-      "y": 0.376802,
+      "x": 0.6329387952724029,
+      "y": 0.3734909721742728,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 320.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "In a small gap on the west side of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl052ql43v4vs",
@@ -306,8 +319,9 @@ const MAP_DATA = {
       "y": 0.380408,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "After making your way to the top of the Bell Tower’s Celestial Bell room, look to your right.",
+      "color": "#344f6e",
+      "subtitle": "Belated Realisation"
     },
     {
       "id": "Mkkwrg20eceubn",
@@ -321,12 +335,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkx9j89s0h69be",
-      "x": 0.719153,
-      "y": 0.390399,
+      "x": 0.7201465350026037,
+      "y": 0.3889802084776751,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Canopy",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Attune here to save your progress, and change your Mod loadout.",
+      "color": "#ff9b42",
+      "subtitle": "Canopy"
     },
     {
       "id": "Mkl0qh5gduokzhk",
@@ -352,17 +367,19 @@ const MAP_DATA = {
       "y": 0.400041,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkln955pesua5t",
-      "x": 0.649266,
-      "y": 0.400588,
+      "x": 0.63846727525149,
+      "y": 0.3997843915447283,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found beneath the Nacre Basin.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklocejs7x6pqnm",
@@ -376,12 +393,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmd65ofpb0v5n",
-      "x": 0.73995,
-      "y": 0.404633,
+      "x": 0.7481500473350051,
+      "y": 0.4104272986950227,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 40.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found at the bottom of the stairs.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln8sj7r0w38ua",
@@ -389,17 +407,19 @@ const MAP_DATA = {
       "y": 0.405521,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On a mushroom half way up the eastern wall.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkloytof20sxeilh",
-      "x": 0.617371,
-      "y": 0.406477,
+      "x": 0.6165458633188484,
+      "y": 0.4062100249038413,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found at the top of this room, as you start heading west.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl1neu3f8daqcn",
@@ -413,21 +433,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmcp9al5fcck",
-      "x": 0.692256,
-      "y": 0.419224,
+      "x": 0.6927787542754369,
+      "y": 0.41837343612580585,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 100.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found at the bottom of the shaft.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklosob5k6o40a5h",
-      "x": 0.735619,
-      "y": 0.419394,
+      "x": 0.735648181663114,
+      "y": 0.4180879685622587,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkln9gq56juizv9",
@@ -435,26 +457,29 @@ const MAP_DATA = {
       "y": 0.419554,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On a small bridge at the bottom of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmv968i21197g",
-      "x": 0.64426,
-      "y": 0.42073,
+      "x": 0.644182819532385,
+      "y": 0.41970100553390083,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Instead of dropping down, climb on this ledge first to find a junk pile.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkllsj46irr51pg",
-      "x": 0.572465,
-      "y": 0.426975,
+      "x": 0.5724262588265557,
+      "y": 0.42512026095256567,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 20.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found sitting on the top of this platform.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmvt8570nfuyq",
@@ -462,17 +487,19 @@ const MAP_DATA = {
       "y": 0.430051,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "Reach by gliding from the top branch.",
-      "color": "#344f6e"
+      "desc": "Glide over from the platform that has the Crystalised Nacre to reach this junk pile.",
+      "color": "#344f6e",
+      "subtitle": "Requires Sail"
     },
     {
       "id": "Mkllqecq20uk40v",
-      "x": 0.625701,
-      "y": 0.431189,
+      "x": 0.6260989775090188,
+      "y": 0.43090123036117567,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Found above the Crystallizer on a branch. Contains 480.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found above the Crystalliser on the top branch in this room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpdrrryfquals",
@@ -480,17 +507,19 @@ const MAP_DATA = {
       "y": 0.431526,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found on the ground by the doorway.",
+      "color": "#926c15",
+      "subtitle": "Roots: Canopy"
     },
     {
       "id": "Mklmdpnkn04lrv",
-      "x": 0.760774,
-      "y": 0.433123,
+      "x": 0.7609968875303355,
+      "y": 0.4304264173704571,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 40.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found on the ground near the doorway.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl0su6yxg4euze",
@@ -515,54 +544,60 @@ const MAP_DATA = {
       "x": 0.626878,
       "y": 0.435055,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl0k7exx7txfth",
-      "x": 0.276701,
-      "y": 0.436835,
+      "x": 0.2767246472097647,
+      "y": 0.4270307085290054,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "From the broken glass in the nearby elevator, jump to the platform and use the Striders to crawl beneath the building and up the other side.",
-      "color": "#344f6e"
+      "desc": "From the broken glass in the nearby elevator, jump to the platform and use the Striders to crawl beneath the building and up the other side. You’ll find this on a ledge on the east side of the building.",
+      "color": "#344f6e",
+      "subtitle": "Our Fault"
     },
     {
       "id": "Mkllt1kafi1uhif",
-      "x": 0.583593,
-      "y": 0.438703,
+      "x": 0.5832206822292365,
+      "y": 0.4379275647960817,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "From the mushroom on the left, use the grapple point and hit the flower to continue to the far right wall.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp9zx8aggjl8q",
-      "x": 0.195898,
-      "y": 0.440815,
+      "x": 0.19408320243358917,
+      "y": 0.4344941298213477,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located on the middle floor of the room. From the Nacre Basin on the bottom floor. Use the Striders ability to go through the hole in the ceiling.\n\nFrom there, make your way through the wind jet puzzle and head to the top floor. The Torn Overseer will be in the center of the room.",
+      "color": "#926c15",
+      "subtitle": "Roots: City Hall"
     },
     {
       "id": "Mkl0l3mtlmxb4gq",
-      "x": 0.751993,
-      "y": 0.447209,
+      "x": 0.751563325167254,
+      "y": 0.44478945434209927,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on a mushroom half way down the shaft.",
+      "color": "#344f6e",
+      "subtitle": "No Future"
     },
     {
       "id": "Mkkzz1sbhuba6hp",
-      "x": 0.791393,
-      "y": 0.448849,
+      "x": 0.7906941494816344,
+      "y": 0.4476194388159323,
       "type": "Mkks3hlp29dyho",
       "title": "Friendly Invitation",
-      "desc": "Opens a locked door in the Canopy.",
-      "color": "#926c15"
+      "desc": "Found on the ground at the end of the corridor. Use it on the door in the passage running underneath this room.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkvisdgjxporle",
@@ -589,22 +624,24 @@ const MAP_DATA = {
       "y": 0.453795,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located on the small ledge to the west of the Network Gate.",
+      "color": "#926c15",
+      "subtitle": "No More"
     },
     {
       "id": "Mkkxcoomu97f2x",
-      "x": 0.393307,
-      "y": 0.454569,
+      "x": 0.3933056918564811,
+      "y": 0.4528197094076314,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Dwellings",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "In the room to the east of the Acat boss you’ll find a grapple point hidden among the ice in the center of the room.\n\nGrapple onto this and attack the flower buds while heading northwest. The Network Gate will be in the following room to the west.",
+      "color": "#ff9b42",
+      "subtitle": "Dwellings"
     },
     {
       "id": "Mkkxr8i53nzikf",
-      "x": 0.77899,
-      "y": 0.456299,
+      "x": 0.7780838590471012,
+      "y": 0.4554242876246458,
       "type": "Mkks2qeldcqyaeu",
       "title": "Friends :)",
       "desc": "Open the door to the west with the friendly invitation to access this boss fight.",
@@ -622,21 +659,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllwsi51z75s6",
-      "x": 0.240094,
-      "y": 0.456198,
+      "x": 0.2399093505109862,
+      "y": 0.45483830522634744,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 20.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on the broken Crystalliser in the center of the room. Use the Strider ability on the gold metal to the right of the City Hall Network Gate to get there.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln83tkbvbiqqm",
       "x": 0.555103,
       "y": 0.456829,
       "type": "Mkkrzfr5b2v5bpj",
-      "title": "Junk Pile",
-      "desc": "Two piles here.",
-      "color": "#344f6e"
+      "title": "Junk Pile (x2)",
+      "desc": "Two junk piles can be found at the end of the maze.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp8l9oomx9ax9",
@@ -644,35 +683,39 @@ const MAP_DATA = {
       "y": 0.457819,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Use the Grapple Point near the Librarian and go left to find this Torn Overseer.",
+      "color": "#926c15",
+      "subtitle": "Roots: Bell Tower"
     },
     {
       "id": "Mklmutkhbm3fqy7",
-      "x": 0.589658,
-      "y": 0.458858,
+      "x": 0.587839177376608,
+      "y": 0.45928931906238707,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found at the top of the waterfall.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpd7sochos2p6",
-      "x": 0.727132,
-      "y": 0.462219,
+      "x": 0.7253710375707131,
+      "y": 0.4568660822428478,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found on the roof at the top of this room. Only accessible by dropping down into “The Breath’s Spring” from Canopy above. From the beams in that room, use the Striders to climb into this hidden area by spider-walking on the underside of the eastern exit.",
+      "color": "#926c15",
+      "subtitle": "Roots: Promenade Tower"
     },
     {
       "id": "Mklmhtcins4u9i",
-      "x": 0.298946,
-      "y": 0.46194,
+      "x": 0.3038107844939357,
+      "y": 0.46169046548801246,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Found on one of the railways.\n\nContains 40.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "On a beam high up above ground level. Glide over from the highest point you can reach to the west.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxuiiag4uewfb",
@@ -686,12 +729,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllkmv91jr13rz",
-      "x": 0.738307,
-      "y": 0.462831,
+      "x": 0.7528681467617121,
+      "y": 0.4631938983091002,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on the floor next to the broken Crystalliser after clearing the large platforming area with the gloomwater.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpz8k4crl3id7",
@@ -713,39 +757,43 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxbi751szxcjf",
-      "x": 0.236612,
-      "y": 0.463064,
+      "x": 0.23672515441438474,
+      "y": 0.461777756917376,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "City Hall",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Requires the Strider ability to reach it. From the floor below, jump up in the center (where the hole is) and hold in the Strider ability to climb up to the next floor.",
+      "color": "#ff9b42",
+      "subtitle": "City Hall"
     },
     {
       "id": "Mkkyfufnx839nacs",
-      "x": 0.555477,
-      "y": 0.463802,
+      "x": 0.5551861896331063,
+      "y": 0.4627803842425886,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Make your way through the Grapple Point and Flower Bud maze to the north of this location and you’ll eventually loop around to this.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxegfmrbj8qd6",
-      "x": 0.601538,
-      "y": 0.463919,
+      "x": 0.6018473759422196,
+      "y": 0.4627190878090233,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Bell Tower",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Attune here to save your progress, and change your Mod loadout.",
+      "color": "#ff9b42",
+      "subtitle": "Bell Tower"
     },
     {
       "id": "Mkkzv25sqcaoib",
-      "x": 0.203968,
-      "y": 0.463708,
+      "x": 0.2025622488493064,
+      "y": 0.46178349861588097,
       "type": "Mkks3hlp29dyho",
       "title": "Bell Tower Visitor Pass",
-      "desc": "Opens the Bell Tower door.",
-      "color": "#926c15"
+      "desc": "Located at the end of the platforming puzzle. You’ll need to use a combination of the grapple points and flower buds to get through it.\n\nNote that you can break through the floor below to reach the exit quicker.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl16p6igmvkp2s",
@@ -787,12 +835,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklp70z7pixsa7t",
-      "x": 0.386738,
-      "y": 0.468783,
+      "x": 0.38682504185721905,
+      "y": 0.4674528200610986,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Defeat Acat, then proceed into the next room to find the Overseer.",
+      "color": "#926c15",
+      "subtitle": "Roots: Dwellings"
     },
     {
       "id": "Mkkyu3wua1fwptl",
@@ -820,8 +869,9 @@ const MAP_DATA = {
       "y": 0.471484,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Defeat Ancile & Targa, then follow the path to the east. You’ll find this on a desk in a room at the end.",
+      "color": "#344f6e",
+      "subtitle": "First Case Study"
     },
     {
       "id": "Mkkxnpggkp99j7g",
@@ -835,12 +885,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllr6yi1w7666v",
-      "x": 0.602513,
-      "y": 0.472248,
+      "x": 0.59798682342461,
+      "y": 0.47132834458082007,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found near the western entrance to this room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkycwrle0wlb7f",
@@ -848,17 +899,19 @@ const MAP_DATA = {
       "y": 0.474813,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "Glide and use wall climb to reach the room.",
-      "color": "#344f6e"
+      "desc": "Located in the hidden room up and left from the nearby Nacre Basin.\n\nStand on top of the basin and jump and glide toward the out-of-reach ledge before using the Strider ability to grapple on to it.\n\nGo through the broken metal fence and you’ll find the Candle in the center of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkloxk83l1exfjg",
       "x": 0.209335,
-      "y": 0.475817,
+      "y": 0.47474574565687067,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located on top of the building.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl1emwcf15wjnf",
@@ -881,21 +934,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklozhhmfl2pqnp",
-      "x": 0.770785,
-      "y": 0.479583,
+      "x": 0.7698924436144129,
+      "y": 0.47938377486542927,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located in the west room just past the narrow tendril corridor.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkln6v7e27bzq5n3",
-      "x": 0.701487,
-      "y": 0.479518,
+      "x": 0.7016213362767484,
+      "y": 0.47707229346584246,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "A junk pile can be found here.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl0o7cdey9v1qu",
@@ -917,12 +972,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkln1wn9njqaa4h",
-      "x": 0.260312,
-      "y": 0.48231,
+      "x": 0.26270036818623566,
+      "y": 0.47926795964552815,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "From the Network Gate below, use Striders to keep climbing to the top and exit to the west.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkvq0w66yjq57e",
@@ -935,21 +991,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmrib500nfqi9",
-      "x": 0.573355,
-      "y": 0.482972,
+      "x": 0.5710873835232011,
+      "y": 0.481121285702759,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found along the platforms as you make your way up to the top of this room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklln65ykvdz11",
-      "x": 0.221398,
-      "y": 0.482621,
+      "x": 0.22086971127121394,
+      "y": 0.48241171298994595,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Atop the platform. Contains 240.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "From the platform to the west, glide over to reach this item.",
+      "color": "#344f6e",
+      "subtitle": "Requires Sail"
     },
     {
       "id": "Mklmwfsvu93h4o8",
@@ -957,8 +1015,9 @@ const MAP_DATA = {
       "y": 0.484137,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the west side of the Gloomwater pit.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkyuybxfz4exwp",
@@ -1000,21 +1059,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkloqc5tp33obmn",
-      "x": 0.194933,
-      "y": 0.485104,
+      "x": 0.1954556033358001,
+      "y": 0.48157576982217176,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Located on the ledge above the west doorway. Grapple up to the small ledge opposite it and then grapple across and jump to reach it.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkllw79delo5fc",
-      "x": 0.27731,
-      "y": 0.485222,
+      "x": 0.27504942737291826,
+      "y": 0.4794833770159853,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "At the top of the platforming section (where the vent is), jump up and travel the wind jet to the end.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkyt3v9sba3w8f",
@@ -1055,21 +1116,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklp81fzxw7rnsj",
-      "x": 0.170474,
-      "y": 0.487493,
+      "x": 0.1686018453716067,
+      "y": 0.4865773693310134,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located on the floor just outside the building.",
+      "color": "#926c15",
+      "subtitle": "Roots: The Blood's Sanctum"
     },
     {
       "id": "Mkloz2scxgm6slg",
       "x": 0.661414,
-      "y": 0.488035,
+      "y": 0.4869268521134316,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found in the lower path, not in the same room as The Breath.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkz8m6u6tj35ua",
@@ -1085,9 +1148,10 @@ const MAP_DATA = {
       "x": 0.484732,
       "y": 0.487971,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Found via a hole in the nearby elevator shaft.\n\nContains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Find the hidden path in the elevator shaft to the west to reach this platform.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1f8umqm970g",
@@ -1101,12 +1165,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklp7opphsr3uko",
-      "x": 0.258753,
-      "y": 0.489527,
+      "x": 0.25868708969193244,
+      "y": 0.4870417167556079,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located on the second balcony above the west doorway of the City Gates Nexus Gate. Use Hairpin on the grapple points outside to get up there.",
+      "color": "#926c15",
+      "subtitle": "Roots: City Gates"
     },
     {
       "id": "Mklox8zm1xnej7",
@@ -1114,17 +1179,19 @@ const MAP_DATA = {
       "y": 0.489839,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkllrvo5ggjruru",
-      "x": 0.78444,
-      "y": 0.491977,
+      "x": 0.7842618912285807,
+      "y": 0.49173484419670027,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 40.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on the small platform in the bed of tendrils.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmsaz1xvjnguk",
@@ -1132,17 +1199,19 @@ const MAP_DATA = {
       "y": 0.493322,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the side of the wall as you make your way up to the northwest.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmpnef2ab83m",
-      "x": 0.258699,
-      "y": 0.493883,
+      "x": 0.25816316428937414,
+      "y": 0.49261520368909556,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on the balcony above the west doorway of the City Gates Nexus Gate. Use Hairpin on the grapple point outside the door to get up there.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1b96qejl3s08",
@@ -1156,48 +1225,53 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmyg9pei2wazo",
-      "x": 0.757709,
-      "y": 0.495119,
+      "x": 0.7577779291008034,
+      "y": 0.4923251525741179,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "On the ledge above.",
-      "color": "#344f6e"
+      "desc": "As you head into the room, jump up and use Strider to get up to the leafy area above the entrance to the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkllo3ybkz89ys",
-      "x": 0.223433,
-      "y": 0.494881,
+      "x": 0.2233736304095269,
+      "y": 0.4940887950036094,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Take the elevator down one floor and head east to the end. The Crystallised Nacre will be next to the broken Crystalliser.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxaexttxlbvjo",
-      "x": 0.27092,
-      "y": 0.496236,
+      "x": 0.2706884585971549,
+      "y": 0.4957197587085333,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "City Gates",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Attune here to save your progress, and change your Mod loadout.",
+      "color": "#ff9b42",
+      "subtitle": "City Gates"
     },
     {
       "id": "Mklmug5eks7cze4",
-      "x": 0.607221,
-      "y": 0.497054,
+      "x": 0.606109078008936,
+      "y": 0.4955722211371492,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Can be found near the eastern exit of this room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklor1gjznbpudw",
       "x": 0.584522,
       "y": 0.497072,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklom7g1vv5c0xg",
@@ -1211,12 +1285,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkyaw50rc4tb8i",
-      "x": 0.626766,
-      "y": 0.497455,
+      "x": 0.6270351756856196,
+      "y": 0.49654473566460455,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "Inside the container.",
-      "color": "#344f6e"
+      "desc": "Defeat the enemies in this room, then open the container to get this Candle.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxvba16nqbxlm",
@@ -1230,30 +1305,33 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl002ylrey89g",
-      "x": 0.192313,
-      "y": 0.49794,
+      "x": 0.1915391827953591,
+      "y": 0.49666012943851545,
       "type": "Mkks3hlp29dyho",
-      "title": "Old Fashioned Key",
-      "desc": "Found after defeating Calderon.",
-      "color": "#926c15"
+      "title": "Old-fashioned Key",
+      "desc": "Located on the floor to the east of the boss arena. Found after defeating Calderon.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkllm2c6uiqv0n",
       "x": 0.530813,
       "y": 0.503555,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Use the Hairpin to reach the spot.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Just to the right of the strange tube is a grapple point, use it to shoot up to this item.",
+      "color": "#344f6e",
+      "subtitle": "Requires Hairpin"
     },
     {
       "id": "Mkllpbijl8d5ivr",
-      "x": 0.659431,
-      "y": 0.504071,
+      "x": 0.6595764051834468,
+      "y": 0.5011027467324063,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Drop down when entering from the upper eastern entrance and look for this against the wall to your right.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmwwcuibhzw2r",
@@ -1261,8 +1339,9 @@ const MAP_DATA = {
       "y": 0.507741,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on a ledge to the left as you drop down this path.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln9vhpy5n9yd2",
@@ -1270,8 +1349,9 @@ const MAP_DATA = {
       "y": 0.507555,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on top of the icy ledge in the hidden area.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklq9qih8abljys",
@@ -1289,8 +1369,9 @@ const MAP_DATA = {
       "y": 0.508792,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Can be found after dropping down where you see the blighted plants.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkz4femn8lqmf3",
@@ -1316,8 +1397,9 @@ const MAP_DATA = {
       "y": 0.509562,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Drop down to the right of the Strange Tube to find another Tomo letter.",
+      "color": "#344f6e",
+      "subtitle": "Flawed Assumptions"
     },
     {
       "id": "Mkkwxm3xnc3qrpq",
@@ -1340,30 +1422,33 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllot10i85fdcn",
-      "x": 0.589046,
-      "y": 0.510432,
+      "x": 0.5889866304095268,
+      "y": 0.5095982059182782,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 20.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Look under the ledge to find this item.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln1b4xpugp33a",
-      "x": 0.333866,
-      "y": 0.513653,
+      "x": 0.33323758797880587,
+      "y": 0.5136516584166022,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on the side of the metal grating. Either jump up and attack it or use the Strider ability to grab the wall to attack it.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxezlj20zli8h",
-      "x": 0.725255,
-      "y": 0.517464,
+      "x": 0.7253413374722473,
+      "y": 0.5160853218212689,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Promenade",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Attune here to save your progress, and change your Mod loadout.",
+      "color": "#ff9b42",
+      "subtitle": "Promenade"
     },
     {
       "id": "Mkkz6ij6ki3lu2h",
@@ -1376,12 +1461,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmxv6qw13bi22",
-      "x": 0.698136,
-      "y": 0.517554,
+      "x": 0.7004649985957626,
+      "y": 0.5165518372018564,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the platform after gliding over.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkvmh0ghe0gd2j",
@@ -1416,8 +1502,9 @@ const MAP_DATA = {
       "y": 0.519989,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Use the bounce pad to reach this platform, where a junk pile can be found.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1e1swqm3jqfm",
@@ -1434,9 +1521,10 @@ const MAP_DATA = {
       "x": 0.306346,
       "y": 0.52077,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 280.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on the icy ledge to the left, about halfway up.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkt3wo5mvx8cnh",
@@ -1449,17 +1537,18 @@ const MAP_DATA = {
     },
     {
       "id": "Mkme442e2zcuwhi",
-      "x": 0.439534,
-      "y": 0.522637,
+      "x": 0.43968745529740927,
+      "y": 0.5240838976945085,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Hidden up the wall in a small cubby.\n\nContains 280.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "In the center of the icy path is a metal decoration hanging down. Climb up it with Striders and head onto the ledge on the right, where you’ll find the Nacre.",
+      "color": "#344f6e",
+      "subtitle": "Requires Striders"
     },
     {
       "id": "Mkkxpy75tkd25l",
-      "x": 0.543336,
-      "y": 0.523561,
+      "x": 0.5428861998823479,
+      "y": 0.5234415990775975,
       "type": "Mkks2qeldcqyaeu",
       "title": "Crow",
       "desc": "You will encounter the Crow boss here, who blocks the elevator.",
@@ -1472,17 +1561,19 @@ const MAP_DATA = {
       "y": 0.523605,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "When you enter this room from the west, use the grapple points and flowers to make your way to this ledge.",
+      "color": "#344f6e",
+      "subtitle": "Hopeful Findings"
     },
     {
       "id": "Mkllvh4hhgjfk11",
-      "x": 0.343008,
-      "y": 0.524048,
+      "x": 0.3430351691346233,
+      "y": 0.5222670480394437,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "On the small ledge in against the right wall as you drop down.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1d82o76tb1si",
@@ -1530,8 +1621,9 @@ const MAP_DATA = {
       "y": 0.525471,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on the desk to the right of the strange tube.",
+      "color": "#344f6e",
+      "subtitle": "It Might Be Too Late Already"
     },
     {
       "id": "Mkkvg5lw80kwr4r",
@@ -1544,12 +1636,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklp9he03tk0kcr",
-      "x": 0.715416,
-      "y": 0.525885,
+      "x": 0.7197333767444889,
+      "y": 0.5264659056112398,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "After defeating the boss, head west to find the Torn Overseer.",
+      "color": "#926c15",
+      "subtitle": "Roots: Promenade Entrance"
     },
     {
       "id": "Mkkt1g2gz889w4r",
@@ -1566,13 +1659,14 @@ const MAP_DATA = {
       "y": 0.528288,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On a platform half way down the shaft.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkloaoejpjmzqnd",
-      "x": 0.608053,
-      "y": 0.528571,
+      "x": 0.6077621896331062,
+      "y": 0.5282034061490076,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
       "desc": "Go west in the room to the right when you find a bounce pad to reach this ledge.",
@@ -1581,39 +1675,43 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpkan1fyvxmto",
-      "x": 0.298282,
-      "y": 0.529098,
+      "x": 0.2982221272774042,
+      "y": 0.5280690055339008,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located to the right of Ati. You can access this area by climbing the metal above the Nacre Basin below.",
+      "color": "#926c15",
+      "subtitle": "Prayer to the Dead"
     },
     {
       "id": "Mkme4t46zk1gqd",
-      "x": 0.435658,
-      "y": 0.529526,
+      "x": 0.4350466944709761,
+      "y": 0.5289001513449345,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Tucked in a little alcove beneath the upper level.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl0im82ohj91ru",
-      "x": 0.714987,
-      "y": 0.530425,
+      "x": 0.713963629262523,
+      "y": 0.5260360099141544,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "You’ll need to do the Redacted area below to gain access to this room. Once you have access, simply open the door and walk into the center of the room.",
+      "color": "#344f6e",
+      "subtitle": "Premature Conclusion"
     },
     {
       "id": "Mklmoh456sjuym",
-      "x": 0.6177,
-      "y": 0.531305,
+      "x": 0.6165246833614817,
+      "y": 0.5308978294387731,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the ground as you make your way east through this room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpofnryjtd2n6",
@@ -1621,8 +1719,9 @@ const MAP_DATA = {
       "y": 0.532069,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
-      "desc": "",
-      "color": "#ff9b42"
+      "desc": "After getting “hired” by Dr Halyn, you can take the shuttle down to the Vaults.",
+      "color": "#ff9b42",
+      "subtitle": "Shuttle"
     },
     {
       "id": "Mkmeamgti88r8y",
@@ -1635,12 +1734,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmej2xnmd9u72f",
-      "x": 0.47642,
-      "y": 0.532289,
+      "x": 0.47646175996618023,
+      "y": 0.5320716634895593,
       "type": "Mkks3hlp29dyho",
       "title": "Silo Access Badge",
-      "desc": "Opens the Silo Access Door.",
-      "color": "#926c15"
+      "desc": "Found next to the bed in Halyn’s Boudoir. You can access this very early by dropping down through the east side of the walkway on L1 above, then jumping across the lampshades.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkx3unkno0di7f",
@@ -1668,26 +1768,29 @@ const MAP_DATA = {
       "y": 0.533962,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located under the tent. Exit the pipe to the right to fall into the room.",
+      "color": "#926c15",
+      "subtitle": "The Word of the Voices"
     },
     {
       "id": "Mklpmp5esy31tyl",
-      "x": 0.474152,
-      "y": 0.53808,
+      "x": 0.47325692795379964,
+      "y": 0.5381732400461459,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
       "desc": "",
-      "color": "#ff9b42"
+      "color": "#ff9b42",
+      "subtitle": "L0: Workshop"
     },
     {
       "id": "Mkme75g2ku2myx",
-      "x": 0.4658,
-      "y": 0.53901,
+      "x": 0.46530240233069575,
+      "y": 0.5384639755571025,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found at the bottom of the shaft.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkku3quns8mm3s",
@@ -1710,12 +1813,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkygh3xrq2xztx",
-      "x": 0.266302,
-      "y": 0.539182,
+      "x": 0.2656947195279573,
+      "y": 0.5375211197535453,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on the floor just past the door.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxt9qbj6qs1ss",
@@ -1733,17 +1837,19 @@ const MAP_DATA = {
       "y": 0.540234,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklm1w0apkwf45l",
-      "x": 0.147075,
-      "y": 0.540463,
+      "x": 0.14435154582007714,
+      "y": 0.5384955679471519,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on top of the icy ledge above the tendrils. You’ll need to use the momentum of the icy ledge in the center of the room to clear the tendrils and reach the Nacre.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpx4aikxyj7qf",
@@ -1760,17 +1866,19 @@ const MAP_DATA = {
       "y": 0.547364,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Grapple past the wind jet and jump on the small disappearing platform to jump on the ledge to the east.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmngrotulti2h",
-      "x": 0.634311,
-      "y": 0.549372,
+      "x": 0.6334858633188484,
+      "y": 0.5488467700997681,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found under a root as you make your way west at the top of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmdj1xutvrj4x",
@@ -1796,9 +1904,10 @@ const MAP_DATA = {
       "x": 0.574513,
       "y": 0.551445,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkktxz4y4kcuoh",
@@ -1810,31 +1919,24 @@ const MAP_DATA = {
       "color": "#d4b106"
     },
     {
-      "id": "Mklpm5iuyfu57f",
-      "x": 0.201493,
-      "y": 0.553895,
-      "type": "Mkkrxjyx2fo5gm9",
-      "title": "Elevator",
-      "desc": "",
-      "color": "#ff9b42"
-    },
-    {
       "id": "Mkllumuac0mqlq7",
-      "x": 0.22281,
-      "y": 0.554906,
+      "x": 0.2235475916918099,
+      "y": 0.5539615252879612,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 200.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Go to the west here and use the ice ramp to jump and glide across to the west, where you can find this item.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmdum7ybvj3e5n",
       "x": 0.49956,
       "y": 0.55521,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Found inside Lura’s Nook. You need the Striders to access this room.",
+      "color": "#926c15",
+      "subtitle": "Requires Striders"
     },
     {
       "id": "Mkl10binsd6h7xi",
@@ -1847,22 +1949,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkxhyspbeu00at",
-      "x": 0.100162,
-      "y": 0.55621,
+      "x": 0.10016003778472166,
+      "y": 0.5550781060872909,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Redacted #1",
+      "title": "Network Gate",
       "desc": "Just past the large fan in the central room.",
       "color": "#ff9b42",
-      "subtitle": ""
+      "subtitle": "Redacted"
     },
     {
       "id": "Mklp0l5g236i4gr",
-      "x": 0.338822,
-      "y": 0.556519,
+      "x": 0.33708870983745903,
+      "y": 0.5558535746346999,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located in the top-left corner of the room.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkmeh92936y0aqh",
@@ -1876,12 +1979,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmqofkbidsslo",
-      "x": 0.440709,
-      "y": 0.560858,
+      "x": 0.43072484615806594,
+      "y": 0.5580151847800988,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the floor of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmdr54w3q02qon",
@@ -1904,12 +2008,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklllded2xswqmn",
-      "x": 0.638681,
-      "y": 0.566295,
+      "x": 0.6376002722005405,
+      "y": 0.5653344262871877,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Use the flower to make your way across the water and reach the ledge with this item.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl0rvhzr9s1hcm",
@@ -1935,8 +2040,9 @@ const MAP_DATA = {
       "y": 0.567921,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On an icy ledge as you make your way down.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1jawc71kg3qv",
@@ -1950,21 +2056,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkmeg3flt9a2ndp",
-      "x": 0.589564,
-      "y": 0.569758,
+      "x": 0.5923186483715274,
+      "y": 0.5694916956955401,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found on the ground on a ledge above the water.",
+      "color": "#926c15",
+      "subtitle": "Stargazing"
     },
     {
       "id": "Mkllv2o8s50ld8j",
-      "x": 0.337269,
-      "y": 0.570066,
+      "x": 0.33648713268139663,
+      "y": 0.5679738006911581,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on a small ledge on the west side of the room. Use the small platforms in the center to reach it.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkzxttp83d8k2",
@@ -1980,9 +2088,10 @@ const MAP_DATA = {
       "x": 0.599479,
       "y": 0.571063,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 20.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Found on a ledge leading southeast out of the large room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1qervljhlgb",
@@ -1996,12 +2105,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkzx18uua1fvst",
-      "x": 0.750524,
-      "y": 0.572545,
+      "x": 0.7506216076317948,
+      "y": 0.5704521298994591,
       "type": "Mkks3hlp29dyho",
-      "title": "Dr Hayln's Employment Ledger",
-      "desc": "Grants Dr Hayln's Assistant Credentials.",
-      "color": "#926c15"
+      "title": "Dr Halyn's Employment Ledger",
+      "desc": "Interact with the machine and agree to all its terms and conditions to become Dr Halyn’s assistant.\n\nThis will give you access to all the doors reserved for the assistant.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkln0iu1yz3arls",
@@ -2009,8 +2119,9 @@ const MAP_DATA = {
       "y": 0.572189,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Head west after making your way up into the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmdjqh0ms6nndr",
@@ -2042,12 +2153,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmz3flrdj288",
-      "x": 0.275813,
-      "y": 0.575635,
+      "x": 0.2739987055657118,
+      "y": 0.5757590964642948,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located on the beam accessed by jumping over to it from the east.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklo9sr1wnuciiu",
@@ -2065,17 +2177,19 @@ const MAP_DATA = {
       "y": 0.57632,
       "type": "Mklphh28hvj1f6l",
       "title": "Traveller's Log",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Head east using the moving platform to block the wind jets and continue east on the other side to find a “hidden” room with a Traveller’s Log.",
+      "color": "#926c15",
+      "subtitle": "So Boring"
     },
     {
       "id": "Mklmo0vbrmslaqn",
-      "x": 0.611913,
-      "y": 0.576991,
+      "x": 0.607478393470933,
+      "y": 0.5751476644114468,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the small platform reached by using the Hairpin.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkmds18k4k6c1gd",
@@ -2083,17 +2197,19 @@ const MAP_DATA = {
       "y": 0.577329,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Pass under the pipes in the bend here to find a junk pile on the other side.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklm2tyuvc868b",
       "x": 0.215478,
       "y": 0.578508,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 200.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "After the alternating fans, use Striders to climb up the ledge to the left.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklq8auu05hyewp",
@@ -2106,21 +2222,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkloy1b5e2f25ju",
-      "x": 0.415383,
-      "y": 0.579261,
+      "x": 0.4159661301301553,
+      "y": 0.5816054169876249,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located at the bottom of the area, against the east wall.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkztv2fi3jvfls",
-      "x": 0.629384,
-      "y": 0.579625,
+      "x": 0.6287963416807408,
+      "y": 0.5792580769407064,
       "type": "Mkks3hlp29dyho",
       "title": "Aviaries Passepartout",
-      "desc": "Located on a platform after defeating the Flora boss.\n\nOpens the Aviaries Door.",
-      "color": "#926c15"
+      "desc": "Once you defeat Flora, use the Hairpin to shoot over to the eastern side of the room to collect this.",
+      "color": "#926c15",
+      "subtitle": "Requires Hairpin"
     },
     {
       "id": "Mkl0pxghmlx9vjo",
@@ -2133,21 +2251,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpey1piot2kav",
-      "x": 0.160433,
-      "y": 0.579405,
+      "x": 0.16002747550914134,
+      "y": 0.577800466256252,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Glide from the right side, or spider walk up the western wall using the Striders.",
+      "color": "#926c15",
+      "subtitle": "Roots: <redacted>"
     },
     {
       "id": "Mklp0ai2aguat5i",
-      "x": 0.303243,
-      "y": 0.579592,
+      "x": 0.30313734225424277,
+      "y": 0.578808515295695,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located at the beginning of the next room to the boss.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkkxmygo3syhdpg",
@@ -2175,8 +2295,9 @@ const MAP_DATA = {
       "y": 0.580217,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located in the middle of the room, near the end of the broken track.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklmr17ur82ncuq",
@@ -2184,8 +2305,9 @@ const MAP_DATA = {
       "y": 0.580392,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located next to the fence, past the wind jets.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl066odng295g",
@@ -2193,8 +2315,9 @@ const MAP_DATA = {
       "y": 0.581647,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "You can find this to the left of the shuttle after ascending from the Lab.",
+      "color": "#344f6e",
+      "subtitle": "Farewell Letter"
     },
     {
       "id": "Mklobmjb4swzh78",
@@ -2208,12 +2331,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllu3n9pvrno2v",
-      "x": 0.206512,
-      "y": 0.583673,
+      "x": 0.2056491284096494,
+      "y": 0.5841237720216549,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located on the broken Crystalliser far to the west after gliding across the tendrils and wind jets.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl17eyjlz408bb",
@@ -2226,39 +2350,43 @@ const MAP_DATA = {
     },
     {
       "id": "Mklmzipbgri7ijo",
-      "x": 0.252958,
-      "y": 0.594049,
+      "x": 0.2533474242629338,
+      "y": 0.5949820712531578,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Located between the two sets of tendrils. Jump into the center to obtain it.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp01hr4dn6htf",
-      "x": 0.273946,
-      "y": 0.596171,
+      "x": 0.2734116736857421,
+      "y": 0.5957752328976542,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Located in the center of the room.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklmfcgvtmzpdcd",
-      "x": 0.20883,
-      "y": 0.597805,
+      "x": 0.20592491512379926,
+      "y": 0.5972140325132769,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 160.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Open the door after climbing the Vault's Shuttle or use the Strider Boost to get this from the right side.",
+      "color": "#344f6e",
+      "subtitle": "Next to Vaults' Shuttle"
     },
     {
       "id": "Mkkybwmt9pdaw1l",
-      "x": 0.243047,
-      "y": 0.597887,
+      "x": 0.24242361930003245,
+      "y": 0.5970424732510958,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Head west using the grapple points whilst in the wind jets and head south before using the grapple point once more to get through the vertical wind jet.",
+      "color": "#344f6e",
+      "subtitle": "Requires Hairpin"
     },
     {
       "id": "Mklq7r2w51b0o6b",
@@ -2275,8 +2403,9 @@ const MAP_DATA = {
       "y": 0.722477,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "The third and final Nacre Basin in the west wing can be found here.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl15gpwlo92lpc",
@@ -2289,12 +2418,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklndlr40vmksr",
-      "x": 0.05748,
-      "y": 0.723317,
+      "x": 0.05674844589366196,
+      "y": 0.7224832059182782,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On the small platform by the Pump System controls.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl150ukrwtpn12",
@@ -2320,8 +2450,9 @@ const MAP_DATA = {
       "y": 0.724007,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "The second Nacre Basin in the west wing can be found tucked away in the corner here.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklpw0fstynjj6p",
@@ -2338,8 +2469,9 @@ const MAP_DATA = {
       "y": 0.74199,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on a small platform.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkvw6l94fe4sco",
@@ -2356,8 +2488,9 @@ const MAP_DATA = {
       "y": 0.74535,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the metal walkway.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl14jkft8u9zzp",
@@ -2374,8 +2507,9 @@ const MAP_DATA = {
       "y": 0.746437,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the metal walkway.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklpwan6xu1khac",
@@ -2388,21 +2522,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllybfp6wvhkje",
-      "x": 0.677078,
-      "y": 0.751367,
+      "x": 0.6774966059260475,
+      "y": 0.7506230920059296,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 80.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Beneath a destroyed Crystalliser resting on the pipes.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln30hx89izlxr",
-      "x": 0.64863,
-      "y": 0.7516,
+      "x": 0.6471417351811913,
+      "y": 0.7512827155264244,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On the ground by the spinning blades.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp2dxh216bhu",
@@ -2410,8 +2546,9 @@ const MAP_DATA = {
       "y": 0.752021,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "The first of three Nacre Basins in the west wing of The Crucible can be found here.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklnb7mocdxu8e",
@@ -2419,17 +2556,19 @@ const MAP_DATA = {
       "y": 0.753199,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on top of the exit tube. Use the Striders to walk up the side to reach it.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklnbq782cyxt1b",
       "x": 0.260753,
       "y": 0.755147,
       "type": "Mkkrzfr5b2v5bpj",
-      "title": "Junk Pile",
-      "desc": "Two piles here.",
-      "color": "#344f6e"
+      "title": "Junk Pile (x2)",
+      "desc": "In a small alcove.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkuixzf4yq9vh4",
@@ -2442,12 +2581,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl06rlt8eyilp",
-      "x": 0.718544,
-      "y": 0.757754,
+      "x": 0.7184373359899975,
+      "y": 0.7567330550342876,
       "type": "Mkks11mxe0y1rxo",
       "title": "Letter From Tomo",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on the ground by the Strange Tube.",
+      "color": "#344f6e",
+      "subtitle": "It All Makes Sense Now"
     },
     {
       "id": "Mkkwwgs4lnv9nnu",
@@ -2471,21 +2611,23 @@ const MAP_DATA = {
     },
     {
       "id": "Mklnaolnf1n89vd",
-      "x": 0.236232,
-      "y": 0.760131,
+      "x": 0.23519856662006994,
+      "y": 0.7622312488092285,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On the platform beneath the single spinning blade.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp3nd1sj21t",
-      "x": 0.282326,
-      "y": 0.760967,
+      "x": 0.2837523795677224,
+      "y": 0.7604095720982214,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "You can find the first of two Nacre Basins in the east wing of The Crucible here.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklp3yfr5cekprx",
@@ -2493,17 +2635,19 @@ const MAP_DATA = {
       "y": 0.762367,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found in the room above the waterfall.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklne7a83df8a4",
       "x": 0.252048,
       "y": 0.762745,
       "type": "Mkkrzfr5b2v5bpj",
-      "title": "Junk Pile",
-      "desc": "Three found here.",
-      "color": "#344f6e"
+      "title": "Junk Pile (x3)",
+      "desc": "Found in the room above the waterfall.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklolpbgos2fhzo",
@@ -2520,18 +2664,20 @@ const MAP_DATA = {
       "x": 0.193924,
       "y": 0.764287,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Found on a platform beneath the Network Gate.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkln3r8ty1hab01k",
-      "x": 0.779915,
-      "y": 0.765644,
+      "x": 0.7768977166604476,
+      "y": 0.7648947256723384,
       "type": "Mkkrzfr5b2v5bpj",
-      "title": "Junk Pile",
-      "desc": "Three in this area.",
-      "color": "#344f6e"
+      "title": "Junk Pile (x3)",
+      "desc": "Watch out for the bomb in the middle of these three piles.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkzb95idrx1zki",
@@ -2544,30 +2690,33 @@ const MAP_DATA = {
     },
     {
       "id": "Mkllywqh5am8zim",
-      "x": 0.680725,
-      "y": 0.76636,
+      "x": 0.6806948120726408,
+      "y": 0.7663123737893788,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 40.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located by a destroyed Crystalliser.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkxjnss02ozc5e",
-      "x": 0.71245,
-      "y": 0.766951,
+      "x": 0.7120784872406327,
+      "y": 0.7658871243655585,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Vaults",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "Enter this room through the Vaults' pipe system.",
+      "color": "#ff9b42",
+      "subtitle": "Vaults"
     },
     {
       "id": "Mklpfhrfntl4q7p",
-      "x": 0.189809,
-      "y": 0.769381,
+      "x": 0.19151914608489892,
+      "y": 0.7678529365099257,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found on the floor at the bottom of the room.",
+      "color": "#926c15",
+      "subtitle": "Roots: The Crucible"
     },
     {
       "id": "Mklpbcz4kl811a",
@@ -2600,12 +2749,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpcnodr45ybzo",
-      "x": 0.699766,
-      "y": 0.779949,
+      "x": 0.6975426591499946,
+      "y": 0.779103802459397,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Make your way up through the winding red path below to find the Overseer here.",
+      "color": "#926c15",
+      "subtitle": "Roots: Vaults"
     },
     {
       "id": "Mkl12v16jaj6xra",
@@ -2618,48 +2768,53 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpal7dtiz5v7j",
-      "x": 0.458799,
-      "y": 0.786366,
+      "x": 0.45724381860887836,
+      "y": 0.7851465006914158,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "On the ground next to the Lab Network Gate. You cannot “Mend” this Overseer until you have fixed the broken Finger Tip in the room above. When you can spin The Wheel, set it to Alignment 0, then return to mend the Overseer.",
+      "color": "#926c15",
+      "subtitle": "Roots: Vaults' Shuttle"
     },
     {
       "id": "Mkkxd4mm2iqu40d",
-      "x": 0.465998,
-      "y": 0.787374,
+      "x": 0.4643166330725169,
+      "y": 0.7851828589155717,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Lab",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "After being thrown out of the Experiment Room by The Hand, take the elevator up, then head west to find this.",
+      "color": "#ff9b42",
+      "subtitle": "Lab"
     },
     {
       "id": "Mklq1wst3gmlk6",
       "x": 0.143561,
       "y": 0.792455,
       "type": "Mkkrzfr5b2v5bpj",
-      "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Junk Pile (x3)",
+      "desc": "Found beneath the broken walkway.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklq1key353m9i",
-      "x": 0.133048,
-      "y": 0.792518,
+      "x": 0.11250360603569369,
+      "y": 0.7884999577236413,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "On a platform beneath the entry pipe.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln6e313z5x66",
-      "x": 0.779437,
-      "y": 0.798586,
+      "x": 0.7806661517756424,
+      "y": 0.7991836754037122,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Along the path is another pile.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1gxa5kx0lpd",
@@ -2677,17 +2832,19 @@ const MAP_DATA = {
       "y": 0.798985,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "You can access this basin after the first Sawlong chase sequence, and heal up before the second one.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklm3jyfnfdt2k",
-      "x": 0.781044,
-      "y": 0.800666,
+      "x": 0.7815139254025583,
+      "y": 0.8002702328976542,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Hidden beneath the saws.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Drop down between the spinning blades directly beneath the energy shard to find this.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkl1lpj4zooxaf",
@@ -2701,39 +2858,43 @@ const MAP_DATA = {
     },
     {
       "id": "Mklpc5dklexqmpi",
-      "x": 0.422636,
-      "y": 0.801623,
+      "x": 0.42124936786996725,
+      "y": 0.8012413195233309,
       "type": "Mklp5xwbuhc529o",
       "title": "Torn Overseer",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found in the passage beyond the hidden path. Only accessible after defeating Sawlong.",
+      "color": "#926c15",
+      "subtitle": "Roots: Lab"
     },
     {
       "id": "Mklp1kl30746id3",
-      "x": 0.740995,
-      "y": 0.809465,
+      "x": 0.7402292329093215,
+      "y": 0.8090974061490076,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Just beyond the hole in the western wall in the spinning blades room.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklm5y2dguc4y9s",
-      "x": 0.755695,
-      "y": 0.809663,
+      "x": 0.7550328781265881,
+      "y": 0.8088593915447283,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 240.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Use the Striders to walk up this platform jutting out from the rocks.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklos684gkjb5gv",
       "x": 0.675038,
       "y": 0.810736,
       "type": "Mklonkcrqpz0ly",
-      "title": "Crystallizer",
-      "desc": "- Turns Nacre Droplets into Crystallized Nacre.",
-      "color": "#926c15"
+      "title": "Crystalliser",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mkl13c5t9tqxtq",
@@ -2784,12 +2945,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkln7ba4ylz05x",
-      "x": 0.734356,
-      "y": 0.818184,
+      "x": 0.7365858815675999,
+      "y": 0.818153143581851,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On the floor beneath the boss room exit pipe.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkz9owg8gosqel",
@@ -2802,37 +2964,40 @@ const MAP_DATA = {
     },
     {
       "id": "Mkl0j96c5kz9if9",
-      "x": 0.397854,
-      "y": 0.82362,
+      "x": 0.3762062372907148,
+      "y": 0.8375422817104881,
       "type": "Mkks1dwxeuo4x2s",
       "title": "Pearl Record",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on a platform in the southwest corner of the room.",
+      "color": "#344f6e",
+      "subtitle": "Beginning of the End"
     },
     {
       "id": "Mklm3y4v7r2gu3h",
-      "x": 0.608027,
-      "y": 0.824387,
+      "x": 0.6061226449157568,
+      "y": 0.82343715895437,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Located by a destroyed Crystalliser.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkllxkcta4v3lb",
-      "x": 0.397464,
-      "y": 0.824294,
+      "x": 0.3769991009110729,
+      "y": 0.8274380006927032,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "On a platform beneath the western exit.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklm55r8b148zao",
       "x": 0.66451,
       "y": 0.825597,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
+      "title": "Crystallised Nacre",
       "desc": "Contains 180.",
       "color": "#344f6e"
     },
@@ -2842,8 +3007,9 @@ const MAP_DATA = {
       "y": 0.82946,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Found on a platform beneath the western exit.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkkyf66y3pxr0rp",
@@ -2856,12 +3022,13 @@ const MAP_DATA = {
     },
     {
       "id": "Mkkyenkb7nq04ci",
-      "x": 0.696738,
-      "y": 0.834991,
+      "x": 0.696621776479667,
+      "y": 0.8344751611835527,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "Enter Pipe F by the Soothing Refuge and climb down to the bottom. The Candle is on a bench next to the sitting robot.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln4rlmxqnnd0s",
@@ -2869,53 +3036,49 @@ const MAP_DATA = {
       "y": 0.835116,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
+      "desc": "On a platform in the middle of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mklp13jtkfyl0w",
-      "x": 0.331002,
-      "y": 0.839642,
+      "x": 0.33037962556427775,
+      "y": 0.8377470134506322,
       "type": "Mklovgt3gcykgro",
       "title": "Nacre Basin",
-      "desc": "",
-      "color": "#926c15"
+      "desc": "Found on a platform beneath the western exit.",
+      "color": "#926c15",
+      "subtitle": ""
     },
     {
       "id": "Mklm0u9sfbhaqqg",
-      "x": 0.354047,
+      "x": 0.3532555731710662,
       "y": 0.844004,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "At the end of the passage at the bottom of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "Mkln4ccgyn91ban",
-      "x": 0.332334,
-      "y": 0.843984,
+      "x": 0.3310042217998271,
+      "y": 0.8437223912374323,
       "type": "Mkkrzfr5b2v5bpj",
       "title": "Junk Pile",
-      "desc": "",
-      "color": "#344f6e"
-    },
-    {
-      "id": "Mkl00xerx9c0qrl",
-      "x": 0.708476,
-      "y": 0.845265,
-      "type": "Mkks3hlp29dyho",
-      "title": "Severed Fingertip",
-      "desc": "Used to control the Wheel located above the Lab Attune Station.",
-      "color": "#926c15"
+      "desc": "Found on the ground at the bottom of the room.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "mmu9cssr4a3aia",
-      "x": 0.805917489884766,
-      "y": 0.46208826524248414,
+      "x": 0.8060273739403535,
+      "y": 0.4621309946737035,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Promenade Tower",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "From the Nacre Basin to the west, make your way east until you reach a large pool of gloomwater.\n\nJump and glide across while attacking the flower bud on the ceiling to refresh your energy to continue gliding the rest of the way.\n\nContinue east and grapple up, and you’ll reach the Network Gate.",
+      "color": "#ff9b42",
+      "subtitle": "Promenade Tower"
     },
     {
       "id": "mmu9ct9pt71rx2",
@@ -2923,8 +3086,9 @@ const MAP_DATA = {
       "y": 0.5287305185799731,
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
-      "desc": "",
-      "color": "#ff9b42"
+      "desc": "From the Network Gate, follow the path east to the end to find the elevator.",
+      "color": "#ff9b42",
+      "subtitle": "L0: Lakeshore"
     },
     {
       "id": "mmu9ctuoeyj1d4",
@@ -2933,7 +3097,8 @@ const MAP_DATA = {
       "type": "Mkkrxjyx2fo5gm9",
       "title": "Elevator",
       "desc": "",
-      "color": "#ff9b42"
+      "color": "#ff9b42",
+      "subtitle": "L-1: <redacted>"
     },
     {
       "id": "mmu9cuawame616",
@@ -2946,30 +3111,33 @@ const MAP_DATA = {
     },
     {
       "id": "mmu9cv1c7ez6vy",
-      "x": 0.8444933196824151,
-      "y": 0.5794395482511283,
+      "x": 0.843435232828475,
+      "y": 0.5759889957520317,
       "type": "Mkkrzn92hipumfv",
-      "title": "Crystallized Nacre",
-      "desc": "Contains 140.",
-      "color": "#344f6e"
+      "title": "Crystallised Nacre",
+      "desc": "Contains 140.From the Network Gate head west and drop to the area below.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "mmu9cvmvfl6rj0",
-      "x": 0.8444933196824151,
-      "y": 0.5657117432565145,
+      "x": 0.8447307477310952,
+      "y": 0.5664363995288267,
       "type": "Mkkrxcctlrtd2qa",
-      "title": "Redacted #2",
-      "desc": "",
-      "color": "#ff9b42"
+      "title": "Network Gate",
+      "desc": "After taking the elevator down. Enter the room to the east and use Strider to climb the metal panels in the air while heading east.",
+      "color": "#ff9b42",
+      "subtitle": "Redacted"
     },
     {
       "id": "mmu9cw77t7uyl5",
-      "x": 0.8763192933846652,
-      "y": 0.5639645680753819,
+      "x": 0.8765537529538217,
+      "y": 0.5626350589281794,
       "type": "Mkks0setaahiv85",
       "title": "Candle",
-      "desc": "Use wall climb and glide to reach.",
-      "color": "#344f6e"
+      "desc": "Located on top of the tendril-covered rock. Head to the east end of the room and climb on top of the building.\n\nFrom there, double-jump onto the right wall and use Striders to clamber to the ceiling.\n\nQuickly drop off and glide west to find a purple flower bud you can attack to refresh your energy.\n\nContinue gliding west and you’ll land on top of the rock.",
+      "color": "#344f6e",
+      "subtitle": ""
     },
     {
       "id": "mmu9d05l3smb06",
@@ -3022,9 +3190,10 @@ const MAP_DATA = {
       "x": 0.6886447955330471,
       "y": 0.8256259964892672,
       "type": "Mkkryd8c84zyyw9",
-      "title": "High-Voltage Discharge",
+      "title": "High-voltage Discharge",
       "desc": "*After a short delay, the next attack will automatically stun the target.*\n\n- Requires 20 Modifier slots.",
-      "color": "#d4b106"
+      "color": "#d4b106",
+      "subtitle": ""
     },
     {
       "id": "mmu9dp7yd891wk",
@@ -3157,7 +3326,7 @@ const MAP_DATA = {
       "x": 0.4765217011343557,
       "y": 0.5654609924437579,
       "type": "Mkkryd8c84zyyw9",
-      "title": "Portable Crystallizer",
+      "title": "Portable Crystalliser",
       "desc": "Can be purchased from Mel's Workshop after saving two Scraplings.\n\n*Converts some Nacre Droplets dropped by enemies into Crystallised Nacre.*\n\n- Requires 10 Modifier slots.",
       "color": "#d4b106"
     },
@@ -3231,8 +3400,8 @@ const MAP_DATA = {
     },
     {
       "id": "mmuasgcb3i826l",
-      "x": 0.5930358241149362,
-      "y": 0.5296961026474671,
+      "x": 0.5930348178506909,
+      "y": 0.5284276355448637,
       "type": "Mklo7etaznf2qu",
       "title": "Coating Component",
       "subtitle": "",
@@ -3281,8 +3450,8 @@ const MAP_DATA = {
     },
     {
       "id": "mmuaspf5m4zmj2",
-      "x": 0.25054188782124776,
-      "y": 0.5723262458876084,
+      "x": 0.25081961675295245,
+      "y": 0.569867123519473,
       "type": "Mmua9n0ek8he79",
       "title": "Modifier Extension",
       "subtitle": "",
@@ -3336,7 +3505,7 @@ const MAP_DATA = {
       "type": "Mkks00cdtqeamel",
       "title": "Old Core",
       "subtitle": "",
-      "desc": "Secret Area: Head east under the western Old-fashioned Key door and it’ll take you into a secret room. The Old Core will be on the mechanical remains in there.",
+      "desc": "Head east under the western Old-fashioned Key door and it’ll take you into a secret room. The Old Core will be on the mechanical remains in there.",
       "color": "#344f6e"
     },
     {
@@ -3561,8 +3730,8 @@ const MAP_DATA = {
     },
     {
       "id": "mmucgyac4tj45z",
-      "x": 0.3965896542777493,
-      "y": 0.47502976734773017,
+      "x": 0.3967374744953848,
+      "y": 0.47532974539547435,
       "type": "mmucgtg2nwkseg",
       "title": "Combat Room",
       "subtitle": "",
@@ -3668,6 +3837,1346 @@ const MAP_DATA = {
       "subtitle": "",
       "desc": "A locked-room combat encounter with a single spinning-blade enemy will trigger when you enter this room.",
       "color": "#a11d33"
+    },
+    {
+      "id": "mmugfu5hikhinn",
+      "x": 0.1403296274855231,
+      "y": 0.485755596684674,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "The Blood's Sanctum",
+      "desc": "Located at the far west end of the room. You won’t be able to use it just yet due to a gust of wind blowing you back. Requires Strider ability to get past.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugfwktfao671",
+      "x": 0.19385584148612778,
+      "y": 0.5968501054799472,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "Vaults' Shuttle",
+      "desc": "Accessible by platforming up the Shuttle Shaft after setting The Wheel to Alignment 120.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugg0msc5pr1k",
+      "x": 0.5154178875971331,
+      "y": 0.5503739081967475,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "Nexus",
+      "desc": "Attune here to save your progress, and change your Mod loadout.\n\nBecomes a fast travel point later, after activating a second gate.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugg666k1yebk",
+      "x": 0.5144981151099964,
+      "y": 0.33240559483181553,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "Celestial Bay",
+      "desc": "Attune here to save your progress, and change your Mod loadout.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugg8oiwdi9iu",
+      "x": 0.7974324890412126,
+      "y": 0.8272608957251597,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "Manufactory",
+      "desc": "After finding the 6 serial numbers, you’ll find this on the other side of the previously locked door.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugg9tod3rj4j",
+      "x": 0.19740536590025703,
+      "y": 0.7575642765032093,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "The Crucible",
+      "desc": "Drop through the gap in the floor in the room above to reach the gate.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggamrdszut7",
+      "x": 0.22024112417755148,
+      "y": 0.8359507137438653,
+      "type": "Mkkrxcctlrtd2qa",
+      "title": "Network Gate",
+      "subtitle": "The Pit",
+      "desc": "The Pit Network Gate can be found here, below “ground” level, in the caves beneath the surface.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggjdylqaytk",
+      "x": 0.3304863336589973,
+      "y": 0.3607854816362113,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: Embedding Palace",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggjzmdj0kin",
+      "x": 0.25932332623090026,
+      "y": 0.3605622421588203,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: Embedding Palace",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugglbfmxykz0",
+      "x": 0.25897078155255704,
+      "y": 0.4464989766038566,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: The Last Earthborn",
+      "desc": "Located to the east of the Commemorative Statue. It will be obstructed at first, and must be freed from above.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggmx1lozwfo",
+      "x": 0.33057780307889567,
+      "y": 0.46108192105858264,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Antechamber",
+      "desc": "Take the hidden path east of the Dwellings Nexus Gate and complete the platforming section.\n\nAt the end, in the far west, is an elevator that will take you to the Embedding Palace.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggnqv9vjn2s",
+      "x": 0.2206414720638492,
+      "y": 0.4864513301898199,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Hall of History",
+      "desc": "Located inside the building that requires the Old-fashioned Key.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggok9v1h809",
+      "x": 0.2006771894369623,
+      "y": 0.4957243546352926,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Hall of History",
+      "desc": "This elevator cannot be used until you clear the obstruction below.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggpdxc4zp40",
+      "x": 0.2006771894369623,
+      "y": 0.5544535094566199,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: Foundation Shafts",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggsmwdhkqja",
+      "x": 0.4732156189741404,
+      "y": 0.508642270667698,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: The Spine",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggtc3kpwfkn",
+      "x": 0.4732156189741404,
+      "y": 0.5807657941324859,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1:<Redacted>",
+      "desc": "After ascending from the Lab using the shuttle, you can find the elevator here.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggu5lv9wyna",
+      "x": 0.44578083059009577,
+      "y": 0.5812809621572343,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "Shuttle",
+      "desc": "Leads down to the Lab area.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggv2392z1eu",
+      "x": 0.4459451756791677,
+      "y": 0.7846364268515239,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "Shuttle",
+      "desc": "You can take the shuttle up to the Dwellings here.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggvjvo4xbng",
+      "x": 0.4981099141558723,
+      "y": 0.803869366442134,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Experiment Room",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggw03p4d9s5",
+      "x": 0.497981112332473,
+      "y": 0.7851515948762724,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: The Wheel",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggw8xpvm0tm",
+      "x": 0.4977989785040725,
+      "y": 0.7421572009358374,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Gloomwater Reserves",
+      "desc": "Only accessible by clearing the platforming challenge to the east.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggz35w4oc2w",
+      "x": 0.7122827593065658,
+      "y": 0.7442720131376356,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "Shuttle",
+      "desc": "On your first visit, the Shuttle will become locked after you descend.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggzft8i9idr",
+      "x": 0.769523094636598,
+      "y": 0.7501414405029341,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: Vaults Entrance",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuggzy1967fuc",
+      "x": 0.7695542888282024,
+      "y": 0.7791786715645388,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Refinery",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmugh0jejxrjs7",
+      "x": 0.7696518964599971,
+      "y": 0.823295300017219,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: Gloomwater Wastes",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9sp1b9nc39",
+      "x": 0.2768651559859022,
+      "y": 0.8283204954757287,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: The Pit",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9tdx2y5bu6",
+      "x": 0.2768651559859022,
+      "y": 0.8592305769606379,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: The Silence",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9ul6lxzj18",
+      "x": 0.6854104183079899,
+      "y": 0.2612110325033474,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Observatory",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9v6v663aow",
+      "x": 0.685874809257199,
+      "y": 0.3027558455824784,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: The Library",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9vtqulj189",
+      "x": 0.7714183390149755,
+      "y": 0.30339913482171516,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: The Basins",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9wh5qqjm06",
+      "x": 0.7715692786517715,
+      "y": 0.31593220692379936,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: Life Compendium",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9wkzy9f3b6",
+      "x": 0.7717891473893711,
+      "y": 0.325576179178759,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-2: Lecture Hall",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9wo8ff2mce",
+      "x": 0.7718178259203622,
+      "y": 0.33577489616870165,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-3: Precious Samples",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuh9z9lnn0oeb",
+      "x": 0.6032157359585945,
+      "y": 0.4611156790650274,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Breath's Bridge",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuha01gne1jk8",
+      "x": 0.542610956124379,
+      "y": 0.46686503471622437,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Bell Tower",
+      "desc": "An elevator runs along this shaft, once you unblock it.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuha1n2rmgug8",
+      "x": 0.7997421168490002,
+      "y": 0.45627704791233137,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: The Breath's Spring",
+      "desc": "From the Network Gate, jump and use the grapple point above it, and go west to find the elevator.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuha2o9mkue3k",
+      "x": 0.7997440790642786,
+      "y": 0.4302914495264927,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Rooftop Terrace",
+      "desc": "You need to free the elevator from the vines below before you can call it up.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuha4wt557bb5",
+      "x": 0.11269697368402169,
+      "y": 0.5547438081421295,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "From the Network Gate, drop down and head east.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuha6iactqe21",
+      "x": 0.0978329413844723,
+      "y": 0.5776580525762549,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "Found at the end of the hidden vent in the corridor above, beneath the rising platform. You can see this from the western redacted area, on the other side.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuha86493lm1m",
+      "x": 0.14266189648179725,
+      "y": 0.5946451949748109,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "Make your way to the bottom of the laser-filled room and then head through the vent to the west.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuha9c2nbjbh8",
+      "x": 0.8362682687329545,
+      "y": 0.5712520052676773,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "After taking the elevator down, head all the way east to find it at the end on the metal floor.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuha9pe20z8tp",
+      "x": 0.7681517263075237,
+      "y": 0.609874849706438,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "Found at the end of the hidden path through the nearby vent.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuha9uhx1kpos",
+      "x": 0.7989348589678268,
+      "y": 0.6094240776847831,
+      "type": "mmuha5jbc9pqix",
+      "title": "Fragmented Serial Number",
+      "subtitle": "",
+      "desc": "At the bottom of the shaft in the hidden path.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhahk43zqjop",
+      "x": 0.43951045260585087,
+      "y": 0.5611486748573169,
+      "type": "Mklphh28hvj1f6l",
+      "title": "Traveller's Log",
+      "subtitle": "Grateful",
+      "desc": "Use Hairpin to grapple onto the enemy on this ledge and pull yourself up. Open the container to find this.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhaksv2f3at4",
+      "x": 0.5277417141628419,
+      "y": 0.5246891336474805,
+      "type": "Mklphh28hvj1f6l",
+      "title": "Traveller's Log",
+      "subtitle": "No Promise",
+      "desc": "Located in Amytis’ Hideout, a hidden area accessed by performing a downward dash in the flower pot in the room above to the northeast.\n\nAfter doing so, head west through the screen to find the secret area.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhb44geqyf7g",
+      "x": 0.22703450098505887,
+      "y": 0.5068205468832085,
+      "type": "Mkks0setaahiv85",
+      "title": "Candle",
+      "subtitle": "",
+      "desc": "Speak to Elesin to receive this item.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuhb7oh108969",
+      "x": 0.5952388502004781,
+      "y": 0.5028026209221302,
+      "type": "Mkks0setaahiv85",
+      "title": "Candle",
+      "subtitle": "Requires Striders",
+      "desc": "From the path above, drop down into this area and then, when you reach the wall, use Striders to climb to the top and snag this item.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuhb9cnbk8hzr",
+      "x": 0.6424654064641828,
+      "y": 0.4559899317829281,
+      "type": "Mkks0setaahiv85",
+      "title": "Candle",
+      "subtitle": "Requires Striders",
+      "desc": "Once you have Striders, go left as far as you can, then use Striders to climb the wall and follow the ceiling to the east.\n\nYou’ll need to hit the flower along the way to renew your energy before you can reach the end and claim this item.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuhbcdvtjjljw",
+      "x": 0.8721953261045023,
+      "y": 0.8151962863318938,
+      "type": "Mkks0setaahiv85",
+      "title": "Candle",
+      "subtitle": "",
+      "desc": "Strike Vlad’s corpse to spin the exit hole around to the southeast, then drop into the tube to find the Candle.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmuhbp05nirc34",
+      "x": 0.5120238466768043,
+      "y": 0.29179055159480577,
+      "type": "Mklp5xwbuhc529o",
+      "title": "Torn Overseer",
+      "subtitle": "Roots: Celestial Bay",
+      "desc": "Found just outside the door. Climb up the inside of the broken glass tube, then drop down to reach it.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhbq5kvvzyrc",
+      "x": 0.8107690709203783,
+      "y": 0.5809663169099251,
+      "type": "Mklp5xwbuhc529o",
+      "title": "Torn Overseer",
+      "subtitle": "Roots: <redacted>",
+      "desc": "In a hidden vent, accessible through a hole in the ceiling in the corridor below.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhbs2rk83u6k",
+      "x": 0.8736861842675236,
+      "y": 0.7957265152766925,
+      "type": "Mklp5xwbuhc529o",
+      "title": "Torn Overseer",
+      "subtitle": "Roots: Manufactory",
+      "desc": "Inside the vertical pipe among the path.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhd1wvslbm6r",
+      "x": 0.1789464665918511,
+      "y": 0.7438903573640561,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "Shuttle",
+      "desc": "You can take the shuttle up to Foundations here.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhd2gju7a6ns",
+      "x": 0.17947510128145447,
+      "y": 0.5968159378053531,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "Shuttle",
+      "desc": "Leads down to The Crucible area.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhd5e9d285vd",
+      "x": 0.24782783519937684,
+      "y": 0.5543190689725912,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: Foundation Shafts",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhd5vpljyztq",
+      "x": 0.2483566764676006,
+      "y": 0.49967630308522915,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Hall of History",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhd7jg1hmeyy",
+      "x": 0.2205925098858526,
+      "y": 0.4943882934832263,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-1: Foundations Access",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhd7xjl58qt1",
+      "x": 0.2205925098858526,
+      "y": 0.5081371184484336,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L-2: Tuning Chamber",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdmm769kj88",
+      "x": 0.473086904736193,
+      "y": 0.482593688270671,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Apartments",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdn83hxb10k",
+      "x": 0.47282248410208116,
+      "y": 0.44910296079132006,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L3: Celestial Bay's Entrance",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdpvldrgpha",
+      "x": 0.5429595036695563,
+      "y": 0.5374852633356012,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L0: Barn",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdq7zu7t3p4",
+      "x": 0.5426950830354443,
+      "y": 0.5082249435378525,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: Aviaries",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdt8rkmx6e1",
+      "x": 0.6029550994992002,
+      "y": 0.4443515713061611,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L1: Pendulum's Panorama",
+      "desc": "",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhdtfq1j8567",
+      "x": 0.603219520133312,
+      "y": 0.41861659124308087,
+      "type": "Mkkrxjyx2fo5gm9",
+      "title": "Elevator",
+      "subtitle": "L2: Belfry Pathway",
+      "desc": "You won’t be able to reach Level 2 on this elevator until you clear out the combat room located there.",
+      "color": "#ff9b42"
+    },
+    {
+      "id": "mmuhfao3olcspz",
+      "x": 0.38810366412757125,
+      "y": 0.4755301630756014,
+      "type": "Mklonkcrqpz0ly",
+      "title": "Crystalliser",
+      "subtitle": "",
+      "desc": "Exchange Nacre Droplets here for Crystallised Nacre, a permanent resource that isn't lost on death.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhfex1iely19",
+      "x": 0.7921267463941444,
+      "y": 0.46246377439762276,
+      "type": "Mklonkcrqpz0ly",
+      "title": "Crystalliser",
+      "subtitle": "",
+      "desc": "Jump and glide west from the Network Gate to find it sitting on the nearby ledge.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmuhfgf11tmpaf",
+      "x": 0.8432868150300162,
+      "y": 0.8075191127649378,
+      "type": "Mklonkcrqpz0ly",
+      "title": "Crystalliser",
+      "subtitle": "",
+      "desc": "Drop down through the hole in the floor of the room above to find the Crystalliser.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui18htnf1ohn",
+      "x": 0.19496425701111328,
+      "y": 0.4473070347129325,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Far left of the room. Use the grapple point in the center to get across the tendrils.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui19b0z6twi7",
+      "x": 0.1384790424960443,
+      "y": 0.5763717713889889,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Located just after the section where you’ll need to glide past the vertically moving hot pipes.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1a1l9elcu9",
+      "x": 0.27279066577049227,
+      "y": 0.5371317985872481,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Exit the Poltergates Boss room through the western door and head to the far west for the Basin.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1bivo243sq",
+      "x": 0.33836926386094357,
+      "y": 0.42229315859794153,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1cegw2qnbx",
+      "x": 0.4008243925773565,
+      "y": 0.46635717014976075,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1dki1i17d3",
+      "x": 0.39962039740784694,
+      "y": 0.5239526869999619,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Pass beneath the ice shelf towards the top of the room to find this.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1gfq7pvg3k",
+      "x": 0.650570212246826,
+      "y": 0.5204162775906324,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Found just to the east of Ollanty.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1h8z820lfx",
+      "x": 0.5730154143325401,
+      "y": 0.4529292663485808,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Found as you make your way through the path to the western room.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1hnoj1mbf0",
+      "x": 0.5858251581752958,
+      "y": 0.4189402509657608,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "The Nacre Basin can be found near the northeast exit of this large room.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1jdlfth39d",
+      "x": 0.7985586118570346,
+      "y": 0.41196592905363366,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1jqtf2m6uc",
+      "x": 0.8289558421792624,
+      "y": 0.4318857593439084,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "To the right hand wall protected by plant monster.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1m1e9toy01",
+      "x": 0.8257061775875032,
+      "y": 0.8340670322858007,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1mggd0rjh3",
+      "x": 0.825577375764104,
+      "y": 0.8563909800249017,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1mttwubfs1",
+      "x": 0.8720748340112406,
+      "y": 0.8366428724095432,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "There’s a hidden Nacre Basin in a small space accessible by using the Striders.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1n9wtkk163",
+      "x": 0.8452840547441923,
+      "y": 0.7978335478784907,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Found in the middle of the room through the pipes.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1obz1e3ruy",
+      "x": 0.6675923186737021,
+      "y": 0.7937118101984687,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Make your way around from the west to reach this basin.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1or1epa5vg",
+      "x": 0.6506674571997643,
+      "y": 0.7577741449303695,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1r61u74hdx",
+      "x": 0.33195489218010904,
+      "y": 0.7503914114923723,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "Broken",
+      "desc": "A broken Nacre Basin can be found here. It will appear on your map after, but is functionally useless…",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1rzkmpo9u1",
+      "x": 0.3483736027386574,
+      "y": 0.7484856922758223,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "A Nacre Basin can be found here, which works unlike the previous broken one.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui1uriphvt8a",
+      "x": 0.38169769029653156,
+      "y": 0.48628612133329957,
+      "type": "Mklovgt3gcykgro",
+      "title": "Nacre Basin",
+      "subtitle": "",
+      "desc": "Offer Nacre here to restore your health (protective coat).",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui22vwxou1tj",
+      "x": 0.5810317642629489,
+      "y": 0.47852355774387095,
+      "type": "Mkks3hlp29dyho",
+      "title": "Bell Tower Visitor Pass",
+      "subtitle": "",
+      "desc": "Located in the hidden area behind the waterfall.",
+      "color": "#926c15"
+    },
+    {
+      "id": "mmui2appo665ic",
+      "x": 0.1864675569390062,
+      "y": 0.5386164332025589,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Located next to the broken Crystalliser beneath the metal grate.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2d9u8xj7hr",
+      "x": 0.18965137701115695,
+      "y": 0.47645886200819837,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Located on the floor just past the enemies under the Energy Shield part of the platforming section.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2gymlm6i10",
+      "x": 0.34190751435063327,
+      "y": 0.5581957830423103,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Before the circular room, slide to the right and glide across above the wind gust.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2hii8dl4vv",
+      "x": 0.35865175139253846,
+      "y": 0.537589062052371,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Before exiting at the top, go right.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2ibffp3gva",
+      "x": 0.4011090586947683,
+      "y": 0.49129034820319756,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "In front of a destroyed Crystalliser.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2lkuuinc3v",
+      "x": 0.6381639718549069,
+      "y": 0.5403965180709335,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Go through the nearby hidden path and follow it to the end.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2pb0whx9q5",
+      "x": 0.6168095351731285,
+      "y": 0.41296487744916366,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "After the first Grapple Point leading up, go out the western exit.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2qdwc3v5d8",
+      "x": 0.5924176898668917,
+      "y": 0.37636446998256,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "On a mushroom just above the shortcut.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2rw3svmzho",
+      "x": 0.4753391025290921,
+      "y": 0.3507665912110556,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Found in the upper section of the room where the tremor occurs.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2t1c1ynp96",
+      "x": 0.6535684797495173,
+      "y": 0.4186264486031019,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "On a rock in the southwest corner of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2tpu9se2ba",
+      "x": 0.683450502778148,
+      "y": 0.37569577987406144,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Found among the blue leaves at the top of the waterfall.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2ugjsulp6f",
+      "x": 0.6795693415839997,
+      "y": 0.3517619320576214,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Found on top of the central hanging platform.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2vzd07opd5",
+      "x": 0.8160651419040256,
+      "y": 0.48698734043880104,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "In the bottom corner of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2xm81yhowo",
+      "x": 0.7551354443763217,
+      "y": 0.5834105011413513,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Located under the walkway, by the heated pipes. Use the underneath of the walkway with Striders to reach it.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2yr77nvzlu",
+      "x": 0.8795794017326006,
+      "y": 0.7988418424415933,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Accessible from the exit pipe from the Vlad boss room below.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui2zddez4y3j",
+      "x": 0.8475107664989183,
+      "y": 0.7945091988584547,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Found at the end of a pipe. Climb up from the room below with the robot enemies in it.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui30m6bbj860",
+      "x": 0.7871761686145677,
+      "y": 0.817356364122691,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Use the Striders to go across the roof to fall down on the left side of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui333hlwmr1i",
+      "x": 0.7192357224320658,
+      "y": 0.8023252637339356,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Located by a destroyed Crystalliser.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui35a7k6p1wb",
+      "x": 0.5444646364350016,
+      "y": 0.7790397535350582,
+      "type": "Mkkrzn92hipumfv",
+      "title": "Crystallised Nacre",
+      "subtitle": "",
+      "desc": "Found on a platform in an optional area. It contains 280 Crystallised Nacre.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3alwdmvu22",
+      "x": 0.09725896123376092,
+      "y": 0.7231232959229854,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found on the metal walkway.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3emr9jbk8u",
+      "x": 0.34516095533025637,
+      "y": 0.7588553561566656,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Located on the walkway.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3f6xrkqsel",
+      "x": 0.32107501435459274,
+      "y": 0.7511278357854383,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile (x2)",
+      "subtitle": "",
+      "desc": "Two junk piles can be found here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3frc80olli",
+      "x": 0.2905997985533536,
+      "y": 0.7534762775232565,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Can be found on a small platform as you climb up here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3g5ahiogt1",
+      "x": 0.3093334200082303,
+      "y": 0.7587775443195943,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found on the side of the wall here. Jump down and strike it in mid-air.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3jaa0q209f",
+      "x": 0.8028868931852707,
+      "y": 0.8031088864871725,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found on a platform near the ceiling.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3jedjvgxbx",
+      "x": 0.8255610454247689,
+      "y": 0.8040017102383967,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "On the far west side of the room, outside of the pipes.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3jqirjxvg9",
+      "x": 0.869790384062984,
+      "y": 0.8222264499055734,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found at the end of the corridor.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3jwdib122j",
+      "x": 0.8123447708269094,
+      "y": 0.8344187598246208,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "In the top-left corner of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3k2cydv5vs",
+      "x": 0.8216185021116569,
+      "y": 0.8579447662881349,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "A junk pile can be found here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3m1gftileq",
+      "x": 0.11111116716238767,
+      "y": 0.5450482833187846,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found in a vent.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3m9vkp4u6z",
+      "x": 0.14949411053537032,
+      "y": 0.5737259700297836,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Make your way through the platforming area until you reach the gray pipes with the laser wall. Instead of dropping down, jump across to the eastern ledge.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3mfmpnzxxa",
+      "x": 0.1787819345271474,
+      "y": 0.5516113093007367,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Use the grapple point to reach the ledge above the wind gust.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3mv1r2tgv8",
+      "x": 0.37916637754480786,
+      "y": 0.4855698541697958,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "On a small icy platform.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3n18j1f6aa",
+      "x": 0.38566583830524453,
+      "y": 0.5143099245087916,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "On a ledge by the grapple point.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3n9go9v9lk",
+      "x": 0.4541783457112034,
+      "y": 0.48944032227239836,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "On a platform on the right side of the room.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3njldrvjqg",
+      "x": 0.2723445435486566,
+      "y": 0.3579550914389789,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "On the ceiling of the corridor.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3nvepoukms",
+      "x": 0.5216903150185435,
+      "y": 0.5580420014963315,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found at the top of the room. Climb up the pipes and girders below to reach it.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3o8krrkwmp",
+      "x": 0.627422670238226,
+      "y": 0.5741373464549626,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "It’s easiest to reach this junk pile by using Striders to walk up the wall.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3p123tsvz4",
+      "x": 0.597220997309431,
+      "y": 0.545400173936106,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found on a small ledge as you work your way up.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3pcheuweg4",
+      "x": 0.6331054368745292,
+      "y": 0.5121412482383593,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Perform a Downward Dash (hold down and press the jump button) to drop to this junk pile.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3pqxeholc5",
+      "x": 0.5801045934363992,
+      "y": 0.43145775190402,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Found on the platform here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3q12r3ou70",
+      "x": 0.633281935623156,
+      "y": 0.3650091262118521,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Pass under a rock on the west side of the room to find this in a little pocket of space.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3qdzak9wjx",
+      "x": 0.7553604396866577,
+      "y": 0.4195167071395432,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "A junk pile can be found here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3qklpk2r2s",
+      "x": 0.7989536784448447,
+      "y": 0.41752724628730353,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Directly under a plant enemy.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3quy5z5l85",
+      "x": 0.7174849754978683,
+      "y": 0.479590450505464,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "A junk pile can be found here.",
+      "color": "#344f6e"
+    },
+    {
+      "id": "mmui3reysu1c8w",
+      "x": 0.6717174160523861,
+      "y": 0.4281062820467666,
+      "type": "Mkkrzfr5b2v5bpj",
+      "title": "Junk Pile",
+      "subtitle": "",
+      "desc": "Hidden by a tree root at the very top of the room. You must drop down from Canopy above to reach it.",
+      "color": "#344f6e"
     }
   ]
 };
