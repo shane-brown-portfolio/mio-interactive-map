@@ -5,6 +5,7 @@
 const viewport = document.getElementById('viewport');
 const world = document.getElementById('world');
 const basemap = document.getElementById('basemap');
+const mapLoading = document.getElementById('mapLoading');
 
 // Size of the map image in pixels, set once it loads
 let worldW = 0, worldH = 0;
@@ -195,6 +196,8 @@ document.addEventListener('DOMContentLoaded', () => {
     world.style.width = worldW + 'px';
     world.style.height = worldH + 'px';
     fitView();
+    mapLoading.remove();
+    viewport.classList.add('ready');
   });
   basemap.src = MAP_DATA.image;
 });
