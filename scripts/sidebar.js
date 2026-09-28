@@ -188,3 +188,17 @@ document.getElementById('resetProgress').addEventListener('click', () => {
 
 renderSidebar();
 applyFilters();
+
+// Collapsible sidebar: click the tab to reclaim screen space on small windows
+const sidebarEl = document.getElementById('sidebar');
+const sidebarToggle = document.getElementById('sidebarToggle');
+let sidebarCollapsed = false;
+sidebarToggle.innerHTML = sidebarCollapsed ? '&#9654;' : '&#9664;';
+sidebarToggle.addEventListener('click', () => {
+  sidebarCollapsed = !sidebarCollapsed;
+  sidebarToggle.innerHTML = sidebarCollapsed ? '&#9654;' : '&#9664;';
+  if (typeof animateSidebar === 'function')
+    animateSidebar(sidebarEl, sidebarToggle, sidebarCollapsed);
+  else
+    sidebarEl.classList.toggle('collapsed', sidebarCollapsed);
+});

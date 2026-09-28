@@ -134,6 +134,59 @@ document.getElementById('zoomOut').addEventListener('click', () => {
 document.getElementById('zoomReset').addEventListener('click', fitView);
 window.addEventListener('resize', fitView);
 
+const SIDEBAR_WIDTH = 280;
+const SIDEBAR_ANIM_MS = 150;
+
+function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+// Guards against second click starting an overlapping animation
+let sidebarAnimFrame = null;
+
+function animateSidebar(sidebarEl, toggleEl, collapsed) {
+  if (sidebarAnimFrame !== null)
+    cancelAnimationFrame(sidebarAnimFrame);
+
+  const wasFitted = Math.abs(scale - minScale) < 0.001;
+  const fromWidth = collapsed ? SIDEBAR_WIDTH : 0;
+  const toWidth = collapsed ? 0 : SIDEBAR_WIDTH;
+  const tx0 = tx, ty0 = ty;
+  const startLeft = viewport.getBoundingClientRect().left;
+  const start = performance.now();
+
+  function frame(now) {
+    const t = Math.min(1, (now - start) / SIDEBAR_ANIM_MS);
+    const width = fromWidth + (toWidth - fromWidth) * easeOutCubic(t);
+    sidebarEl.style.width = width + 'px';
+    toggleEl.style.left = (width + 8) + 'px';
+
+    if (wasFitted) {
+      // Resize viewport if fully zoomed out
+      updateViewportRect();
+      fitView();
+    }
+    else {
+      // Hold the map's screen position fixed while closing sidebar when zoomed in
+      const currentLeft = viewport.getBoundingClientRect().left;
+      tx = tx0 - (currentLeft - startLeft);
+      ty = ty0;
+      world.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+    }
+
+    if (t < 1) {
+      sidebarAnimFrame = requestAnimationFrame(frame);
+    }
+    else {
+      sidebarAnimFrame = null;
+      sidebarEl.classList.toggle('collapsed', collapsed);
+      sidebarEl.style.width = '';
+      toggleEl.style.left = '';
+      updateViewportRect();
+      apply();
+    }
+  }
+  sidebarAnimFrame = requestAnimationFrame(frame);
+}
+
 // Load the map image, then size the map area to match it and fit it on screen
 document.addEventListener('DOMContentLoaded', () => {
   basemap.addEventListener('load', () => {
